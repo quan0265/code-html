@@ -1,0 +1,308 @@
+.stamped-badge,
+.stamped-badge:after {
+    clear: both
+}
+
+@font-face {
+    font-family: stamped-font;
+    font-display: swap;
+    /*src: url(https://cdn1.stamped.io/fonts/stamped-font.eot?rkevfi);*/
+    /*src: url(https://cdn1.stamped.io/fonts/stamped-font.eot?rkevfi#iefix) format('embedded-opentype'), url(https://cdn1.stamped.io/fonts/stamped-font.ttf?rkevfi) format('truetype'), url(https://cdn1.stamped.io/fonts/stamped-font.woff?rkevfi) format('woff'), url(https://cdn1.stamped.io/fonts/stamped-font.svg?rkevfi#stamped-font) format('svg');*/
+    src: url(../webfonts/stamped-font.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+
+.fa,
+.stamped-fa {
+    display: inline-block;
+    font-style: normal;
+}
+
+i.stamped-fa.stamped-fa-camera::before {
+    content: '\e805';
+}
+
+.stamped-fa-camera::before {
+}
+
+[class*=" stamped-fa-"]:before,
+[class*=" stamped-icon-"]:before,
+[class^=fa-]:before,
+[class^=stamped-fa-]:before,
+[class^=stamped-icon-]:before {
+    font-family: stamped-font, FontAwesome, "Font Awesome 5 Pro", "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em
+}
+
+.fa-star:before,
+.stamped-fa-star:before {
+    content: '\f005'
+}
+
+.fa-star-o:before,
+.stamped-fa-star-o:before {
+    content: '\f006'
+}
+
+.fa-star-half-o:before,
+.stamped-fa-star-half-o:before {
+    content: '\f123'
+}
+
+.fa-star,
+.fa-star-half-o,
+.fa-star-o,
+.stamped-fa-star,
+.stamped-fa-star-half-o,
+.stamped-fa-star-o {
+    color: #ffd200;
+    padding: 0
+}
+
+.fa-star-half-o:before,
+.fa-star-o:before,
+.fa-star:before,
+.stamped-fa-star-half-o:before,
+.stamped-fa-star-o:before,
+.stamped-fa-star:before {
+    font-size: 18px;
+    margin-right: -1px;
+}
+
+.fa-star-half-o:before,
+.fa-star-o:before,
+.fa-star:before,
+.stamped-fa-star-half-o:before,
+.stamped-fa-star-o:before,
+.stamped-fa-star:before {
+    font-family: stamped-font, FontAwesome !important
+}
+
+.stamped-badge[data-rating="0"],
+.stamped-badge[data-rating="0,0"],
+.stamped-badge[data-rating="0.0"] {
+    display: none
+}
+
+.stamped-badge {
+    min-height: auto;
+    min-width: auto;
+    display: block;
+    cursor: pointer
+}
+
+.stamped-badge-starrating {
+    color: gold;
+    margin: 0 3px 0 0 !important;
+    vertical-align: middle
+}
+
+.stamped-badge-starrating .stamped-fa {
+    font-size: 100%
+}
+
+.stamped-review {
+    border-top: 1px solid #eee;
+    margin-bottom: 30px;
+    padding-top: 25px
+}
+
+.stamped-review:first-child {
+    margin-top: 0;
+    border-top: none
+}
+
+.stamped-review:last-child {
+    padding-bottom: 0
+}
+
+.stamped-review-header {
+    font-size: 14px;
+    width: 100%;
+    line-height: 18px
+}
+
+.stamped-review-header #stamped-review-avatar,
+.stamped-review-header .stamped-review-avatar,
+.stamped-review-reply #stamped-review-avatar,
+.stamped-review-reply .stamped-review-avatar {
+    float: left
+}
+
+.stamped-review-avatar {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin-right: 10px;
+    color: #bbb;
+    background: #f5f5f5;
+    border-radius: 50%;
+    text-shadow: 1px 1px 0 #fff
+}
+
+.stamped-review[data-verified=buyer] .stamped-review-avatar:before {
+    content: '\e904';
+    font-family: stamped-font;
+    font-size: 21px !important;
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    color: #1cc286
+}
+
+.stamped-review-reply .stamped-review-avatar:before {
+    display: none
+}
+
+.stamped-review-reply .stamped-review-content {
+    clear: both;
+    padding-top: 5px
+}
+
+.stamped-review-avatar-content {
+    height: 55px;
+    width: 55px;
+    font-size: 18px;
+    vertical-align: text-bottom;
+    text-align: center;
+    text-transform: inherit;
+    font-style: initial;
+    margin-right: 10px
+}
+
+.stamped-review-avatar-content {
+    display: table-cell;
+    vertical-align: middle;
+    height: 56px;
+    width: 55px;
+    font-weight: 700
+}
+
+.stamped-review-header .created,
+.stamped-review-header-byline .created {
+    float: right !important;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.stamped-review-content {
+    margin: 0 0 15px;
+    clear: both
+}
+
+.stamped-review-content:after,
+.stamped-review-content:before {
+    content: " ";
+    display: table
+}
+
+.stamped-review-content:after {
+    clear: both
+}
+
+.stamped-review .author {
+    margin-right: 7px
+}
+
+.stamped-review-content-body,
+.stamped-review-reply-body {
+    font-size: 1em;
+    line-height: 20px
+}
+
+.stamped-review-content-body {
+    margin: 0;
+    padding: 0
+}
+
+.stamped-review-reply {
+    background: 0 0;
+    margin: 15px 0 0 35px;
+    padding: 10px 0 0 15px;
+    border-left: 5px solid #e0e0e0
+}
+
+.stamped-review-reply:after,
+.stamped-review-reply:before {
+    content: " ";
+    display: table
+}
+
+.stamped-review-reply:after {
+    clear: both
+}
+
+.stamped-review-reply .stamped-review-footer {
+    display: none
+}
+
+.stamped-review-reply-body {
+    margin: 0 0 12px
+}
+
+.stamped-review-footer {
+    clear: both !important;
+    font-size: 12px;
+    opacity: .8;
+    margin-top: 25px
+}
+
+.stamped-review-footer:after,
+.stamped-review-footer:before {
+    content: " " !important;
+    display: table !important
+}
+
+.stamped-review-footer:after {
+    clear: both !important
+}
+
+.stamped-review-footer a {
+    text-decoration: none;
+    Border: none !important
+}
+
+.stamped-review-footer #stamped-review-vote,
+.stamped-review-footer .stamped-review-vote {
+    float: right !important
+}
+
+#stamped-review-vote,
+.stamped-review-vote {
+    margin-top: 0 !important
+}
+
+#stamped-review-vote a,
+.stamped-review-vote a {
+    cursor: pointer
+}
+
+.stamped-questions .stamped-review {
+    width: 100%
+}
+
+.stamped-questions .stamped-review-reply span.created {
+    margin-right: 10px
+}
+
+.stamped-questions .stamped-icon-comment,
+.stamped-questions .stamped-review-content-body {
+    margin-top: 10px
+}
+
+.stamped-questions span.stamped-review-header-byline {
+    display: block;
+    margin-bottom: 10px !important;
+    font-weight: 700
+}

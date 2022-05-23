@@ -1,0 +1,22 @@
+{
+	"style": [
+		{"1": "style1"},
+		{"2": "style2"},
+		{"3": "style3"}
+	],
+	"color": [
+		{"1": "color1"},
+		{"2": "color2"},
+		{"3": "color3"}
+	],
+	"size": [
+		{"1": "size1"},
+		{"2": "size2"},
+		{"3": "size3"}
+	],
+	"image": [
+		{"1": "image1"},
+		{"2": "image2"},
+		{"3": "image3"}
+	]
+}

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en" class="supports-js supports-no-touch supports-csstransforms supports-csstransforms3d supports-fontface supports-pointerevents" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>collection</title>
+
+	<link rel="stylesheet" href="assets/css/main-font.css">
+
+    <link href="assets/css/timber.scss.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/theme.scss.css" rel="stylesheet" type="text/css" media="all">
+
+	<link href="assets/css/aj_custom.css" rel="stylesheet" type="text/css" media="all">
+
+    <script type="text/javascript" src="assets/js/jquery.min-3.5.1.js"></script>
+    <script async="" defer="" type="text/javascript" src="assets/js/lazysizes.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/theme.js"></script> -->
+
+
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main-main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main-collection.css">
+
+
+</head>
+<body id="hot-products" class="template-collection">
+
+    <div class="overlay1"></div>
+
+    <div id="shopify-section-header" class="shopify-section">
+        <style>
+            .site-header__logo img {
+                max-width: 180px;
+              }
+
+              @media screen and (max-width: 768px) {
+                .site-header__logo img {
+                  max-width: 100%;
+                }
+              }
+            </style>
+        <div data-section-id="header" data-section-type="header-section" data-template="collection">
+            <div id="NavDrawer" class="drawer drawer--left">
+                <div class="drawer__inner drawer-left__inner">
+                    <ul class="mobile-nav">
+                        <li class="mobile-nav__item">
+                            <a href="/" class="mobile-nav__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <div class="mobile-nav__has-sublist">
+                                <a href="/collections/all" class="mobile-nav__link" id="Label-2">Catalog</a>
+                                <div class="mobile-nav__toggle">
+                                    <button type="button" class="mobile-nav__toggle-btn icon-fallback-text" aria-controls="Linklist-2" aria-expanded="false">
+                                        <span class="icon-fallback-text mobile-nav__toggle-open">
+                                            <span class="icon icon-plus" aria-hidden="true"></span>
+                                            <span class="fallback-text">Expand submenu Catalog</span>
+                                        </span>
+                                        <span class="icon-fallback-text mobile-nav__toggle-close">
+                                            <span class="icon icon-minus" aria-hidden="true"></span>
+                                            <span class="fallback-text">Collapse submenu Catalog</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="mobile-nav__sublist" id="Linklist-2" aria-labelledby="Label-2" role="navigation">
+                                <li class="mobile-nav__item">
+                                    <a href="/collections/health-beauty" class="mobile-nav__link">
+                                        Health &amp; Beauty
+                                    </a>
+                                </li>
+                                <li class="mobile-nav__item">
+                                    <a href="/collections/hot-products" class="mobile-nav__link" aria-current="page">
+                                        Hot Products
+                                    </a>
+                                </li>
+                                <li class="mobile-nav__item">
+                                    <a href="/collections/home-kitchen" class="mobile-nav__link">
+                                        Houseware &amp; Kitchen
+                                    </a>
+                                </li>
+                                <li class="mobile-nav__item">
+                                    <a href="/collections/tools-gadgets" class="mobile-nav__link">
+                                        Tools &amp; Gadgets
+                                    </a>
+                                </li>
+                                <li class="mobile-nav__item">
+                                    <a href="/collections/toys-kids-gifts" class="mobile-nav__link">
+                                        Toys, Kids &amp; Gifts
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="/pages/faq" class="mobile-nav__link">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="https://www.17track.net/en/" class="mobile-nav__link">
+                                Tracking Order
+                            </a>
+                        </li>
+                        <li class="mobile-nav__spacer"></li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary">
+                            <a href="/account/login" id="customer_login_link">Log In</a>
+                        </li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary">
+                            <a href="/account/register" id="customer_register_link">Create Account</a>
+                        </li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/refund">Refund</a></li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/contact-us">Contact Us</a></li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/about-us">About Us</a></li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/privacy-statement">Privacy Statement</a></li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/terms-of-logistics">Terms of Logistics</a></li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/terms-of-service">Terms of Service</a></li>
+                        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/intellectual-property-rights">Intellectual Property Rights</a></li>
+                    </ul>
+                    <!-- //mobile-nav -->
+                </div>
+            </div>
+            <div class="header-container drawer__header-container">
+                <div class="header-wrapper">
+                    <style>
+                        .announcement-bar {
+                  background-color: #1c1d1d;
+                }
+
+                .announcement-bar--link:hover {
+
+                    background-color: #404242;
+                  
+                }
+
+                .announcement-bar__message {
+                  color: #ffffff;
+                }
+              </style>
+                    <div class="announcement-bar">
+                        <p class="announcement-bar__message">Free shipping for orders over $40</p>
+                    </div>
+                    <header class="site-header" role="banner">
+                        <div class="wrapper">
+                            <div class="grid--full grid--table">
+                                <div class="grid__item large--hide large--one-sixth one-quarter">
+                                    <div class="site-nav--open site-nav--mobile site-nav--init">
+                                        <button type="button" class="icon-fallback-text site-nav__link site-nav__link--burger js-drawer-open-button-left" aria-controls="NavDrawer" aria-expanded="false">
+                                            <span class="burger-icon burger-icon--top"></span>
+                                            <span class="burger-icon burger-icon--mid"></span>
+                                            <span class="burger-icon burger-icon--bottom"></span>
+                                            <span class="fallback-text">Site navigation</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="grid__item large--one-third medium-down--one-half">
+                                    <div class="h1 site-header__logo large--left" itemscope="" itemtype="http://schema.org/Organization">
+                                        <a href="/" itemprop="url" class="site-header__logo-link">
+                                            <img src="assets/image/logo.png" alt="plemono" itemprop="logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <nav class="grid__item large--two-thirds large--text-right medium-down--hide" role="navigation" style="">
+                                    <!-- begin site-nav -->
+                                    <ul class="site-nav site-nav--init" id="AccessibleNav">
+                                        <li class="site-nav__item">
+                                            <a href="/" class="site-nav__link" data-meganav-type="child" tabindex="">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="site-nav__item site-nav--has-dropdown" aria-haspopup="true" data-meganav-type="parent">
+                                            <a href="/collections/all" class="site-nav__link" data-meganav-type="parent" aria-controls="MenuParent-2" aria-expanded="false" tabindex="">
+                                                Catalog
+                                                <span class="icon icon-arrow-down" aria-hidden="true"></span>
+                                            </a>
+                                            <ul id="MenuParent-2" class="site-nav__dropdown" data-meganav-dropdown="">
+                                                <li>
+                                                    <a href="/collections/health-beauty" class="site-nav__dropdown-link" data-meganav-type="child" tabindex="-1">
+                                                        Health &amp; Beauty
+                                                    </a>
+                                                </li>
+                                                <li class="site-nav--active">
+                                                    <a href="/collections/hot-products" class="site-nav__dropdown-link" data-meganav-type="child" aria-current="page" tabindex="-1">
+                                                        Hot Products
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/collections/home-kitchen" class="site-nav__dropdown-link" data-meganav-type="child" tabindex="-1">
+                                                        Houseware &amp; Kitchen
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/collections/tools-gadgets" class="site-nav__dropdown-link" data-meganav-type="child" tabindex="-1">
+                                                        Tools &amp; Gadgets
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/collections/toys-kids-gifts" class="site-nav__dropdown-link" data-meganav-type="child" tabindex="-1">
+                                                        Toys, Kids &amp; Gifts
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="site-nav__item">
+                                            <a href="/pages/faq" class="site-nav__link" data-meganav-type="child" tabindex="">
+                                                FAQ
+                                            </a>
+                                        </li>
+                                        <li class="site-nav__item">
+                                            <a href="https://www.17track.net/en/" class="site-nav__link" data-meganav-type="child" tabindex="">
+                                                Tracking Order
+                                            </a>
+                                        </li>
+                                        <li class="site-nav__item site-nav__expanded-item site-nav__item--compressed">
+                                            <a class="site-nav__link site-nav__link--icon" href="/account" tabindex="">
+                                                <span class="icon-fallback-text">
+                                                    <span class="icon icon-customer" aria-hidden="true"></span>
+                                                    <span class="fallback-text">
+                                                        Log In
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="site-nav__item site-nav__item--compressed">
+                                            <a href="/search" class="site-nav__link site-nav__link--icon js-toggle-search-modal" data-mfp-src="#SearchModal" tabindex="">
+                                                <span class="icon-fallback-text">
+                                                    <span class="icon icon-search" aria-hidden="true"></span>
+                                                    <span class="fallback-text">Search</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="site-nav__item site-nav__item--compressed">
+                                            <a href="/cart" class="btn_header_cart site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer" aria-expanded="false" tabindex="">
+                                                <span class="icon-fallback-text">
+                                                    <span class="icon icon-cart" aria-hidden="true"></span>
+                                                    <span class="fallback-text">Cart</span>
+                                                </span>
+                                                <span class="cart-link__bubble cart-link__bubble--visible"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- //site-nav -->
+                                </nav>
+                                <div class="grid__item large--hide one-quarter">
+                                    <div class="site-nav--mobile text-right">
+                                        <a href="/cart" class="btn_header_cart site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer" aria-expanded="false">
+                                            <span class="icon-fallback-text">
+                                                <span class="icon icon-cart" aria-hidden="true"></span>
+                                                <span class="fallback-text">Cart</span>
+                                            </span>
+                                            <span class="cart-link__bubble cart-link__bubble--visible"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
+        <div class="drawer__fixed-header">
+            <div class="drawer__header">
+                <div class="drawer__title">Your cart</div>
+                <div class="drawer__close">
+                    <button type="button" class="btn_header_cart_close icon-fallback-text drawer__close-button js-drawer-close">
+                        <span class="icon icon-x" aria-hidden="true"></span>
+                        <span class="fallback-text">Close Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="drawer__inner">
+            <div id="CartContainer" class="drawer__cart">
+                <form action="/cart" method="post" novalidate="" class="cart ajaxcart">
+                    <div class="ajaxcart__inner ajaxcart__inner--has-fixed-footer" style="bottom: 180px;">
+                        <div class="ajaxcart__product">
+                            <div class="ajaxcart__row" data-line="1">
+                                <div class="grid">
+                                    <div class="grid__item one-quarter">
+                                        <a href="/product/123" class="ajaxcart__product-image"><img src="assets/image/header-cart1.gif" alt="Transparent Jewelry Storage Book"></a>
+                                    </div>
+                                    <div class="grid__item three-quarters">
+                                        <div class="ajaxcart__product-name--wrapper">
+                                            <a href="/products/book?variant=40053141176485" class="ajaxcart__product-name">Transparent Jewelry Storage Book</a>
+                                            <span class="ajaxcart__product-meta">10 PCS Jewelry Packaging Bag</span>
+                                        </div>
+                                        <div class="grid--full">
+                                            <div class="grid__item one-half">
+                                                <div class="ajaxcart__qty">
+                                                    <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="40053141176485:5fa0076f5bef33ce0fcb8f86757b10fe" data-qty="1" data-line="1" aria-label="Reduce item quantity by one">
+                                                        <span class="icon icon-minus" aria-hidden="true"></span>
+                                                        <span class="fallback-text" aria-hidden="true">−</span>
+                                                    </button>
+                                                    <input type="text" name="updates[]" class="ajaxcart__qty-num" value="2" min="0" data-id="40053141176485:5fa0076f5bef33ce0fcb8f86757b10fe" data-line="1" aria-label="quantity" pattern="[0-9]*">
+                                                    <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-id="40053141176485:5fa0076f5bef33ce0fcb8f86757b10fe" data-line="1" data-qty="3" aria-label="Increase item quantity by one">
+                                                        <span class="icon icon-plus" aria-hidden="true"></span>
+                                                        <span class="fallback-text" aria-hidden="true">+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="grid__item one-half text-right">
+                                                <span class="ajaxcart__price">$19.98</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ajaxcart__footer ajaxcart__footer--fixed" style="height: 180px;">
+                        <div class="grid--full">
+                            <div class="grid__item two-thirds">
+                                <p class="ajaxcart__subtotal">Subtotal</p>
+                            </div>
+                            <div class="grid__item one-third text-right">
+                                <p class="ajaxcart__subtotal">$19.98</p>
+                            </div>
+                        </div>
+                        <p class="ajaxcart__policies">
+                            Taxes and shipping calculated at checkout
+                        </p>
+                        <button type="submit" class="btn--secondary btn--full cart__checkout" name="checkout">
+                            Check Out <span class="icon icon-arrow-right" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="PageContainer" class="page-container">
+        <main class="main-content" role="main">
+            <div class="wrapper">
+                <!-- /templates/collection.liquid -->
+                <div id="shopify-section-collection-template" class="shopify-section">
+                    <!-- /templates/collection.liquid -->
+                    <div id="CollectionSection" data-section-id="collection-template" data-section-type="collection-template" data-grid-type="collage">
+                        <header class="section-header text-center">
+                            <h1>Hot Products</h1>
+                            <hr class="hr--small">
+                            <div class="grid--full collection-sorting">
+                            </div>
+                        </header>
+                        <div class="grid grid-collage">
+                            <div class="grid__item collage-grid__row">
+                                <div class="grid">
+                                    <div class="grid__item collage-grid__reverse--wrapper one-whole medium--one-third large--one-third">
+                                        <div class="grid">
+                                            <!-- /snippets/product-grid-item.liquid -->
+                                            <div class="grid__item grid-product grid__item--small one-whole reverse" data-product-card="">
+                                                <div class="grid-product__wrapper">
+                                                    <div class="grid-product__image-wrapper">
+                                                        <a class="grid-product__image-link" href="/products/pro" data-image-link="">
+                                                            <div id="ProductImageWrapper-2" class="product--wrapper">
+                                                                <div style="padding-top:100.0%;">
+                                                                    <img class="product--image ProductImage-2 lazyautosizes lazyloaded" src="assets/image/product1.jpg" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Bionic Soft Plastic Fishing Lures Bait" data-image="" data-srcset="" sizes="190px" srcset="">
+                                                                </div>
+                                                            </div>
+                                                            <noscript>
+                                                                <img class="grid-product__image" src="assets/image/product1.jpg" alt="Bionic Soft Plastic Fishing Lures Bait">
+                                                            </noscript>
+                                                        </a>
+                                                        <div class="grid-product__on-sale">
+                                                            <p>Save<br>$6</p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="/products/pro" class="grid-product__meta">
+                                                        <div>
+                                                            <span class="grid-product__price-wrap">
+                                                                <span class="long-dash"></span>
+                                                                <span class="grid-product__price">
+                                                                    <span class="visually-hidden">Sale price</span>
+                                                                    $12.99
+                                                                </span>
+                                                            </span>
+                                                            <span>
+                                                                <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6623046664357">
+                                                                    <input type="hidden" name="id" value="39542339600549">
+                                                                    <div>
+                                                                        <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                                    </div>
+                                                                </form>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="grid-product__title">Bionic Soft Plastic Fishing Lures Bait</span>
+                                                        </div>
+                                                        <div class="loox-rating" data-id="6623046664357" data-rating="" data-raters=""></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- /snippets/product-grid-item.liquid -->
+                                            <div class="grid__item grid-product grid__item--small one-whole reverse" data-product-card="">
+                                                <div class="grid-product__wrapper">
+                                                    <div class="grid-product__image-wrapper">
+                                                        <a class="grid-product__image-link" href="/products/ring-3" data-image-link="">
+                                                            
+                                                            <div id="ProductImageWrapper-2" class="product--wrapper">
+                                                                <div style="padding-top:100.0%;">
+                                                                    <img class="product--image ProductImage-2 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Ring Re-sizer（1 SET ）" data-image="" data-srcset="">
+                                                                </div>
+                                                            </div>
+                                                            <noscript>
+                                                                <img class="grid-product__image" src="assets/image/product1.jpg" alt="Ring Re-sizer（1 SET ）">
+                                                            </noscript>
+                                                        </a>
+                                                        <div class="grid-product__on-sale">
+                                                            <p>Save<br>$7</p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="/products/ring-3" class="grid-product__meta">
+                                                        <div>
+                                                            <span class="grid-product__price-wrap">
+                                                                <span class="long-dash"></span>
+                                                                <span class="grid-product__price">
+                                                                    <span class="visually-hidden">Sale price</span>
+                                                                    $12.99
+                                                                    <span class="icon-fallback-text">
+                                                                        <span class="icon grid-product__price-min" aria-hidden="true"></span>
+                                                                        <span class="fallback-text"></span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                            <span>
+                                                                <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6799629811877">
+                                                                    <input type="hidden" name="id" value="40040721350821">
+                                                                    <div>
+                                                                        <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                                    </div>
+                                                                </form>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="grid-product__title">Ring Re-sizer（1 SET ）</span>
+                                                        </div>
+                                                        <div class="loox-rating" data-id="6799629811877" data-rating="" data-raters=""></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /snippets/product-grid-item.liquid -->
+                                    <div class="grid__item grid-product grid__item--large one-whole medium--two-thirds large--two-thirds reverse clearfix" data-product-card="">
+                                        <div class="grid-product__wrapper">
+                                            <div class="grid-product__image-wrapper">
+                                                <a class="grid-product__image-link" href="/products/stand" data-image-link="">
+
+                                                    <div id="ProductImageWrapper-1" class="product--wrapper">
+                                                        <div style="padding-top:100.0%;">
+                                                            <img class="product--image ProductImage-1 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Wireless Charging Folding Stand" data-image="" data-srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <noscript>
+                                                        <img class="grid-product__image" src="assets/image/product1.jpg" alt="Wireless Charging Folding Stand">
+                                                    </noscript>
+                                                </a>
+                                                <div class="grid-product__on-sale">
+                                                    <p>Save<br>$9.99</p>
+                                                </div>
+                                            </div>
+                                            <a href="/products/stand" class="grid-product__meta">
+                                                <div>
+                                                    <span class="grid-product__price-wrap">
+                                                        <span class="long-dash"></span>
+                                                        <span class="grid-product__price">
+                                                            <span class="visually-hidden">Sale price</span>
+                                                            $25.99
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6066854297765">
+                                                            <input type="hidden" name="id" value="37617824432293">
+                                                            <div>
+                                                                <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="grid-product__title">Wireless Charging Folding Stand</span>
+                                                </div>
+                                                <div class="loox-rating" data-id="6066854297765" data-rating="" data-raters=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__row-separator"></div>
+
+                            <div class="grid__item collage-grid__row">
+                                <div class="grid">
+                                    <!-- /snippets/product-grid-item.liquid -->
+                                    <div class="grid__item grid-product grid__item--large one-whole medium--two-thirds large--two-thirds" data-product-card="">
+                                        <div class="grid-product__wrapper">
+                                            <div class="grid-product__image-wrapper">
+                                                <a class="grid-product__image-link" href="/products/book" data-image-link="">
+
+                                                    <div id="ProductImageWrapper-1" class="product--wrapper">
+                                                        <div style="padding-top:100.0%;">
+                                                            <img class="product--image ProductImage-1 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Transparent Jewelry Storage Book" data-image="" data-srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <noscript>
+                                                        <img class="grid-product__image" src="assets/image/product1.jpg" alt="Transparent Jewelry Storage Book">
+                                                    </noscript>
+                                                </a>
+                                            </div>
+                                            <a href="/products/book" class="grid-product__meta">
+                                                <div>
+                                                    <span class="grid-product__price-wrap">
+                                                        <span class="long-dash"></span>
+                                                        <span class="grid-product__price">
+                                                            <span class="visually-hidden">Regular price</span>
+                                                            $9.99
+                                                            <span class="icon-fallback-text">
+                                                                <span class="icon grid-product__price-min" aria-hidden="true"></span>
+                                                                <span class="fallback-text"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6802550128805">
+                                                            <input type="hidden" name="id" value="40053141176485">
+                                                            <div>
+                                                                <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="grid-product__title">Transparent Jewelry Storage Book</span>
+                                                </div>
+                                                <div class="loox-rating" data-id="6802550128805" data-rating="" data-raters=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- /snippets/product-grid-item.liquid -->
+                                    <div class="grid__item grid-product grid__item--small one-whole medium--one-third large--one-third" data-product-card="">
+                                        <div class="grid-product__wrapper">
+                                            <div class="grid-product__image-wrapper">
+                                                <a class="grid-product__image-link" href="/products/genius-latte-pen" data-image-link="">
+
+                                                    <div id="ProductImageWrapper-2" class="product--wrapper">
+                                                        <div style="padding-top:100.0%;">
+                                                            <img class="product--image ProductImage-2 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Genius Latte Pen" data-image="" data-srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <noscript>
+                                                        <img class="grid-product__image" src="assets/image/product1.jpg" alt="Genius Latte Pen">
+                                                    </noscript>
+                                                </a>
+                                                <div class="grid-product__on-sale">
+                                                    <p>Save<br>$5</p>
+                                                </div>
+                                            </div>
+                                            <a href="/products/genius-latte-pen" class="grid-product__meta">
+                                                <div>
+                                                    <span class="grid-product__price-wrap">
+                                                        <span class="long-dash"></span>
+                                                        <span class="grid-product__price">
+                                                            <span class="visually-hidden">Sale price</span>
+                                                            $16.99
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6677658042533">
+                                                            <input type="hidden" name="id" value="39684213964965">
+                                                            <div>
+                                                                <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="grid-product__title">Genius Latte Pen</span>
+                                                </div>
+                                                <div class="loox-rating" data-id="6677658042533" data-rating="" data-raters=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- /snippets/product-grid-item.liquid -->
+                                    <div class="grid__item grid-product grid__item--small one-whole medium--one-third large--one-third clearfix" data-product-card="">
+                                        <div class="grid-product__wrapper">
+                                            <div class="grid-product__image-wrapper">
+                                                <a class="grid-product__image-link" href="/products/painting" data-image-link="">
+
+                                                    <div id="ProductImageWrapper-2" class="product--wrapper">
+                                                        <div style="padding-top:100.0%;">
+                                                            <img class="product--image ProductImage-2 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Funny Finger Painting Kit （Children's Gift）" data-image="" data-srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <noscript>
+                                                        <img class="grid-product__image" src="assets/image/product1.jpg" alt="Funny Finger Painting Kit （Children&#39;s Gift）">
+                                                    </noscript>
+                                                </a>
+                                                <div class="grid-product__on-sale">
+                                                    <p>Save<br>$14.99</p>
+                                                </div>
+                                            </div>
+                                            <a href="/products/painting" class="grid-product__meta">
+                                                <div>
+                                                    <span class="grid-product__price-wrap">
+                                                        <span class="long-dash"></span>
+                                                        <span class="grid-product__price">
+                                                            <span class="visually-hidden">Sale price</span>
+                                                            $13.99
+                                                            <span class="icon-fallback-text">
+                                                                <span class="icon grid-product__price-min" aria-hidden="true"></span>
+                                                                <span class="fallback-text"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6779561443493">
+                                                            <input type="hidden" name="id" value="39955001147557">
+                                                            <div>
+                                                                <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="grid-product__title">Funny Finger Painting Kit （Children's Gift）</span>
+                                                </div>
+                                                <div class="loox-rating" data-id="6779561443493" data-rating="" data-raters=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__row-separator"></div>
+
+
+                            <div class="grid__item collage-grid__row">
+                                <div class="grid">
+                                    <!-- /snippets/product-grid-item.liquid -->
+                                    <div class="grid__item grid-product grid__item--large one-whole medium--two-thirds large--two-thirds" data-product-card="" style="float: right;">
+                                        <div class="grid-product__wrapper">
+                                            <div class="grid-product__image-wrapper">
+                                                <a class="grid-product__image-link" href="/products/book" data-image-link="">
+
+                                                    <div id="ProductImageWrapper-1" class="product--wrapper">
+                                                        <div style="padding-top:100.0%;">
+                                                            <img class="product--image ProductImage-1 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Transparent Jewelry Storage Book" data-image="" data-srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <noscript>
+                                                        <img class="grid-product__image" src="assets/image/product1.jpg" alt="Transparent Jewelry Storage Book">
+                                                    </noscript>
+                                                </a>
+                                            </div>
+                                            <a href="/products/book" class="grid-product__meta">
+                                                <div>
+                                                    <span class="grid-product__price-wrap">
+                                                        <span class="long-dash"></span>
+                                                        <span class="grid-product__price">
+                                                            <span class="visually-hidden">Regular price</span>
+                                                            $9.99
+                                                            <span class="icon-fallback-text">
+                                                                <span class="icon grid-product__price-min" aria-hidden="true"></span>
+                                                                <span class="fallback-text"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6802550128805">
+                                                            <input type="hidden" name="id" value="40053141176485">
+                                                            <div>
+                                                                <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="grid-product__title">Transparent Jewelry Storage Book</span>
+                                                </div>
+                                                <div class="loox-rating" data-id="6802550128805" data-rating="" data-raters=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- /snippets/product-grid-item.liquid -->
+                                    <div class="grid__item grid-product grid__item--small one-whole medium--one-third large--one-third" data-product-card="">
+                                        <div class="grid-product__wrapper">
+                                            <div class="grid-product__image-wrapper">
+                                                <a class="grid-product__image-link" href="/products/genius-latte-pen" data-image-link="">
+
+                                                    <div id="ProductImageWrapper-2" class="product--wrapper">
+                                                        <div style="padding-top:100.0%;">
+                                                            <img class="product--image ProductImage-2 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Genius Latte Pen" data-image="" data-srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <noscript>
+                                                        <img class="grid-product__image" src="assets/image/product1.jpg" alt="Genius Latte Pen">
+                                                    </noscript>
+                                                </a>
+                                                <div class="grid-product__on-sale">
+                                                    <p>Save<br>$5</p>
+                                                </div>
+                                            </div>
+                                            <a href="/products/genius-latte-pen" class="grid-product__meta">
+                                                <div>
+                                                    <span class="grid-product__price-wrap">
+                                                        <span class="long-dash"></span>
+                                                        <span class="grid-product__price">
+                                                            <span class="visually-hidden">Sale price</span>
+                                                            $16.99
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6677658042533">
+                                                            <input type="hidden" name="id" value="39684213964965">
+                                                            <div>
+                                                                <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="grid-product__title">Genius Latte Pen</span>
+                                                </div>
+                                                <div class="loox-rating" data-id="6677658042533" data-rating="" data-raters=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- /snippets/product-grid-item.liquid -->
+                                    <div class="grid__item grid-product grid__item--small one-whole medium--one-third large--one-third clearfix" data-product-card="">
+                                        <div class="grid-product__wrapper">
+                                            <div class="grid-product__image-wrapper">
+                                                <a class="grid-product__image-link" href="/products/painting" data-image-link="">
+
+                                                    <div id="ProductImageWrapper-2" class="product--wrapper">
+                                                        <div style="padding-top:100.0%;">
+                                                            <img class="product--image ProductImage-2 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Funny Finger Painting Kit （Children's Gift）" data-image="" data-srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <noscript>
+                                                        <img class="grid-product__image" src="assets/image/product1.jpg" alt="Funny Finger Painting Kit （Children&#39;s Gift）">
+                                                    </noscript>
+                                                </a>
+                                                <div class="grid-product__on-sale">
+                                                    <p>Save<br>$14.99</p>
+                                                </div>
+                                            </div>
+                                            <a href="/products/painting" class="grid-product__meta">
+                                                <div>
+                                                    <span class="grid-product__price-wrap">
+                                                        <span class="long-dash"></span>
+                                                        <span class="grid-product__price">
+                                                            <span class="visually-hidden">Sale price</span>
+                                                            $13.99
+                                                            <span class="icon-fallback-text">
+                                                                <span class="icon grid-product__price-min" aria-hidden="true"></span>
+                                                                <span class="fallback-text"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6779561443493">
+                                                            <input type="hidden" name="id" value="39955001147557">
+                                                            <div>
+                                                                <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                            </div>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="grid-product__title">Funny Finger Painting Kit （Children's Gift）</span>
+                                                </div>
+                                                <div class="loox-rating" data-id="6779561443493" data-rating="" data-raters=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__row-separator"></div>
+
+                            <div class="grid__item grid-product one-whole medium--one-half large--one-half">
+                                <div class="grid-product__wrapper">
+                                    <div class="grid-product__image-wrapper">
+                                        <a class="grid-product__image-link" href="/products/painting" data-image-link="">
+
+                                            <div id="ProductImageWrapper-12" class="product--wrapper">
+                                                <div style="padding-top:100.0%;">
+                                                    <img class="product--image ProductImage-12 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Funny Finger Painting Kit （Children's Gift）" data-image="" data-srcset="">
+                                                </div>
+                                            </div>
+                                            <noscript>
+                                                <img class="grid-product__image" src="assets/image/product1.jpg" alt="Funny Finger Painting Kit （Children&#39;s Gift）">
+                                            </noscript>
+                                        </a>
+                                        <div class="grid-product__on-sale">
+                                            <p>Save<br>$14.99</p>
+                                        </div>
+                                    </div>
+                                    <a href="/products/painting" class="grid-product__meta">
+                                        <div>
+                                            <span class="grid-product__price-wrap">
+                                                <span class="long-dash"></span>
+                                                <span class="grid-product__price">
+                                                    <span class="visually-hidden">Sale price</span>
+                                                    $13.99
+                                                    <span class="icon-fallback-text">
+                                                        <span class="icon grid-product__price-min" aria-hidden="true"></span>
+                                                        <span class="fallback-text"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6779561443493">
+                                                    <input type="hidden" name="id" value="39955001147557">
+                                                    <div>
+                                                        <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                    </div>
+                                                </form>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="grid-product__title">Funny Finger Painting Kit （Children's Gift）</span>
+                                        </div>
+                                        <div class="loox-rating" data-id="6779561443493" data-rating="" data-raters=""></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="grid__item grid-product one-whole medium--one-half large--one-half">
+                                <div class="grid-product__wrapper">
+                                    <div class="grid-product__image-wrapper">
+                                        <a class="grid-product__image-link" href="/products/painting" data-image-link="">
+
+                                            <div id="ProductImageWrapper-12" class="product--wrapper">
+                                                <div style="padding-top:100.0%;">
+                                                    <img class="product--image ProductImage-12 lazyautosizes lazyloaded" src="assets/image/product1.jpg" data-widths="" data-aspectratio="1.0" data-sizes="auto" alt="Funny Finger Painting Kit （Children's Gift）" data-image="" data-srcset="">
+                                                </div>
+                                            </div>
+                                            <noscript>
+                                                <img class="grid-product__image" src="assets/image/product1.jpg" alt="Funny Finger Painting Kit （Children&#39;s Gift）">
+                                            </noscript>
+                                        </a>
+                                        <div class="grid-product__on-sale">
+                                            <p>Save<br>$14.99</p>
+                                        </div>
+                                    </div>
+                                    <a href="/products/painting" class="grid-product__meta">
+                                        <div>
+                                            <span class="grid-product__price-wrap">
+                                                <span class="long-dash"></span>
+                                                <span class="grid-product__price">
+                                                    <span class="visually-hidden">Sale price</span>
+                                                    $13.99
+                                                    <span class="icon-fallback-text">
+                                                        <span class="icon grid-product__price-min" aria-hidden="true"></span>
+                                                        <span class="fallback-text"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <form class="aj_quickCartForm" action="/cart/add" method="post" id="product-form-6779561443493">
+                                                    <input type="hidden" name="id" value="39955001147557">
+                                                    <div>
+                                                        <button type="submit" name="add" class="btn_cart aj_quickCart"> <i class="icon icon-cart"></i> </button>
+                                                    </div>
+                                                </form>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="grid-product__title">Funny Finger Painting Kit （Children's Gift）</span>
+                                        </div>
+                                        <div class="loox-rating" data-id="6779561443493" data-rating="" data-raters=""></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /snippets/pagination.liquid -->
+                        <div class="pagination">
+                            <span class="prev">
+                                <a href="/collections/health-beauty?page=4" title="">
+                                    <span class="icon-fallback-text">
+                                        <span class="icon icon-arrow-left" aria-hidden="true"></span>
+                                        <span class="fallback-text">Previous</span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="page"><a href="/collections/health-beauty?page=1" title="">1</a></span>
+                            <span class="deco">…</span>
+                            <span class="page"><a href="/collections/health-beauty?page=3" title="">3</a></span>
+                            <span class="page"><a href="/collections/health-beauty?page=4" title="">4</a></span>
+                            <span class="page current">5</span>
+                            <span class="page"><a href="/collections/health-beauty?page=6" title="">6</a></span>
+                            <span class="page"><a href="/collections/health-beauty?page=7" title="">7</a></span> 
+                            <span class="next">
+                                <a href="/collections/health-beauty?page=6" title="">
+                                    <span class="icon-fallback-text">
+                                        <span class="icon icon-arrow-right" aria-hidden="true"></span>
+                                        <span class="fallback-text">Next</span>
+                                    </span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        
+        <hr class="hr--large">
+        <div id="shopify-section-footer" class="shopify-section">
+            <footer class="site-footer small--text-center" role="contentinfo">
+                <div class="wrapper">
+                    <div class="grid-uniform">
+                        <div class="grid__item one-third small--one-whole">
+                            <ul class="no-bullets site-footer__linklist">
+                                <li><a href="/pages/refund">Refund</a></li>
+                                <li><a href="/pages/contact-us">Contact Us</a></li>
+                                <li><a href="/pages/about-us">About Us</a></li>
+                                <li><a href="/pages/privacy-statement">Privacy Statement</a></li>
+                            </ul>
+                        </div>
+                        <div class="grid__item one-third small--one-whole">
+                            <ul class="no-bullets site-footer__linklist">
+                                <li><a href="/pages/terms-of-logistics">Terms of Logistics</a></li>
+                                <li><a href="/pages/terms-of-service">Terms of Service</a></li>
+                                <li><a href="/pages/intellectual-property-rights">Intellectual Property Rights</a></li>
+                            </ul>
+                        </div>
+                        <div class="grid__item one-third small--one-whole large--text-right">
+                            <p>© 2021, <a href="assets/image/thuonghieu1.png" title="">plemono</a><br><a target="_blank" rel="nofollow" href="#">Powered by Shopify</a></p><span class="visually-hidden">Payment methods</span>
+                            <ul class="inline-list payment-icons">
+                                <li><img src="assets/image/thuonghieu1.png" style="width:100%">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/js/main-main.js"></script>
+    <script type="text/javascript">
+    	
+    	
+
+
+
+
+
+    </script>
+
+</body>
+</html>

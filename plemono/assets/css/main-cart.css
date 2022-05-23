@@ -1,0 +1,31 @@
+.product_cart_list .cart__row:first-child {
+    border: 0;
+    padding: 0;
+}
+
+.product_cart_item .cart__product-meta:nth-child(2) {
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 591px) {
+    .ProductImage-1_3 {
+        max-width: 415.0px;
+        max-height: 415px;
+    }
+
+    #ProductImageWrapper-1_3 {
+        max-width: 415.0px;
+    }
+}
+
+
+
+@media screen and (max-width: 590px) {
+    .ProductImage-1_3 {
+        max-width: 295.0px;
+    }
+
+    #ProductImageWrapper-1_3 {
+        max-width: 295.0px;
+    }
+}

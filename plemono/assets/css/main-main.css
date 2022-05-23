@@ -1,0 +1,47 @@
+:root{
+
+}
+
+.img-out {
+    display: block;
+    position: relative;
+    height: 0px;
+    padding-bottom: 100%;
+    font-size: 0;
+}
+
+.img-out>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 1;
+    /* z-index: 2; */
+}
+
+
+
+.overlay1.i-active{
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 3;
+	opacity: 0;
+	/*visibility: hidden;*/
+}
+
+.d-none{
+    display: none !important;
+}
+
+.overflow-hidden{
+    overflow: hidden !important;
+}

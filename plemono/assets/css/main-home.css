@@ -1,0 +1,127 @@
+.template-index .header-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.template-index header.site-header .site-nav__link,
+.template-index header.site-header .site-header__logo a,
+.template-index header.site-header .hero__pause,
+.template-index header.site-header .hero__pause .icon:before,
+.template-index header.site-header .slick-prev .icon:before,
+.template-index header.site-header .slick-next .icon:before {
+    color: #ffffff;
+}
+
+.template-index header.site-header .burger-icon {
+    background: #ffffff;
+}
+
+.template-index header.site-header .slick-dots li a:before {
+    background: transparent;
+    border-color: #ffffff;
+}
+
+.template-index header.site-header li.slick-active a:before {
+    background: #ffffff;
+    border-color: transparent;
+}
+
+.template-index header.site-header .hero__pause .icon {
+    fill: #ffffff;
+}
+
+.site-nav--has-dropdown.nav-hover>a, .site-nav--has-dropdown:hover>a, .site-nav--has-dropdown>a.nav-focus {
+    color: #222323;
+    background-color: #fff;
+    opacity: 1;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.template-index header .site-nav--has-dropdown:hover>a{
+	color: #222323 !important;
+    background-color: #fff;
+    opacity: 1;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+
+
+
+
+@media screen and (min-width: 591px) { 
+    .ProductImage-2 {
+      max-width: 190.0px;
+      max-height: 190px;
+    }
+    #ProductImageWrapper-2 {
+      max-width: 190.0px;
+    }
+   } 
+
+
+
+@media screen and (max-width: 590px) {
+  .ProductImage-2 {
+    max-width: 295.0px;
+  }
+  #ProductImageWrapper-2 {
+    max-width: 295.0px;
+  }
+}
+
+@media screen and (min-width: 591px) { 
+    .ProductImage-1 {
+      max-width: 480.0px;
+      max-height: 480px;
+    }
+    #ProductImageWrapper-1 {
+      max-width: 480.0px;
+    }
+   } 
+
+  
+    
+@media screen and (max-width: 590px) {
+  .ProductImage-1 {
+    max-width: 295.0px;
+  }
+  #ProductImageWrapper-1 {
+    max-width: 295.0px;
+  }
+}
+
+  
+
+@media screen and (min-width: 591px) { 
+  .ProductImage-12 {
+    max-width: 270.0px;
+    max-height: 270px;
+  }
+  #ProductImageWrapper-12 {
+    max-width: 270.0px;
+  }
+ } 
+
+
+  
+  @media screen and (max-width: 590px) {
+    .ProductImage-12 {
+      max-width: 295.0px;
+    }
+    #ProductImageWrapper-12 {
+      max-width: 295.0px;
+    }
+  }
+

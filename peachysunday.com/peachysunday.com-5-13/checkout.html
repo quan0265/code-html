@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>checkout</title>
+	<link rel="stylesheet" href="css/checkout.css">
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<header id="banner" class="hidden-pc">
+	<a href="" class="a-img"><img src="images/logo.png"></a>
+</header>
+
+<section id="nav" class="hidden-pc">
+	<div class="nav">
+		<div class="nav-left">
+			<svg width="20" height="19" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__icon">
+	            <path d="M17.178 13.088H5.453c-.454 0-.91-.364-.91-.818L3.727 1.818H0V0h4.544c.455 0 .91.364.91.818l.09 1.272h13.45c.274 0 .547.09.73.364.18.182.27.454.18.727l-1.817 9.18c-.09.455-.455.728-.91.728zM6.27 11.27h10.09l1.454-7.362H5.634l.637 7.362zm.092 7.715c1.004 0 1.818-.813 1.818-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817zm9.18 0c1.004 0 1.817-.813 1.817-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817z"></path>
+	        </svg>
+	        <div class="nav-show-order d-none">
+	        	<span>Show order summary</span>
+	        	<svg width="11" height="6" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"></path>
+	        	</svg>			
+	        </div>
+	        <div class="nav-hide-order">
+	        	<span>Hide order summary</span>
+	        	<svg width="11" height="7" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M6.138.876L5.642.438l-.496.438L.504 4.972l.992 1.124L6.138 2l-.496.436 3.862 3.408.992-1.122L6.138.876z"></path>
+	        	</svg>		
+	        </div>
+		</div>
+		<div class="nav-right">
+			$11,178.81
+		</div>
+	</div>	
+</section>
+
+<section id="section-checkout">
+	<div class="main">
+		<div class="main-top">
+			<div class="logo hidden-tablet-down"><a href=""><img src="images/logo-checkout.png" alt=""></a></div>
+			<div class="breadcrumb">
+				<div>
+					<span><a href="">Cart</a></span>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M2 1l1-1 4 4 1 1-1 1-4 4-1-1 4-4"></path></svg>
+				</div>
+				<div>
+					<span>Information</span>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M2 1l1-1 4 4 1 1-1 1-4 4-1-1 4-4"></path></svg>
+				</div>
+				<div>
+					<span>Information</span>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M2 1l1-1 4 4 1 1-1 1-4 4-1-1 4-4"></path></svg>
+				</div>
+				<div><span>Payment</span>
+				</div>
+			</div>
+			<div class="payment-out">
+				<h3>Express checkout</h3>
+				<div class="payment-list">
+					<div class="payment-list-item">
+						<a href=""><img src="images/payment-shop.png" alt=""></a>
+					</div>
+					<div class="payment-list-item">
+						<a href=""><img src="images/payment-gpay.png" alt=""></a>
+					</div>
+					<div class="payment-list-item">
+						<a href=""><img src="images/payment-paypal.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="payment-line-or"><span>OR</span></div>
+		</div>
+		<div class="main-body">
+			<div class="form-checkout">
+				<form action="">
+					<div class="form-checkout-header">
+						<h3>Contact information</h3>
+						<p>Already have an account?</p>
+					</div>
+					<div class="form-group">
+						<input type="text" name="email" placeholder="Email" class="input-text">
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="checkbox" name="" class="input-checkbox">
+							<span>Keep me up to date on news and exclusive offers</span>
+						</label>
+					</div>
+					<h4>Shipping address</h4>
+					<div class="form-name">
+						<div class="form-group">
+							<input type="text" name="first_name" placeholder="First name(onptional)" class="input-text">
+						</div>
+						<div class="form-group">
+							<input type="text" name="last_name" placeholder="Last name" class="input-text">
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" name="address" placeholder="Address" class="input-text">
+					</div>
+					<div class="form-group">
+						<input type="text" name="optional" placeholder="Apartment, suite, etc. (optional)" class="input-text">
+					</div>
+					<div class="form-group">
+						<input type="text" name="optional" placeholder="City" class="input-text">
+					</div>
+					<div class="form-select-country">
+						<div class="form-group">
+							<div class="form-select-title">Country/Region</div>
+							<select class="select">
+								<option data-code="IN" value="India">India</option>
+									<option data-code="CA" value="Canada">Canada</option>
+									<option data-code="AU" value="Australia">Australia</option>
+									<option disabled="disabled" value="---">---</option>
+									<option data-code="AF" value="Afghanistan">Afghanistan</option>
+									<option data-code="AX" value="Aland Islands">Åland Islands</option>
+									<option data-code="AL" value="Albania">Albania</option>
+							</select>
+							<div class="field-caret">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M0 3h10L5 8" fill-rule="nonzero"></path></svg>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-select-title">Province</div>
+							<select class="select">
+								<option data-code="IN" value="India">India</option>
+									<option data-code="CA" value="Canada">Canada</option>
+									<option data-code="AU" value="Australia">Australia</option>
+									<option disabled="disabled" value="---">---</option>
+									<option data-code="AF" value="Afghanistan">Afghanistan</option>
+									<option data-code="AX" value="Aland Islands">Åland Islands</option>
+									<option data-code="AL" value="Albania">Albania</option>
+							</select>
+							<div class="field-caret">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M0 3h10L5 8" fill-rule="nonzero"></path></svg>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="text" name="postal" placeholder="Postal code" class="input-text">
+						</div>		
+					</div>
+					<div class="form-group">
+						<input type="text" name="optional" placeholder="Phone (optional)" class="input-text">
+					</div>
+					<div class="form-group form-checkout-button">
+						<button type="submit" class="button1">Continue to shipping</button>
+						<a href="" class="">
+							<svg class="hidden-tablet-up" width="10" focusable="false" aria-hidden="true" class="icon-svg icon-svg--color-accent icon-svg--size-10 previous-link__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"></path></svg>
+							<span>Return to cart</span>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="main-footer">
+			<a href="">Refund policy</a>
+			<a href="">Privacy policy</a>
+			<a href="">Terms of service</a>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="table-product-out">
+			<table>
+				<tr>
+					<td class="product-image">
+						<div>
+							<img src="images/product1.png" alt="">
+							<span class="product-count">33</span>
+						</div>
+					</td>
+					<td class="product-info">
+						<p class="product-info-name">Girl Gang Tee</p>
+						<p class="product-info-summary">Girl Gang Tee</p>
+					</td>
+					<td class="product-price">
+						<span>$9,980.01</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="product-image">
+						<div>
+							<img src="images/product1.png" alt="">
+							<span class="product-count">33</span>
+						</div>
+					</td>
+					<td class="product-info">
+						<p class="product-info-name">Girl Gang Tee</p>
+						<p class="product-info-summary">Girl Gang Tee</p>
+					</td>
+					<td class="product-price">
+						<span>$9,980.01</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="product-image">
+						<div>
+							<img src="images/product1.png" alt="">
+							<span class="product-count">33</span>
+						</div>
+					</td>
+					<td class="product-info">
+						<p class="product-info-name">Girl Gang Tee</p>
+						<p class="product-info-summary">Girl Gang Tee</p>
+					</td>
+					<td class="product-price">
+						<span>$9,980.01</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="product-image">
+						<div>
+							<img src="images/product1.png" alt="">
+							<span class="product-count">33</span>
+						</div>
+					</td>
+					<td class="product-info">
+						<p class="product-info-name">Girl Gang Tee</p>
+						<p class="product-info-summary">Girl Gang Tee</p>
+					</td>
+					<td class="product-price">
+						<span>$9,980.01</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<form class="form-apply">
+			<div class="form-group form-apply-code">
+				<div class="form-select-title">Gift card or discount code</div>
+				<input type="text" class="input-text2">
+			</div>
+			<div class="form-group">
+				<button class="button2" type="submit" name="form_apply_sumit">Apply</button>
+			</div>
+		</form>
+		<div class="sidebar-total">
+			<div class="subtotal-shipping">
+				<div class="subtotal flex">
+					<span>Subtotal</span>
+					<span class="total-price">$11,178.81</span>
+				</div>
+				<div class="shipping flex">
+					<span>Shipping</span>
+					<span>Calculated at next step</span>
+				</div>
+			</div>
+			<div class="sidebar-total-footer flex">
+				<span>Total</span>
+				<div>
+					<span class="currency">USD</span>
+					<span class="total-price">$11,178.81</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+.fb_iframe_widget{margin-bottom:40px}
+
+.single-option-radio label{border:1px solid #e9e9e9}
+.single-option-radio input[type='radio']:checked + label:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    background: transparent;
+    bottom: 4px;
+    right: 2px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+    z-index: 9;
+}
+.single-option-radio input[type='radio']:checked + label:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgb(29,37,88);
+    border-right: 10px solid rgb(29,37,88);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.single-option-radio input[type=radio]:checked+label{
+	border-color: rgb(29,37,88);
+	border-width:2px;
+}
+.js-qty__adjust--minus, .js-qty__adjust--plus{
+	border: 1px solid #e9e9e9;
+}
+.shopify-payment-button .shopify-payment-button__button--unbranded{
+    background-color: rgb(29,37,88);
+}
+.btn--secondary-accent{
+	border:1px solid rgb(29,37,88);
+}
+.btn--secondary-accent{
+	color:rgb(29,37,88);
+}
+
+
+
+
+/*.image slider pc*/
+.image-slider-pc .image-slider-item{
+    margin-bottom: 15px;
+}
+
+@media(max-width: 590px){
+    .image-slider-pc{
+        display: none;
+    }
+}
+
+/*image slider phone*/
+.image-slider-phone{
+    margin-top: -35px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 55px;
+}
+
+.product-image-wrapper .carousel {
+    background: #EEE;
+    min-height: 300px;
+}
+
+.product-image-wrapper .carousel:hover .flickity-button {
+    opacity: 1 !important;
+}
+
+.product-image-wrapper .carousel-cell {
+    width: 100%;
+    /* height: 100%; */
+    /* margin-right: 10px; */
+    background: #eee;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    font-size: 0;
+    display: block;
+}
+
+.product-image-wrapper .carousel-cell img{
+    display: block;
+    /* max-height: 100%; */
+    margin: 0 auto;
+    /* max-width: 100%; */
+    /* opacity: 0; */
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+
+
+.product-image-wrapper .image1-main {
+    min-height: 300px;
+
+      /*content: 'flickity';*/
+      /*display: none; */
+      /*background-color: var(--grey1);
+      background-image: url(../image/rolling.svg);
+      background-position: center;
+      background-repeat: no-repeat;*/
+      background: var(--grey1) url(../image/rolling.svg) center no-repeat;
+}
+
+.product-image-wrapper .image-cell{
+    width: 100%;
+    font-size: 0;
+    /* line-height: 0; */
+}
+
+.product-image-wrapper .image-cell img{
+    width: 100%;
+    font-size: 0;
+    /* line-height: 0; */
+}
+
+.product-image-wrapper .image1-main:after{
+    content: 'flickity';
+    display: none;
+}
+
+@media screen and ( min-width: 591px ) {
+
+    .product-image-wrapper .image1-main{
+        display: none;
+    }
+
+    .product-image-wrapper .image1-main:after{
+        content: '';
+    }
+}
+
+@media(max-width: 590px){
+
+    .product-image-wrapper .flickity-page-dots{
+        bottom: -55px;
+        background: #fff4f6;
+        padding: 15px 5px;
+    }
+
+    .product-image-wrapper .flickity-page-dots .dot{
+        border: 6px solid #fff4f6;
+        box-sizing: content-box;
+        margin: 0;
+    }
+}
+
+@media(max-width: 590){
+    .image1-main img{
+        max-width: calc(100%);
+        width: calc(100%);
+    }
+    
+}
+
+/*image slider button*/
+.product-image-wrapper .flickity-prev-next-button {
+    color: #fff !important;
+    width: 32px;
+    height: 56px;
+    bottom: 0;
+    top: 50%;
+    transform: translateY(-100%) !important;
+    overflow: hidden;
+    /*opacity: 0;*/
+    background: transparent;
+    border-radius: initial;
+}
+
+.product-image-wrapper .flickity-prev-next-button:hover {
+    opacity: 1 !important;
+}
+
+.product-image-wrapper .flickity-prev-next-button.next::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    /* display: block; */
+}
+
+.product-image-wrapper .flickity-prev-next-button.previous::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    /* display: block; */
+}
+
+
+
+.product-image-wrapper .flickity-prev-next-button svg {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    transform: translateX(-5px);
+    /* fill: #fff; */
+    /* color: white; */
+    z-index: 1;
+}
+
+.product-image-wrapper .flickity-prev-next-button svg path {
+    fill: white;
+}
+
+.product-image-wrapper .flickity-prev-next-button.next {
+    right: 0px !important;
+    opacity: 1;
+    /*transform: translateX(0) !important;*/
+}
+
+.product-image-wrapper .flickity-prev-next-button.previous {
+    left: 0px !important;
+    opacity: 1;
+    /*transform: translateX(0) !important;*/
+}
+
+.product-image-wrapper .slider:hover .flickity-prev-next-button {
+    transform: translate(0px) !important;
+}
+
+
+
+
+/*modal email*/
+.modal-wrapper{
+    font-size: 16px;
+    font-family: "Avenir Next Rounded",sans-serif;
+    color: #100e0e;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    line-height: 1.563;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    z-index: 1060;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding: .625em;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    align-items: center;
+    transition: background-color .1s;
+    background-color: rgba(0,0,0,.4);
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-email-wrapper{
+    color: #100e0e;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    line-height: 1.563;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    border-radius: .3125em;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    -webkit-tap-highlight-color: transparent;
+    animation: ccswal2-show .3s;
+    margin: auto;
+    display: flex;
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+}
+
+.modal-email-header{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.modal-email-header img{
+    width: 100px;
+    max-width: 100%;
+    margin: 1.25em auto;
+    display: flex;
+}
+
+.modal-email-header h2{
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #595959;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    text-transform: unset;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 19px;
+}
+
+.modal-email-close{
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0;
+    overflow: hidden;
+    transition: color .1s ease-out;
+    border: none;
+    border-radius: 0;
+    outline: initial;
+    background: 0 0;
+    color: #ccc;
+    font-family: serif;
+    font-size: 2.5em;
+    line-height: 1.2;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+}
+
+.modal-email-close:hover{
+    transform: none;
+    color: #f27474;
+}
+
+.modal-email-content{
+font-size: 18px;
+}
+
+.modal-email-content p{
+    text-transform: unset;
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.modal-email-input{word-wrap: break-word;font-family: "Avenir Next Rounded",sans-serif;font-weight: 400;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%;text-rendering: optimizeLegibility;-webkit-appearance: none;max-width: 100%;line-height: 1.563;font-style: italic;color: #1c1d1d;margin: 1em auto;box-sizing: border-box;width: 100%;border: 1px solid #d9d9d9;border-radius: .1875em;background: inherit;box-shadow: inset 0 1px 1px rgba(0,0,0,.06);font-size: 1.125em;height: 2.625em;padding: 0 .75em;-webkit-tap-highlight-color: transparent;transition: opacity .15s ease-out;opacity: 1;display: flex;height: 53px;margin-top: 20px;margin-bottom: 20px;}
+
+.modal-email-input{
+    border: 1px solid #b4dbed;
+    outline: 0;
+    box-shadow: 0 0 3px #c4e6f5;
+}
+
+.modal-email-action{
+z-index: 1;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin: 1.25em auto 0;
+}
+
+.modal-email-add{
+    box-sizing: border-box;
+    font-family: "Avenir Next Rounded",sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    overflow: visible;
+    -webkit-appearance: none;
+    line-height: 1.563;
+    margin: .3125em;
+    padding: .625em 2em;
+    box-shadow: none;
+    font-weight: 500;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    color: #fff;
+    font-size: 1.0625em;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+/* text-transform: capitalize; */
+}
+
+.modal-email-add span{
+        font-size: 12px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.modal-email-error{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-family: inherit;
+    line-height: normal;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    padding: .625em;
+    overflow: hidden;
+    background: #f0f0f0;
+    color: #666;
+    font-size: 1em;
+    font-weight: 300;
+    -webkit-tap-highlight-color: transparent;
+    /*display: flex;*/
+    display: none;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.modal-email-error:before{
+    content: '!';
+    display: inline-block;
+    width: 1.5em;
+    min-width: 1.5em;
+    height: 1.5em;
+    margin: 0 .625em;
+    zoom: normal;
+    border-radius: 50%;
+    background-color: #f27474;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.modal-email-content.has-error .modal-email-input{
+    border-color: #f27474!important;
+    box-shadow: 0 0 2px #f27474!important;
+}
+
+.modal-email-content.has-error .modal-email-error{
+    display: flex;
+}
+
