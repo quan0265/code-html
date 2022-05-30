@@ -82,6 +82,9 @@ h1 {
 .dropdown-menu {
     position: absolute;
 }
+.dropdown-menu.show {
+    display: block;
+}
 
 .mt-48px {
     margin-top: 48px;
@@ -111,6 +114,8 @@ body {
 
 a {
     font: inherit;
+    line-height: 1.5;
+    vertical-align: middle;
 }
 
 p {
@@ -121,6 +126,10 @@ p {
     width: 0;
     border-right: 1px solid #eee;
     height: 2em;
+}
+.separator-x {
+    height: 1px;
+    border-bottom: 1px solid rgba(125,136,147,.5);
 }
 
 .btn {
@@ -261,6 +270,52 @@ font-size: 14px;}
     color: #fff;
 }
 
+/*dropmenu top*/
+.droptop.show {
+    display: flex;
+}
+.droptop {
+    position: absolute;
+    min-width: 100%;
+    background: #191b26;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+    z-index: 90;
+    padding: 8px;
+    top: calc(100% + 21px);
+    right: 0;
+}
+.droptop-menu {
+
+}
+
+.droptop-menu:nth-child(n+2) {
+    min-width: 180px;
+    border-left: 1px solid rgba(125,136,147,.5);
+}
+.droptop-head {
+    color: #fff;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 8px;
+}
+.droptop-link {
+    padding: 8px;
+    text-decoration: none;
+    color: #f7f7f7;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+}
+.droptop-link:hover {
+    background: #7d8893;
+    color: #fff;
+    /*font-weight: 600;*/
+    text-decoration: none;
+}
+ 
 /*section search*/
 .ss_search {
 	padding: 0 20px;
