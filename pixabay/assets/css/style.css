@@ -1,128 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-    font: inherit;
-    color: inherit;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-select,
-optgroup,
-textarea {
-    font: inherit;
-    line-height: inherit;
-    outline: none;
-    border: 1px solid;
-}
-button {
-    white-space: nowrap;
-}
-
-h6,
-h5,
-h4,
-h3,
-h2,
-h1 {
-    font: inherit;
-}
-
-[placeholder] {
-    text-overflow: ellipsis;
-}
-
-.d-none {
-    display: none;
-}
-
-.d-block {
-    display: block;
-}
-
-.d-flex {
-    display: flex;
-}
-@media(min-width: 576px) {
-    .hide-f-sm {
-        display: none !important;
-    }
-}
-@media(min-width: 768px) {
-    .hide-f-md {
-        display: none !important;
-    }
-}
-@media(min-width: 992px) {
-    .hide-f-lg {
-        display: none !important;
-    }
-}
-@media(max-width: 1139px) {
-    .hide-t-lg {
-        display: none !important;
-    }
-}
-@media(max-width: 991px) {
-    .hide-t-md {
-        display: none !important;
-    }
-}
-@media(max-width: 767px) {
-    .hide-t-sm {
-        display: none !important;
-    }
-}
-@media(max-width: 575px) {
-    .hide-t-xs {
-        display: none !important;
-    }
-}
-.text-center {
-    text-align: center;
-}
-
-.cursor-ponter {
-    cursor: pointer;
-}
-
-.link-img {
-    line-height: 0;
-    display: block;
-}
-
-.dropdown>.dropdown-menu {
-    display: none;
-}
-
-.dropdown.show>.dropdown-menu {
-    display: block;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    position: absolute;
-}
-.dropdown-menu.show {
-    display: block;
+:root {
+    --header-h: 60px;
 }
 
 .mt-48px {
-    margin-top: 48px;
+    margin-top: 48px !important;
+}
+.fs-24 {
+    font-size: 24px !important;
 }
 
 @font-face {
@@ -210,6 +94,19 @@ hr {
     margin-right: 4px;
 }
 
+.dropdown-menu {
+    position: absolute;
+    background: #191b26;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+    z-index: 90;
+    padding: 8px;
+    top: calc(100% + 0px);
+    left: auto;
+    right: 0;
+}
+
 .dropdown_arrow {
     display: inline-block;
     width: 12px;
@@ -227,7 +124,7 @@ hr {
 
 /*header*/
 #header {
-    height: 60px !important;
+    height: var(--header-h) !important;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 60px rgba(0, 0, 0, .12);
@@ -235,7 +132,7 @@ hr {
     display: flex;
     max-width: 1830px;
     margin: 0 auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     position: relative;
     align-items: center;
 font-size: 14px;}
@@ -243,7 +140,7 @@ font-size: 14px;}
 .header_logo {
     width: 100px;
     margin-right: 32px;
-}
+margin-left: 20px;}
 
 .header_logo a {
     display: block;
@@ -278,12 +175,12 @@ font-size: 14px;}
     background: none;
     border: none;
     cursor: pointer;
-}
+height: var(--header-h);}
 
 .header_join,
 .header_login {
     text-transform: capitalize;
-    padding: 0 20px;
+    padding: 0 15px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -296,13 +193,26 @@ font-size: 14px;}
     text-decoration: underline;
 }
 
+.header_action .dropdown-toggle {
+    padding: 0 12px;
+}
+
 .btn_upload {
     border-radius: 17.5px;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
+    padding: 0 26px;
+margin: -1px 20px 0 15px;}
+
+.btn_bell {
+    height: var(--header-h);
+    font-size: 18px;
+    padding: 0 12px;
+}
+.btn_user {
+    height: var(--header-h);
 }
 
 .container-1 {
@@ -324,7 +234,7 @@ font-size: 14px;}
     box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
     z-index: 90;
     padding: 8px;
-    top: calc(100% + 21px);
+    top: calc(100% + 0px);
     right: 0;
 }
 .droptop-menu {
@@ -374,6 +284,8 @@ font-size: 14px;}
     color: #fff;
     opacity: .8;
 }
+
+
  
 /*section search*/
 .ss_search {
@@ -565,7 +477,7 @@ font-size: 14px;}
     background: hsla(0,0%,100%,.2);
 }
 .btn--more {
-    padding: 12px 60px;
+    padding: 12px var(--header-h);
 }
 
 /*section about*/

@@ -6,6 +6,7 @@
 	<title>pixabay</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" href="assets/css/jquery.mosaic.css">
+	<link rel="stylesheet" href="assets/css/base.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.mosaic.js"></script>
@@ -24,8 +25,8 @@
 	    <a href="/music/">Music</a>
 	    <a href="/sound-effects/">Sound Effects</a> -->
 	</div>
-	<div class="header_action hide-f-md">
-		<div class="dropdown">
+	<div class="header_action">
+		<div class="dropdown hide-t-md">
 			<button class="btn btn_explore dropdown-toggle" id="toggle_explore">
 				Explore
 				<i class="dropdown_arrow"></i>
@@ -59,19 +60,43 @@
 				</div>
 			</div>
 		</div>
-		<a href="/abc" class="header_login">login</a>
+
+		<!-- not login -->
+		<!-- <a href="/abc" class="header_login">login</a>
 		<div class="separator"></div>
-		<a href="/abc" class="header_join">join</a>
-		<a href="/abc" class="btn_upload btn-green">
+		<a href="/abc" class="header_join">join</a> -->
+
+
+		<!-- is login -->
+		<div class="dropdown">
+			<button class="dropdown-toggle btn_bell">
+				<i class="fas fa-bell"></i>
+			</button>
+			<div class="dropdown-menu">
+				abc
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropdown-toggle btn_user">
+				<img width="32" src="assets/images/user.svg" class="rounded-circle" >
+			</button>
+			<div class="dropdown-menu">
+				<div class="droptop-menu">
+					<div class="droptop-head">Media</div>
+					<a href="#" class="droptop-link">Editor's Choice</a>
+					<a href="#" class="droptop-link">Popular Images</a>
+					<a href="#" class="droptop-link">Popular Videos</a>
+				</div>
+			</div>
+		</div>
+
+		<a href="/abc" class="btn_upload btn-green hide-t-sm">
 			<i class="icon icon_upload"></i>
 			<span>Upload</span>
 		</a>
-	</div>
-	<div class="header_action hide-t-sm">
-		<div class="dropdown">
+		<div class="dropdown hide-f-lg">
 			<button class="btn btn_explore dropdown-toggle" id="toggle_explore">
-				Explore
-				<i class="dropdown_arrow"></i>
+				<i class="fas fa-bars fs-24"></i>
 			</button>
 			<div class="dropdown-menu droptop">
 				<div class="droptop-menu">
@@ -102,13 +127,6 @@
 				</div>
 			</div>
 		</div>
-		<a href="/abc" class="header_login">login</a>
-		<div class="separator"></div>
-		<a href="/abc" class="header_join">join</a>
-		<a href="/abc" class="btn_upload btn-green">
-			<i class="icon icon_upload"></i>
-			<span>Upload</span>
-		</a>
 	</div>
 </header>
 

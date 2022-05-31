@@ -8,15 +8,21 @@ document.querySelector('body').addEventListener('click', (e) => {
 		var toggle = dropdown.querySelector('.dropdown-toggle')
 		var dropdown_menu = dropdown.querySelector('.dropdown-menu')
 
+        document.querySelectorAll('.dropdown-menu').forEach(item => {
+            if (item != dropdown_menu) {
+                item.classList.remove('show')
+            }
+        })
+
 		if (toggle && dropdown_menu) {
 			dropdown_menu.classList.toggle('show')
 		}
 	}
-    if (!e.target.closest('.dropdown-toggle')) {
-        document.querySelectorAll('.dropdown-menu').forEach(item => {
-            item.classList.remove('show')
-        })
-    }
+    // if (!e.target.closest('.dropdown-toggle')) {
+    //     document.querySelectorAll('.dropdown-menu').forEach(item => {
+    //         item.classList.remove('show')
+    //     })
+    // }
 
 	// Collapse
 	if (e.target.closest('[data-bs-toggle=collapse]')) {
