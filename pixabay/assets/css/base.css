@@ -45,6 +45,14 @@ h1 {
     text-overflow: ellipsis;
 }
 
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
 .w-100 {
     width: 100% !important;
 }
