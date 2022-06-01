@@ -90,8 +90,17 @@ document.querySelector('body').addEventListener('click', (e) => {
     }
 
 
+})
 
-
-
-
+// to top
+var btn_to_top = document.querySelector('#to-top')
+if (btn_to_top) {
+    btn_to_top.onclick = (e) => {
+        e.preventDefault()
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+}
+// window.scrollTo({ top: 0, behavior: 'smooth' });
+window.addEventListener('scroll', () => {
+    window.scrollY > window.innerHeight ? btn_to_top.classList.add("show") : btn_to_top.classList.remove("show");
 })
