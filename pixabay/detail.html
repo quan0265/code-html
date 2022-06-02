@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pixabay</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.mosaic.css">
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/detail.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mosaic.js"></script>
+</head>
+<body>
+	
+<header id="header">
+	<div class="header_logo">
+		<a href=""><img src="assets/images/logo.png"></a>
+	</div>
+	<div class="header_link">
+	    <a href="/photos/">Photos</a>
+	    <!-- <a href="/illustrations/">Illustrations</a>
+	    <a href="/vectors/">Vectors</a>
+	    <a href="/videos/">Videos</a>
+	    <a href="/music/">Music</a>
+	    <a href="/sound-effects/">Sound Effects</a> -->
+	</div>
+	<div class="header_action">
+		<div class="dropdown hide-t-md">
+			<button class="btn btn_explore dropdown-toggle" id="toggle_explore">
+				Explore
+				<i class="dropdown_arrow"></i>
+			</button>
+			<div class="dropdown-menu droptop">
+				<div class="droptop-menu">
+					<div class="droptop-head">Media</div>
+					<a href="#" class="droptop-link">Editor's Choice</a>
+					<a href="#" class="droptop-link">Popular Images</a>
+					<a href="#" class="droptop-link">Popular Videos</a>
+				</div>
+				<div class="droptop-menu">
+					<div class="droptop-head">Community</div>
+					<a href="#" class="droptop-link">Blog</a>
+					<a href="#" class="droptop-link">Forum</a>
+					<a href="#" class="droptop-link">Artists</a>
+					<a href="#" class="droptop-link">Cameras</a>
+				</div>
+				<div class="droptop-menu">
+					<div class="droptop-head">About Us</div>
+					<a href="#" class="droptop-link">Blog</a>
+					<a href="#" class="droptop-link">Forum</a>
+					<a href="#" class="droptop-link">Artists</a>
+					<a href="#" class="droptop-link">Cameras</a>
+					<hr>
+					<div class="droptop-socials">
+						<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- not login -->
+		<!-- <a href="/abc" class="header_login">login</a>
+		<div class="separator"></div>
+		<a href="/abc" class="header_join">join</a> -->
+
+
+		<!-- is login -->
+		<div class="dropdown">
+			<button class="dropdown-toggle btn_bell">
+				<i class="fas fa-bell"></i>
+			</button>
+			<div class="dropdown-menu dropdown-menu-notification">
+				<div class="notifications">
+					<div class="notification-title">Notifications</div>
+					<ul class="notification-list">
+						<p class="notification-empty">No notifications to show</p>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropdown-toggle btn_user">
+				<img width="32" src="assets/images/user.svg" class="rounded-circle" >
+			</button>
+			<div class="dropdown-menu">
+				<div class="droptop-menu">
+					<div class="droptop-head">Media</div>
+					<a href="#" class="droptop-link">Editor's Choice</a>
+					<a href="#" class="droptop-link">Popular Images</a>
+					<a href="#" class="droptop-link">Popular Videos</a>
+				</div>
+			</div>
+		</div>
+
+		<a href="/abc" class="btn_upload btn-green hide-t-sm">
+			<i class="icon icon_upload"></i>
+			<span>Upload</span>
+		</a>
+		<div class="dropdown hide-f-lg">
+			<button class="btn btn_explore dropdown-toggle" id="toggle_explore">
+				<i class="fas fa-bars fs-24"></i>
+			</button>
+			<div class="dropdown-menu droptop">
+				<div class="droptop-menu">
+					<div class="droptop-head">Media</div>
+					<a href="#" class="droptop-link">Editor's Choice</a>
+					<a href="#" class="droptop-link">Popular Images</a>
+					<a href="#" class="droptop-link">Popular Videos</a>
+				</div>
+				<div class="droptop-menu">
+					<div class="droptop-head">Community</div>
+					<a href="#" class="droptop-link">Blog</a>
+					<a href="#" class="droptop-link">Forum</a>
+					<a href="#" class="droptop-link">Artists</a>
+					<a href="#" class="droptop-link">Cameras</a>
+				</div>
+				<div class="droptop-menu">
+					<div class="droptop-head">About Us</div>
+					<a href="#" class="droptop-link">Blog</a>
+					<a href="#" class="droptop-link">Forum</a>
+					<a href="#" class="droptop-link">Artists</a>
+					<a href="#" class="droptop-link">Cameras</a>
+					<hr>
+					<div class="droptop-socials">
+						<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<section id="main" class="container">
+	<div class="main-left text-center">
+		<div class="main-media">
+			<img src="https://picsum.photos/200/300" alt="">
+		</div>
+	</div>
+	<aside class="main-right sidebar">
+		<div class="media-author">
+			<a href="#" class="d-flex media-author mb-1">
+				<img src="https://picsum.photos/100/100" alt="">
+				<p>Lorem ipsum, dolor. / 38 photos</p>
+			</a>
+			<button class="btn btn-green btn-sm">Coffee</button>
+			<button class="btn btn-grey btn-sm">Follow</button>
+		</div>
+		<div class="like-buttons">
+			<button class="btn btn-blue btn-sm">
+				<i class="fas fa-thumbs-up"></i>
+				56
+			</button>
+			<button class="btn btn-blue btn-sm">
+				<i class="far fa-bookmark"></i>
+			</button>
+			<button class="btn btn-grey btn-sm">
+				<i class="fas fa-share-alt"></i>
+			</button>
+		</div>
+		<button class="btn btn-green btn-dowload w-100 mb-4">
+			<i class="fas fa-download me-1"></i>
+			FREE DOWNLOAD
+		</button>
+		<div class="sidebar-block">
+			<a href="#a">Pixabay License</a>
+			<p>Free for commercial use</p>
+			<p>No attribution required</p>
+		</div>
+		<div class="sidebar-block sidebar-block-sm">
+			<p>Related Images</p>
+		</div>
+		<div class="reated-image">
+			<a href="#">
+				<img src="https://picsum.photos/200/200" alt="">
+			</a>
+			<a href="#">
+				<img src="https://picsum.photos/200/200" alt="">
+			</a>
+			<a href="#">
+				<img src="https://picsum.photos/200/200" alt="">
+			</a>
+			<a href="#">
+				<img src="https://picsum.photos/200/200" alt="">
+			</a>
+			<a href="#">
+				<img src="https://picsum.photos/200/200" alt="">
+			</a>
+			<a href="#">
+				<img src="https://picsum.photos/200/200" alt="">
+			</a>
+		</div>
+		<div class="detail-image sidebar-block">
+		    <table class="w-100">
+		        <tbody>
+		            <tr>
+		                <td>Image type</td>
+		                <td>JPG</td>
+		            </tr>
+		            <tr>
+		                <td>Resolution</td>
+		                <td>2064×1410</td>
+		            </tr>
+		            <tr>
+		                <td>Published</td>
+		                <td>Nov. 17, 2015</td>
+		            </tr>
+		            <tr>
+		                <td>Views</td>
+		                <td>506548</td>
+		            </tr>
+		            <tr>
+		                <td>Downloads</td>
+		                <td>281903</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		</div>
+	</aside>
+	<div class="main-left block-comment">
+		<div class="comment-list">
+			<div class="comment-item">
+				<a href="#" class="comment-avatar me-2">
+					<img src="assets/images/user.svg" alt="">
+				</a>
+				<div class="comment-right">
+					<textarea class="w-100 form-control mb-2" name="content" placeholder="Add your comment ..."></textarea>
+					<label class="d-block mb-2">
+						<input type="checkbox" name="subcribe">
+						Email notification of new posts
+					</label>
+					<button class="btn btn-green btn-md d-block btn-comment">Submit</button>
+				</div>
+			</div>
+			<div class="comment-item">
+				<a href="#" class="comment-avatar me-2">
+					<img src="assets/images/user.svg" alt="">
+				</a>
+				<div class="comment-right">
+					<div>
+						<a href="#" class="text-primary">name abc</a>
+						<span class="comment-date">May 31, 2022</span>
+					</div>
+					<div class="comment-content">
+						Thanks beautiful kitty. can I use this on T shirts for commercial purpose
+					</div>
+				</div>
+			</div>
+			<div class="comment-item">
+				<a href="#" class="comment-avatar me-2">
+					<img src="assets/images/user.svg" alt="">
+				</a>
+				<div class="comment-right">
+					<div>
+						<a href="#" class="text-primary">name abc</a>
+						<span class="comment-date">May 31, 2022</span>
+					</div>
+					<div class="comment-content">
+						Thanks beautiful kitty. can I use this on T shirts for commercial purpose
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="footer">
+	This site is protected by reCAPTCHA and the Google 
+	<a href="/privacy-polici">Privacy Policy</a> 
+	and 
+	<a href="/tearm-of-service">Terms of Service</a> 
+	apply.
+</footer>
+
+<button id="to-top">
+	<i class="icon-arrow-top"></i>
+</button>
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

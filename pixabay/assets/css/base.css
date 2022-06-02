@@ -1,4 +1,8 @@
-* {
+:root {
+    --color-primary: #0a88d3;
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -132,6 +136,11 @@ h1 {
 
 
 /*components*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .link-img {
     line-height: 0;
     display: block;
@@ -199,4 +208,34 @@ h1 {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 18px solid black;width: 0; height: 0;
+}
+
+/*text*/
+.text-primary {
+    color: var(--color-primary);
+}
+.text-nowrap {
+    white-space: nowrap;
+}
+
+
+/*margin*/
+.mb-1 {
+    margin-bottom: 0.25rem !important;
+}
+.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.me-1 {
+    margin-right: 0.25rem !important;
+}
+.me-2 {
+    margin-right: 0.5rem !important;
 }

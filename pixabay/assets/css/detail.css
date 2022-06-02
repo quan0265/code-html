@@ -1,0 +1,135 @@
+.container {
+	max-width: 1270px;
+	margin: 0 auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+#main {
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	margin-top: 32px;
+}
+.main-left {
+    width: 100%;
+    float: left;
+    width: calc(100% - 300px);
+    margin-bottom: 24px;
+    padding-right: 50px;
+    /*margin-right: 300px; */
+}
+.main-right {
+	width: 300px;
+    float: right;
+    margin-bottom: 10px;
+    position: relative;
+}
+.main-media {
+	/*width: calc(100% - 300px);
+	padding-right: 50px;
+}
+.main-media img {
+	min-height: 300px;
+	max-height: 520px;
+	/* height: auto; */
+	width: 100%;
+	object-fit: contain;
+	object-position: top center;
+}
+
+/*sidebar*/
+.sidebar {
+	width: 300px;
+}
+.media-author {
+	margin-bottom: 20px;
+}
+.media-author img{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	object-fit: contain;
+	margin-right: 12px;
+}
+.like-buttons {
+	padding: 16px 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid var(--border-color-grey);
+	margin-bottom: 24px;
+}
+.like-buttons button {
+    display: inline-block;
+    padding: 0 15px;
+    width: 28%;
+    height: 28px;
+    line-height: 24px;
+    font-size: 13px;
+    max-width: 100px;
+    font-weight: bold;
+}
+
+.sidebar-block {
+    margin-bottom: 24px;padding: 15px 20px;
+    background: #f6f5fa;
+    line-height: 1.5;
+}
+.sidebar-block a {
+	text-decoration: underline;
+	font-size: 16px;
+	margin-bottom: 4px;
+}
+.sidebar-block-sm {
+	padding: 5px 15px;
+}
+
+.reated-image {
+	display: flex;
+	flex-wrap: wrap;
+}
+.reated-image a{
+	width: calc(50% - 5px);
+	margin-bottom: 10px;
+}
+.reated-image a:nth-child(2n - 1) {
+	margin-right: 10px; 
+}
+.reated-image img {
+	object-fit: cover;
+}
+
+.detail-image {
+	margin-top: 10px;
+}
+.detail-image tr td:nth-child(2){
+	text-align: right;
+}
+
+/*block comment*/
+.block-comment {
+	/*width: calc(100% - 300px);
+	padding-right: 50px;*/
+}
+.comment-list {
+
+}
+.comment-item {
+	display: flex;
+	margin-bottom: 24px;
+}
+.comment-avatar img{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.comment-right {
+	flex-grow: 1;
+}
+.comment-date {
+	font-size: 12px;
+	color: #999;
+	margin-left: 4px;
+}
+.comment-content {
+	margin-top: 8px;
+}
