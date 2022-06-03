@@ -93,13 +93,13 @@ textarea.form-control {
 }
 
 .btn-grey {
-    color: rgba(0,0,0,.8);
+    color: rgba(0, 0, 0, .8);
     background: #e6e6e6;
     border-radius: 50px;
 }
 
 .btn-grey:hover {
-    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
 }
 
 .btn-blue {
@@ -109,13 +109,14 @@ textarea.form-control {
 }
 
 .btn-blue:hover {
-    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
 }
 
 .btn-sm {
     padding: 6px 12px;
     font-size: 12px;
 }
+
 .btn-md {
     padding: 8px 17px;
     font-size: 13px;
@@ -202,12 +203,45 @@ textarea.form-control {
 }
 
 .header_link a {
-
     padding: 8px 16px;
 }
 
 .header_link a:hover {
     color: #7d8893;
+}
+
+.header-search {
+
+}
+
+.header-search form {
+    position: relative;
+    display: flex;
+    width: 400px;
+}
+
+.header-search button {
+    top: 0;
+    left: 0;
+    padding: 9px 16px;
+    background: #f7f7f7;
+}
+
+.header-search input {
+    padding: 8px 0;
+    font-size: 14px;
+    background: #f7f7f7;
+    line-height: normal;
+    border: none;
+    flex-grow: 1;
+}
+@media (max-width: 767px) {
+    .header-search form {
+        width: initial;
+    }
+    .header-search input {
+        display: none;
+    }
 }
 
 .header_action {
@@ -323,11 +357,15 @@ textarea.form-control {
     text-decoration: none;
 }
 
+.dropdown-menu--user hr{
+    margin: 0;
+}
+
 .droptop-socials {
     padding: 0 16px 6px;
 }
 
-.droptop hr {
+.dropdown-menu hr {
     border-top: 1px solid #2e303d;
 }
 
@@ -343,10 +381,22 @@ textarea.form-control {
     opacity: .8;
 }
 
+@media(max-width: 575px) {
+    .droptop {
+        flex-direction: column;
+        display: block;
+        width: 100vw;
+    }
+
+    .droptop-menu:nth-child(n+2) {
+        border-left: none;
+    }
+}
+
 .dropdown-menu-notification {
     background: #fff;
     color: #191b26;
-    min-width: 480px;
+    width: 480px;
     max-height: 480px;
 }
 
@@ -365,6 +415,13 @@ textarea.form-control {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 575px) {
+    .dropdown-menu-notification {
+        width: 100vw;
+        right: -101px;
+    }
 }
 
 /*section search*/

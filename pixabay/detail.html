@@ -18,13 +18,21 @@
 	<div class="header_logo">
 		<a href=""><img src="assets/images/logo.png"></a>
 	</div>
-	<div class="header_link">
+	<div class="header_link" style="display: none">
 	    <a href="/photos/">Photos</a>
 	    <!-- <a href="/illustrations/">Illustrations</a>
 	    <a href="/vectors/">Vectors</a>
 	    <a href="/videos/">Videos</a>
 	    <a href="/music/">Music</a>
 	    <a href="/sound-effects/">Sound Effects</a> -->
+	</div>
+	<div class="header-search hide-t-sm">
+		<form action="">
+			<button class="btn">
+				<i class="fas fa-search"></i>
+			</button>
+			<input type="text" name="q" placeholder="Search">
+		</form>
 	</div>
 	<div class="header_action">
 		<div class="dropdown hide-t-md">
@@ -86,13 +94,11 @@
 			<button class="dropdown-toggle btn_user">
 				<img width="32" src="assets/images/user.svg" class="rounded-circle" >
 			</button>
-			<div class="dropdown-menu">
-				<div class="droptop-menu">
-					<div class="droptop-head">Media</div>
-					<a href="#" class="droptop-link">Editor's Choice</a>
-					<a href="#" class="droptop-link">Popular Images</a>
-					<a href="#" class="droptop-link">Popular Videos</a>
-				</div>
+			<div class="dropdown-menu dropdown-menu--user">
+				<a href="#" class="droptop-link">Profile</a>
+				<a href="#" class="droptop-link">Settings</a>
+				<hr>
+				<a href="#" class="droptop-link">Logout</a>
 			</div>
 		</div>
 
