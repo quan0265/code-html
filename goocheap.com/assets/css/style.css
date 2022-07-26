@@ -7,23 +7,21 @@
     font-style: italic;
     font-weight: 400;
     font-display: swap;
-    src: url(../fonts/opensans-400-latin21.woff2) format("woff2");
+    src: url(../../fonts/opensans-400-latin21.woff2) format("woff2");
 }
-
 @font-face {
     font-family: Open Sans;
     font-style: italic;
     font-weight: 700;
     font-display: swap;
-    src: url(../fonts/opensans-700-latin35.woff2) format("woff2");
+    src: url(../../fonts/opensans-700-latin35.woff2) format("woff2");
 }
-
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     /*color: #191b26;*/
     color: #333;
-    font-family: Open Sans, Arial, system-ui;
+    /*font-family: Open Sans, Arial, system-ui;*/
 }
 
 /* setting */
@@ -64,9 +62,16 @@ body {
 .container {
 	max-width: 1160px;
 	margin: auto;
+	padding-left: 12px;
+	padding-right: 12px;
 }
 
+.h2-title {
+	font-size: 24px;
+	font-weight: 600;
+}
 
+/* header */
 #header {
 	display: flex;
 	justify-content: space-between;
@@ -109,6 +114,7 @@ body {
 	/*font-weight: 600;*/
 }
 
+/* nav */
 #nav {
 	height: 60px;
 	display: flex;
@@ -126,12 +132,14 @@ body {
 	border-radius: 50rem;
 }
 
+/* home search */
 #home-search {
 	height: 40vh;
 	background: #f1f1f1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 36px;
 }
 .home-search {
 	display: flex;
@@ -151,7 +159,7 @@ body {
 .home-search-icon {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 8px;
 	height: 50px;
 	line-height: 50px;
 }
@@ -164,10 +172,71 @@ body {
 	height: 50px;
 }
 
+/* post */
+.post-wrapper {
+	margin-bottom: 32px;
+}
+.post-type {
 
+}
+.post-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+.post-item-box {
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 25%;
+}
+.post-item {
+	border-radius: 5px;
+	border: 1px solid #cfcfcf;
+    transition: box-shadow .2s ease,transform .2s ease,-webkit-transform .2s ease;
+}
+.post-item:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%);
+    z-index: 2;
+}
+.post-image {
 
+}
+.post-main {
+	padding: 12px;
+}
+.post-title {
 
+}
+@media(max-width: 767px) {
+	.post-item-box {
+		width: 50%;
+	}
+}
+@media(max-width: 480px) {
+	.post-item-box {
+		width: 100%;
+	}
+}
 
+/* footer */
+#footer {
+	background: var(--bs-light);
+	padding: 50px 0;
+	text-align: center;
+}
+.footer-link {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #cfcfcf;
+}
+.footer-link a {
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 6px;
+}
 
 
 
