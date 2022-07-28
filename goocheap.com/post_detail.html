@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+	<title>Post</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -17,12 +17,12 @@
 	<div id="header" class="container">
 		<div class="header-left">
 			<div class="logo">
-				<a href="home.html">GooCheap</a>
+				<a href="index.html">GooCheap</a>
 			</div>
 			<form class="header-search hidden-sm-down">
 				<input type="text" name="q" class="form-control">
 				<button class="btn" type="submit">
-					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style=" fill:#757575; display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style="display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
 					</svg>
 				</button>
 			</form>
@@ -33,49 +33,78 @@
 			<a class="btn-gray1 rounded" href="#">Sign Up</a>
 			<a class="btn-gray1 rounded" href="#">Login</a>
 		</div>
-		<button class="btn btn-bars hidden-md-up" data-bs-toggle="modal" data-bs-target="#modal-sidebar">
-			<svg viewBox="0 0 24 24" width="1em" height="1em" class="d Vb UmNoP"><path d="M2.038 4.511H22v2.496H2.038zM2 10.752h19.962v2.497H2zM2.014 16.992h19.962v2.496H2.014z"></path></svg>
-		</button>
-		<!-- Sidebar -->
-		<div class="modal modal--left fade" id="modal-sidebar">
-		    <div class="modal-dialog">
-		        <div class="modal-content sidebar">
-		            <!-- Modal Header -->
-		            <div class="modal-header">
-		                <h4 class="modal-title"></h4>
-		                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-		            </div>
-		            <!-- Modal body -->
-		            <div class="modal-body">
-		                <ul class="nav flex-column">
-		                	<li class="nav-item">
-		                		<a href="#" class="nav-link">home</a>
-		                	</li>
-		                	<li class="nav-item">
-		                		<a href="#" class="nav-link">about</a>
-		                	</li>
-		                	<li class="nav-item">
-		                		<a href="#" class="nav-link">contact</a>
-		                	</li>
-		                </ul>
-		                <hr>
-		                <div>
-		                	<a href="#" class="btn-gray1 rounded d-block">Hotels</a>
-							<a href="#" class="btn-gray1 rounded d-block">Things to do</a>
-							<a href="#" class="btn-gray1 rounded d-block">Restaurants</a>
-							<a href="#" class="btn-gray1 rounded d-block">Flights</a>
-		                </div>
-		            </div>
-		            <!-- Modal footer -->
-		            <div class="modal-footer justify-content-center">
-		                <a href="#" type="button" class="btn btn-primary">Sign Up</a>
-		                <a href="#" type="button" class="btn btn-danger">Login</a>
-		            </div>
-		        </div>
-		    </div>
+		<div class="hidden-md-up">
+			<button class="btn btn-toggle-search" data-bs-toggle="modal" data-bs-target="#modal-search">
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style="display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+					</svg>
+			</button>
+			<button class="btn btn-toggle-bars" data-bs-toggle="modal" data-bs-target="#modal-sidebar">
+				<svg viewBox="0 0 24 24" width="1em" height="1em" class="d Vb UmNoP"><path d="M2.038 4.511H22v2.496H2.038zM2 10.752h19.962v2.497H2zM2.014 16.992h19.962v2.496H2.014z"></path></svg>
+			</button>
 		</div>
 	</div>
 </header>
+<!-- Modal Sidebar -->
+<div class="modal modal--left fade" id="modal-sidebar">
+    <div class="modal-dialog">
+        <div class="modal-content sidebar">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <ul class="nav flex-column">
+                	<li class="nav-item">
+                		<a href="#" class="nav-link">home</a>
+                	</li>
+                	<li class="nav-item">
+                		<a href="#" class="nav-link">about</a>
+                	</li>
+                	<li class="nav-item">
+                		<a href="#" class="nav-link">contact</a>
+                	</li>
+                </ul>
+                <hr>
+                <div>
+                	<a href="#" class="btn-gray1 rounded d-block">Hotels</a>
+					<a href="#" class="btn-gray1 rounded d-block">Things to do</a>
+					<a href="#" class="btn-gray1 rounded d-block">Restaurants</a>
+					<a href="#" class="btn-gray1 rounded d-block">Flights</a>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-center">
+                <a href="#" type="button" class="btn btn-primary">Sign Up</a>
+                <a href="#" type="button" class="btn btn-danger">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search -->
+<div class="modal modal--top fade" id="modal-search">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="" method="GET">
+	            <!-- Modal Header -->
+	            <div class="modal-header">
+	                <h4 class="modal-title">Search</h4>
+	                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+	            </div>
+	            <!-- Modal body -->
+	            <div class="modal-body">
+	                	<input type="text" name="q" class="form-control" placeholder="search">
+	            </div>
+	            <!-- Modal footer -->
+	            <div class="modal-footer">
+	                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+	                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	            </div>
+            </form>
+        </div>
+    </div>
+</div>
 <nav class="border-bottom hidden-sm-down">
 	<div id="nav" class="container">
 		<a href="#" class="btn-gray1 rounded">Hotels</a>
@@ -86,198 +115,138 @@
 </nav>
 
 <!-- Main -->
-<section id="home-search">
-	<form class="home-search container">
-		<input type="text" name="q" class="form-control">
-		<button class="btn home-search-icon" type="submit">
-			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style=" fill:#212121; display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
-			</svg>
-		</button>
-		<button class="btn btn-orange home-search-submit">Search</button>
-	</form>
-</section>
-
-<section class="post-wrapper container">
-	<h2 class="h2-title post-type mb-4 text-center">New Post</h2>
-	<div class="post-list">
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
+<main>
+	<!-- breadcrumb -->
+	<div class="breadcrumb container">
+		<div class="breadcrumb-item">
+			<a href="index.html">Home</a>
 		</div>
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
+		<div class="breadcrumb-item">
+			<a href="category.html">Viet Name</a>
 		</div>
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
+		<div class="breadcrumb-item">
+			<a href="category.html">Ha Noi</a>
 		</div>
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
-		</div>
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
-		</div>
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
-		</div>
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
-		</div>
-		<div class="post-item-box">
-			<a href="post_detail.html" class="post-item">
-				<div class="post-image img-cover">
-					<img src="http://via.placeholder.com/300x200" alt="">
-				</div>
-				<div class="post-main">
-					<div class="mb-1">
-						<span class="list-star">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="text-orange fw-600">4.5</span>
-						<span>(123)</span>
-					</div>
-					<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
-					<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
-				</div>
-			</a>
+		<div class="breadcrumb-item">
+			<a href="category.html">burgers</a>
 		</div>
 	</div>
-</section>
+	<section class="container page-blog">
+		<div class="row">
+			<div class="col-sm-12 col-lg-8">
+				<h1 class="h1-title">The 9 best burger restaurants in Russell County</h1>
+				<div class="blog-date text-secondary mb-3">
+					<time class="author-time" datetime="2022-07-28 07:23"> Thứ năm, 28/07/2022 - 07:23 </time>
+				</div>
+				<div class="blog-about">
+					<h3 class="h3-title fw-600">About</h3>
+					<p>When tourists come to Russell County, they may be deeply impressed not only by the hospitality of the local people but also the unique cuisine here. Restaurants in Russell County combine various experiences, and make every meal an adventure because of the links between France and China culture, as well as a rich native customs. Let’s check out 10 top-rated restaurants in Russell County that you should try.</p>
+				</div>
+				<div class="blog-content">
+					<h3 class="h3-title fw-600">Infomation</h3>
+					<h2>1. The Black Cow</h2><ul><li class="ql-align-justify">Address: No 115A 12th St Columbus, GA 31901</li><li class="ql-align-justify">Opening hours: 11:00 AM - 9:00 PM</li><li class="ql-align-justify">Phone: (706) 321-2020</li><li class="ql-align-justify">Website: http://www.theblackcowga.com</li><li class="ql-align-justify">Price: $9 - $34</li></ul><p>The Black Cow brings a laid-back rustic southern charm to Uptown Columbus. Just steps away from the rapids of Rush South Whitewater Park, sit down and experience southern hospitality at its best. The restaurant's signature is the Pimento Cheeseburger, which has been named the "Best Burger in the South" by Garden &amp; Gun Readers. In addition, the restaurant also serves other dishes such as sandwiches, steaks and appetizers, and desserts. Sit back, relax and enjoy one of the signature cocktails found only in the South or a craft beer at the bar. The bustling and cozy atmosphere here is suitable for friends gathering or watching football with strangers.</p><p class="ql-align-justify"><br></p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_0_97366013.png"></p><h2>2. 11th and Bay Southern Table</h2><ul><li class="ql-align-justify">Address: No 1050 Bay Ave Columbus, GA 31901</li><li class="ql-align-justify">Opening hours: 5:00 PM - 9:00 PM</li><li class="ql-align-justify">Phone: (706) 940-0202</li><li class="ql-align-justify">Website: http://11thandbay.com</li><li class="ql-align-justify">Price: $8 - $42</li></ul><p>11th and Bay are inspired by southern hospitality and fresh creative southern cuisine. Upon arriving at 11th and Bay, you are greeted with a warm welcome in a rustic modern setting situated in an old cotton warehouse below W.C. Bradley. Their food and atmosphere are one in the same, bringing the old and the new together, while creating an atmosphere that is unpretentious, warm, and inviting. There are several dining options at 11th and Bay: view the sunset over the Chattahoochee while dining al fresco on patio or around the fire pit; enjoy dinner inside our open dining room with heart pine floors and beams, warm brick walls, and vintage Edison lighting; or take pleasure in sitting at the bar with one of their humorous bartenders.</p><p><br></p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_1_91670647.png"></p><h2><br></h2><h2>3. Jarfly</h2><ul><li class="ql-align-justify">Address: No 1358 13th St Columbus, GA 31901</li><li class="ql-align-justify">Opening hours: 11:00 AM - 9:00 PM</li><li class="ql-align-justify">Phone: (706) 505-1818</li><li class="ql-align-justify">Website: https://jarflymidtown.com</li><li class="ql-align-justify">Price: $2.5 - $28</li></ul><p>Are you looking for a restaurant that serves a romantic dinner for a couple? Want a place to have dinner with friends or family? Welcome to Jarfly- the perfect place for your dinner. They have a wide variety of dishes to suit all ages, with appetizers, soup and salads, main courses, smash and vegan burgers, Tacos, etc. The combination of flavors with blow your mind and incredible taste on your tongue. The most attractive of the restaurant is the drink menu with a variety of beers and cocktails prepared by talented and sophisticated bartenders. The food is served quickly and the service is friendly and dedicated to customers. Surely the Jarfly deserves your visit once and many times.</p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_2_69379104.png"></p><h2><br></h2><h2>4. Nonic Beer Bar &amp; Kitchen</h2><ul><li class="ql-align-justify">Address: No 1239 Broadway Ave Columbus, GA 31901</li><li class="ql-align-justify">Opening hours: 4:00 PM - 10:00 PM</li><li class="ql-align-justify">Phone: (706) 221-8832</li><li class="ql-align-justify">Website: http://www.nonicbar.com</li><li class="ql-align-justify">Price: $5 - $40</li></ul><p>A weekend and you want to hang out with friends, have a beer and have a meal together? Stand up and go to Nonic Beer Bar &amp; Kitchen now! With a diverse food menu, suitable for young people and ingredients provided by verified units such as Extreme Green Farms, Fortune Food, or The Spotted Trotter. The dishes all have great flavors, convincing even the most demanding diners! And the restaurant's spotlight is the drinks, up to 30 items. If you are a big fan of cocktails, this is a destination should not be missed in Russell County.</p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_3_5619964.png"></p><h2><br></h2><h2>5. The Loft</h2><ul><li class="ql-align-justify">Address: No 1032 Broadway Columbus, GA 31901</li><li class="ql-align-justify">Opening hours: 5:00 PM - 10:00 PM</li><li class="ql-align-justify">Phone: (706) 596-8141</li><li class="ql-align-justify">Website: https://www.theloft.com</li><li class="ql-align-justify">Price: $9-$44</li></ul><p>You having a boring weekend, looking for an elegant yet cozy restaurant, delicious food and entertainment? The Loft will be the destination to satisfy all your requirements. The Loft is a restaurant, bar, and venue based in Columbus, Georgia. It serves dinner with fresh ingredients everyday, prepared by skilled and professional chefs. The dishes taste great, the flavors and aromas are rich, the flavors are handled very delicately to blend together and bring out a unique flavor. Order "Grilled Salmon" and you will never regret it. They also have stand-up comedy shows and live shows on Thursday nights and weekends, making them the perfect place for dates or boring evenings.</p><p><br></p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_4_31994233.png"></p><h2><br></h2><h2>6. Mark&rsquo;s City Grill</h2><ul><li class="ql-align-justify">Address: No 7160 Moon Rd Ste C Columbus, GA 31909</li><li class="ql-align-justify">Opening hours: 11:00 AM - 9:00 PM</li><li class="ql-align-justify">Phone: (706) 507-3221</li><li class="ql-align-justify">Website: https://www.markscitygrill.com</li><li class="ql-align-justify">Price: $3.49- $16.99</li></ul><p>Marks City Grill quickly became a favorite restaurant in the neighborhood that serves a loyal following of regulars who head in for the friendly service as much as they do the comforting food on the menu. Inside the restaurant is a spacious, bustling but elegant space to have a cozy dinner with family or friends. The signature of the restaurant are "City Meatloaf" and "Pounded Pork Cutlet" with tasty flavor and fresh ingredients.</p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_5_72335360.png"></p><h2><br></h2><h2>7. BurgerFi</h2><ul><li class="ql-align-justify">Address: No 339 S College St Auburn, AL 36830</li><li class="ql-align-justify">Opening hours: 11:00 AM - 10:00 PM</li><li class="ql-align-justify">Phone: (334) 502-0000</li><li class="ql-align-justify">Website: http://burgerfi.com</li><li class="ql-align-justify">Price: $1.67 - $12.97</li></ul><p>If you are too familiar with brands like KFC, Burger's King, McDonald's, then give BurgerFi a try&nbsp;for a completely different experience from previous burgers. The first difference is the wrappers are emboss with the word "BurgerFi"; creating professionalism and increasing brand recognition. With 12 types of burger, including a vegetarian burger, the filling made from premier wagyu beef is the highlight that makes BurgerFi another level. Unlike other burger brands, the burger here is very thick, the filling is full with fresh topping and double wagyu. A burger that able to fill anyone's stomach with an affordable price and excellent quality, blow up all the concept of a burger you have ever known.</p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_6_3320655.png"></p><h2>8. Sheila C&rsquo;s Burger Barn</h2><ul><li class="ql-align-justify">Address: No 622 Shug Jordan Pkwy Auburn, AL 36832</li><li class="ql-align-justify">Opening hours: 10:00 AM - 9:00 PM</li><li class="ql-align-justify">Phone: (334) 283-5200</li><li class="ql-align-justify">Price: $2-$17</li></ul><p>Located at No 622 Shug Jordan Pkwy Auburn, AL, Sheila C's Burger is a restaurant with 80's vintage style. It's a small and cozy restaurant, suitable for groups of friends. There are basic burgers like cheese burger, hot dog and beverage. But don't underestimate the burgers here, they taste is not inferior to any major brands! For $7.5 you had a large burger with huge ground beef and fresh ingredients, enough to fill any starving stomach. Having affordable prices, Sheila C's Burger is a student-friendly eatery with many discounts and promotions.</p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_7_26731358.png"></p><h2><br></h2><h2>9. Cheeburger Cheeburger</h2><ul><li class="ql-align-justify">Address: No 160 North College Street Auburn, AL 36830</li><li class="ql-align-justify">Opening hours:&nbsp;</li><li class="ql-align-justify">Phone: (334) 826-0845</li><li class="ql-align-justify">Website: https://www.cheeburger.com</li><li class="ql-align-justify">Price: $1.29- $13.99</li></ul><p>And the final destination of our list, Cheeburger Cheeburger is a diner-style burger restaurant chain that started on Sanibel Island, FL in 1986. The restaurant chain specializes in big, juicy cheeseburgers, French fries, onion rings, and handmade milkshakes. You definitely should visit Cheeburger Cheeburger for delicious burgers, French fries, and onion rings. Take a seat at the soda fountain or pull up an old-fashioned chair,&nbsp;look around at the neon lights and neat signs and posters. Turn on the fifties and sixties music and enjoy your delicious huge burger with soft drinks. Feels good, doesn't it?&nbsp;</p><p><img src="https://be.gotolike.com/ajax/images/post_photos_66_8_83552305.png"></p><p>Coming to Russell County, do not miss the opportunity to enjoy wonderful and distinctive. There are a lot of interesting options for you to choose, and you are sure to find something that suits you and become unforgettable memories.</p>
+				</div>
+
+				<!-- Review -->
+				<div class="blog-review">
+					<h3 class="h3-title">Reviews</h3>
+					<div class="review-list">
+						<div class="review-item">
+							<div class="review-top">
+								<div class="review-image">
+									<img width="40" height="40" src="assets/images/user.png" alt="">
+								</div>
+								<div>
+									<a href="javascript:0" class="review-name">Douglas Johnson</a>
+									<div class="review-star">
+										<span class="list-star">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<i class="far fa-star"></i>
+										</span>
+									</div>
+									<time class="review-date">a days ago</time>
+								</div>
+							</div>
+							<pre class="review-content">Big and very clean! Crowed on a Saturday as I would expect. Lots of food choice and of course Starbucks, McDonalds, Pizza Hut, BreadTalk and for the Filipinos in Hanoi a Jollibee ! Lots of activities for kids.</pre>
+						</div>
+						<div class="review-item">
+							<div class="review-top">
+								<div class="review-image">
+									<img width="40" height="40" src="assets/images/user.png" alt="">
+								</div>
+								<div>
+									<a href="javascript:0" class="review-name">Douglas Johnson</a>
+									<div class="review-star">
+										<span class="list-star">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<i class="far fa-star"></i>
+										</span>
+									</div>
+									<time class="review-date">a days ago</time>
+								</div>
+							</div>
+							<pre class="review-content">Big and very clean! Crowed on a Saturday as I would expect. Lots of food choice and of course Starbucks, McDonalds, Pizza Hut, BreadTalk and for the Filipinos in Hanoi a Jollibee ! Lots of activities for kids.</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-lg-4">
+				<aside id="aside">
+					<article class="widget">
+						<h4 class="widget-title">recent post</h4>
+						<ul class="aside-post-list">
+							<li class="aside-post-item">
+								<a href="post_detail.html">
+									<div class="aside-post-thumb">
+										<div class="img-cover">
+											<img src="http://via.placeholder.com/200x300" alt="">
+										</div>
+									</div>
+									<div class="aside-post-info">
+										<div class="aside-post-title">The 9 best burger restaurants in Russell County</div>
+										<time>20 March 2020</time>
+									</div>
+								</a>
+							</li>
+							<li class="aside-post-item">
+								<a href="post_detail.html">
+									<div class="aside-post-thumb">
+										<div class="img-cover">
+											<img src="http://via.placeholder.com/200x300" alt="">
+										</div>
+									</div>
+									<div class="aside-post-info">
+										<div class="aside-post-title">The 9 best burger restaurants in Russell County</div>
+										<time>20 March 2020</time>
+									</div>
+								</a>
+							</li>
+							<li class="aside-post-item">
+								<a href="post_detail.html">
+									<div class="aside-post-thumb">
+										<div class="img-cover">
+											<img src="http://via.placeholder.com/200x300" alt="">
+										</div>
+									</div>
+									<div class="aside-post-info">
+										<div class="aside-post-title">The 9 best burger restaurants in Russell County</div>
+										<time>20 March 2020</time>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</article>
+				</aside>
+			</div>
+		</div>
+	</section>
+</main>
 
 <!-- Footer -->
 <footer id="footer">

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="border-bottom">
+	<div id="header" class="container">
+		<div class="header-left">
+			<div class="logo">
+				<a href="index.html">GooCheap</a>
+			</div>
+			<form class="header-search hidden-sm-down">
+				<input type="text" name="q" class="form-control">
+				<button class="btn" type="submit">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style="display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+					</svg>
+				</button>
+			</form>
+		</div>
+		<div class="header-nav hidden-sm-down">
+			<a class="btn-gray1 rounded" href="#">About</a>
+			<a class="btn-gray1 rounded" href="#">Contact</a>
+			<a class="btn-gray1 rounded" href="#">Sign Up</a>
+			<a class="btn-gray1 rounded" href="#">Login</a>
+		</div>
+		<div class="hidden-md-up">
+			<button class="btn btn-toggle-search" data-bs-toggle="modal" data-bs-target="#modal-search">
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style="display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+					</svg>
+			</button>
+			<button class="btn btn-toggle-bars" data-bs-toggle="modal" data-bs-target="#modal-sidebar">
+				<svg viewBox="0 0 24 24" width="1em" height="1em" class="d Vb UmNoP"><path d="M2.038 4.511H22v2.496H2.038zM2 10.752h19.962v2.497H2zM2.014 16.992h19.962v2.496H2.014z"></path></svg>
+			</button>
+		</div>
+	</div>
+</header>
+<!-- Modal Sidebar -->
+<div class="modal modal--left fade" id="modal-sidebar">
+    <div class="modal-dialog">
+        <div class="modal-content sidebar">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <ul class="nav flex-column">
+                	<li class="nav-item">
+                		<a href="#" class="nav-link">home</a>
+                	</li>
+                	<li class="nav-item">
+                		<a href="#" class="nav-link">about</a>
+                	</li>
+                	<li class="nav-item">
+                		<a href="#" class="nav-link">contact</a>
+                	</li>
+                </ul>
+                <hr>
+                <div>
+                	<a href="#" class="btn-gray1 rounded d-block">Hotels</a>
+					<a href="#" class="btn-gray1 rounded d-block">Things to do</a>
+					<a href="#" class="btn-gray1 rounded d-block">Restaurants</a>
+					<a href="#" class="btn-gray1 rounded d-block">Flights</a>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-center">
+                <a href="#" type="button" class="btn btn-primary">Sign Up</a>
+                <a href="#" type="button" class="btn btn-danger">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search -->
+<div class="modal modal--top fade" id="modal-search">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="" method="GET">
+	            <!-- Modal Header -->
+	            <div class="modal-header">
+	                <h4 class="modal-title">Search</h4>
+	                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+	            </div>
+	            <!-- Modal body -->
+	            <div class="modal-body">
+	                	<input type="text" name="q" class="form-control" placeholder="search">
+	            </div>
+	            <!-- Modal footer -->
+	            <div class="modal-footer">
+	                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+	                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<nav class="border-bottom hidden-sm-down">
+	<div id="nav" class="container">
+		<a href="category.html" class="btn-gray1 rounded">Hotels</a>
+		<a href="category.html" class="btn-gray1 rounded">Things to do</a>
+		<a href="category.html" class="btn-gray1 rounded">Restaurants</a>
+		<a href="category.html" class="btn-gray1 rounded">Flights</a>
+	</div>
+</nav>
+
+<!-- Main -->
+<main>
+	<section id="home-search">
+		<form class="home-search container">
+			<input type="text" name="q" class="form-control">
+			<button class="btn home-search-icon" type="submit">
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style=" fill:#212121; display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+				</svg>
+			</button>
+			<button class="btn btn-orange home-search-submit">Search</button>
+		</form>
+	</section>
+
+	<section class="post-wrapper container">
+		<h2 class="h2-title post-type mb-4 text-center">New Post</h2>
+		<div class="post-list">
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="post-item-box">
+				<a href="post_detail.html" class="post-item">
+					<div class="post-image img-cover">
+						<img src="http://via.placeholder.com/300x200" alt="">
+					</div>
+					<div class="post-main">
+						<div class="mb-1">
+							<span class="list-star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="text-orange fw-600">4.5</span>
+							<span>(123)</span>
+						</div>
+						<div class="post-title">Hoa Lu, Tam Coc, and Bich Dong Tour from Hanoi</div>
+						<div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis cum, placeat ipsum omnis minima, impedit nemo voluptas explica... <span class="text-primary fw-600">Read more</span></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="container">
+		<div class="footer-link">
+			<a class="btn-gray1" href="#">home</a>
+			<a class="btn-gray1" href="#">contact</a>
+			<a class="btn-gray1" href="#">policy</a>
+			<a class="btn-gray1" href="#">about</a>
+		</div>
+		<div class="footer-coppyright">Copyright © 2022 goocheap.com</div>
+	</div>
+</footer>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// $('.btn-bars').click()
+	})
+</script>
+
+</body>
+</html>

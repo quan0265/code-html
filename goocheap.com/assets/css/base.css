@@ -11,6 +11,10 @@
 html {
     font-size: 16px;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 a {
     text-decoration: none;
     display: inline-block;
@@ -52,6 +56,9 @@ h6{
 }
 .fw-600 {
     font-weight: 600 !important;
+}
+.fw-500 {
+    font-weight: 500 !important;
 }
 .fw-bold {
     font-weight: 700 !important;

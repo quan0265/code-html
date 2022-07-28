@@ -2,6 +2,7 @@
     --color-primary: #0a88d3;
     --color-orange: #ff5b00;
     --color-gray: #f5f5f5;
+    --border-gray: #dee2e6;
 }
 
 @font-face {
@@ -34,15 +35,6 @@ body {
 a:hover {
 	color: inherit;
 }
-
-/* setting */
-/*.btn {
-	font-size: 14px;
-	padding: 0 16px;
-	height: 36px;
-	line-height: 36px;
-	border-radius: 6px;
-}*/
 .text-orange {
 	color: var(--color-orange) !important;
 }
@@ -99,7 +91,15 @@ a:hover {
 	padding-right: 12px;
 }
 
+.h1-title {
+	font-size: 32px;
+	font-weight: 600;
+}
 .h2-title {
+	font-size: 28px;
+	font-weight: 600;
+}
+.h3-title {
 	font-size: 24px;
 	font-weight: 600;
 }
@@ -112,6 +112,9 @@ a:hover {
 }
 .list-star i {
 	margin-right: 2px;
+}
+.pagination_out .pagination {
+	justify-content: center;
 }
 
 /* navbar */
@@ -200,50 +203,23 @@ a:hover {
 	border-radius: .25rem;
 }
 
-/* home search */
-#home-search {
-	height: 40vh;
-	background: #f1f1f1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 36px;
+/* breadcrumb */
+.breadcrumb {
+	margin-top: 12px;
+	margin-bottom: 24px;
 }
-.home-search {
-	display: flex;
-	position: relative;
-	border-radius: 0.25rem;
-	/* overflow: hidden; */
-	max-width: 800px;
+.breadcrumb a{
+	padding: 8px 0px;
 }
-.home-search>*:focus {
-	box-shadow: none;
+.breadcrumb a:hover{
+	/* padding: 8px; */
+	color: var(--color-orange);
+	text-decoration: underline;
 }
-.home-search input {
-	border: none;
-	height: 50px;
-	/* width: 700px; */
-	max-width: 100%;
-	padding-left: 50px;
-	font-size: 18px;
-	border-radius: 0;
-	flex-grow: 1;
+.breadcrumb-item+.breadcrumb-item::before {
+	margin-top: 8px;
 }
-.home-search-icon {
-	position: absolute;
-	top: 0;
-	left: 8px;
-	height: 50px;
-	line-height: 50px;
-}
-.home-search-submit {
-	/*position: absolute;
-	top: 0;
-	right: 0;*/
-	border-radius: 0;
-	border: 3px solid #fff;
-	height: 50px;
-}
+
 
 /* post */
 .post-wrapper {
@@ -276,7 +252,7 @@ a:hover {
     z-index: 2;
 }
 .post-image {
-
+padding-bottom: 80%;
 }
 .post-main {
 	padding: 12px;
@@ -331,16 +307,142 @@ a:hover {
 }
 .footer-link a {
 	text-transform: capitalize;
-	font-weight: 600;
-	padding: 6px;
+	font-weight: 500;
+	/* padding: 6px; */
 }
 
 
+/* =========== Page home =========== */
+/* home search */
+#home-search {
+	height: 40vh;
+	background: #f1f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 36px;
+}
+.home-search {
+	display: flex;
+	position: relative;
+	border-radius: 0.25rem;
+	/* overflow: hidden; */
+	max-width: 800px;
+}
+.home-search>*:focus {
+	box-shadow: none;
+}
+.home-search input {
+	border: none;
+	height: 50px;
+	max-width: 100%;
+	padding-left: 50px;
+	font-size: 18px;
+	border-radius: 0;
+	flex-grow: 1;
+}
+.home-search-icon {
+	position: absolute;
+	top: 0;
+	left: 8px;
+	height: 50px;
+	line-height: 50px;
+}
+.home-search-submit {
+	border-radius: 0;
+	border: 3px solid #fff;
+	height: 50px;
+}
 
+/* =========== Page blog =========== */
+.page-blog {
 
+}
+.blog-date {
+	font-size: 14px;
+	/*text-align: right;*/
+}
+.blog-content {
+	margin-bottom: 36px;
+}
 
+/* review */
+.blog-review {
+	margin-bottom: 32px;
+}
+.blog-review>h3 {
+	margin-bottom: 20px;
+}
+.review-list {
 
+}
+.review-item {
+	border-bottom: 1px solid var(--border-gray);
+	padding: 16px 0;
+}
+.review-item:last-child {
+	border-bottom: 0;
+}
+.review-top {
+	display: flex;
+	line-height: 1.3;
+	margin-bottom: 16px;
+}
+.review-image {
+	margin-right: 16px;
+}
+.review-name {
+	display: block;
+}
+.review-date {
+	font-size: 14px;
+	color: gray;
+}
+.review-star {
 
+}
+.review-content {
+	/*margin-bottom: 0;*/
+}
 
+/* aside */
+.widget {
 
+}
+.widget-title {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+.aside-post-list {
+
+}
+.aside-post-item {
+	margin-bottom: 24px;
+}
+.aside-post-item a{
+	/*display: flex;*/
+}
+.aside-post-item a:hover .aside-post-title{
+	color: var(--color-orange);
+}
+.aside-post-thumb {
+	margin-right: 12px;
+    width: 80px;
+    height: 80px;
+    float: left;
+    /*flex-shrink: 0;*/
+}
+.aside-post-info {
+	/*flex-grow: 1;*/
+}
+.aside-post-title {
+	font-size: 15px;
+	line-height: 1.3;
+}
+.aside-post-info time{
+	font-size: 13px;
+	color: var(--bs-gray);
+}
 
