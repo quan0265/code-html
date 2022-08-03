@@ -68,7 +68,7 @@ a:hover {
 	background: var(--color-gray);
 }
 
-.form-control {
+input.form-control {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -540,6 +540,32 @@ ul.aside-tag {
 
 }
 .aside-tag li a{
-	margin-bottom: 8px;
-	margin-right: 8px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+}
+/* write a review */
+.write-review {
+	margin-bottom: 36px;
+}
+.write-info {
+	display: flex;
+}
+.write-thumb img{
+	width: 40px;
+	margin-right: 24px;
+}
+.write-info-right {
+
+}
+.write-name {
+	margin-bottom: 12px;
+}
+.write-review .list-star{
+	font-size: 24px;
+}
+.write-form {
+	margin-top: 24px;
+}
+.write-form textarea {
+	margin-bottom: 16px;
 }
