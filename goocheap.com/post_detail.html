@@ -233,17 +233,21 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<i class="fas fa-star-half-alt"></i>
-									<i class="far fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<!-- <i class="far fa-star"></i> -->
 								</span>
+								<!-- Great, Good, Ok, Could've been better, Not good -->
+								<!-- <span class="review-star-text">123</span> -->
 							</div>
 						</div>
 					</div>
 					<form action="" class="write-form">
-						<textarea class="form-control" rows="3"></textarea>
+						<input type="hidden" name="rating" value="5">
+						<textarea class="form-control" rows="5" required="" minlength="10"></textarea>
 						<button class="btn btn-orange" type="submit">Post Review</button>
 					</form>
-				</div>					
+				</div>
 
 			</div>
 			<div class="col-sm-12 col-lg-4">
@@ -351,6 +355,20 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		// $('.btn-bars').click()
+		document.querySelectorAll('.write-info .review-star i.fa-star').forEach(function(item, index) {
+			item.onclick = function() {
+				document.querySelector('.write-form input[name=rating]').value = index + 1
+				document.querySelectorAll('.write-info .review-star i.fa-star').forEach(function(item1, index1) {
+					item1.classList.remove('fa', 'far')
+					if (index1 <= index) {
+						item1.classList.add('fa')
+					}
+					else {
+						item1.classList.add('far')
+					}
+				})
+			}
+		})
 	})
 </script>
 

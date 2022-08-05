@@ -107,6 +107,11 @@ h6{
     }
 }
 
+/* form */
+.form-control:focus {
+    box-shadow: 0 0 0 0.125rem rgb(13 110 253 / 25%);
+}
+
 /* modal left */
 .modal.modal--left {
     overflow: hidden;

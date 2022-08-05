@@ -545,10 +545,11 @@ ul.aside-tag {
 }
 /* write a review */
 .write-review {
-	margin-bottom: 36px;
+	margin-bottom: 48px;
 }
 .write-info {
 	display: flex;
+	margin-top: 24px;
 }
 .write-thumb img{
 	width: 40px;
@@ -558,14 +559,21 @@ ul.aside-tag {
 
 }
 .write-name {
-	margin-bottom: 12px;
+	margin-bottom: 8px;
 }
 .write-review .list-star{
-	font-size: 24px;
+	font-size: 32px;
+	cursor: pointer;
+	margin-left: -2px;
+}
+.write-review .list-star i {
+	padding: 5px;
+	margin: 0;
 }
 .write-form {
 	margin-top: 24px;
+	text-align: right;
 }
 .write-form textarea {
-	margin-bottom: 16px;
+	margin-bottom: 24px;
 }
