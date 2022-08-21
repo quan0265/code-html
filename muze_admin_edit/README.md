@@ -30,3 +30,8 @@ Some SASS functions:
 ## License
 
 **Muze** is licensed under Themeforest. For more information, head to: [Themeforest License Page](https://themeforest.net/licenses/standard)
+
+
+- Link view example:
+	- https://fabrx.co/preview/muse-dashboard/documentation/index.html
+	- https://fabrx.co/preview/muse-dashboard/html/settings.html
