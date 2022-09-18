@@ -35,3 +35,7 @@ Some SASS functions:
 - Link view example:
 	- https://fabrx.co/preview/muse-dashboard/documentation/index.html
 	- https://fabrx.co/preview/muse-dashboard/html/settings.html
+
+- Theme edit:
+	- Top header: thêm class top-header, container vào body. Thêm html header top
+	- Vetical header: xóa class top-header, container vào body. Thêm html header vetical, top

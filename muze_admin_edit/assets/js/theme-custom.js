@@ -126,36 +126,41 @@ var getSelectedRadio = function getSelectedRadio(radioName) {
 }
 
 //Muze Reload Page And Set item By LocalStorage JavaScript
-document.querySelector('#CustomizerPreview').addEventListener('click', event => {
-	var skin = getSelectedRadio('MuzeSkins');
-	localStorage.setItem('selectedSkin', skin);
-	var rtlMode = document.getElementById('RTLMode');
-	localStorage.setItem('rtlModeCheck', rtlMode.checked);
-	localStorage.setItem('rtlModeValue', rtlMode.value);
-	var headerStyle = getSelectedRadio('HeaderStyles');
-	localStorage.setItem('headerStyle', headerStyle);
-	var sidebarStyle = getSelectedRadio('SidebarStyles');
-	localStorage.setItem('sidebarStyle', sidebarStyle);
-	var fluidLayout = document.getElementById('FluidLayout');
-	localStorage.setItem('fluidLayoutCheck', fluidLayout.checked);
-	localStorage.setItem('fluidLayoutValue', fluidLayout.value);
-	window.location.reload();
-});
+if (document.querySelector('#CustomizerPreview')) {
+	document.querySelector('#CustomizerPreview').addEventListener('click', event => {
+		var skin = getSelectedRadio('MuzeSkins');
+		localStorage.setItem('selectedSkin', skin);
+		var rtlMode = document.getElementById('RTLMode');
+		localStorage.setItem('rtlModeCheck', rtlMode.checked);
+		localStorage.setItem('rtlModeValue', rtlMode.value);
+		var headerStyle = getSelectedRadio('HeaderStyles');
+		localStorage.setItem('headerStyle', headerStyle);
+		var sidebarStyle = getSelectedRadio('SidebarStyles');
+		localStorage.setItem('sidebarStyle', sidebarStyle);
+		var fluidLayout = document.getElementById('FluidLayout');
+		localStorage.setItem('fluidLayoutCheck', fluidLayout.checked);
+		localStorage.setItem('fluidLayoutValue', fluidLayout.value);
+		window.location.reload();
+	});
+}
 
 //Muze Remove Local Storage And Reload Page JavaScript
-document.querySelector('#ResetCustomizer').addEventListener('click', event => {
-	localStorage.removeItem('skins');
-	localStorage.removeItem('rtlModeCheck');
-	localStorage.removeItem('rtlModeValue');
-	localStorage.removeItem('headerStyle');
-	localStorage.removeItem('selectedSkin');
-	localStorage.removeItem('headerStyles');
-	localStorage.removeItem('sidebarStyle');
-	localStorage.removeItem('sidebarStyles');
-	localStorage.removeItem('fluidLayoutCheck');
-	localStorage.removeItem('fluidLayoutValue');
-	window.location.reload();
-});
+if (document.querySelector('#ResetCustomizer')) {
+	document.querySelector('#ResetCustomizer').addEventListener('click', event => {
+		localStorage.removeItem('skins');
+		localStorage.removeItem('rtlModeCheck');
+		localStorage.removeItem('rtlModeValue');
+		localStorage.removeItem('headerStyle');
+		localStorage.removeItem('selectedSkin');
+		localStorage.removeItem('headerStyles');
+		localStorage.removeItem('sidebarStyle');
+		localStorage.removeItem('sidebarStyles');
+		localStorage.removeItem('fluidLayoutCheck');
+		localStorage.removeItem('fluidLayoutValue');
+		window.location.reload();
+	});
+}
+	
 
 //Muze Custom JavaScript
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;

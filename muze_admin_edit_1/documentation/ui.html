@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>UI - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+  
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="false">Customize</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="false">Forms</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="true">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0 show" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>UI</h1>
+            <p class="lead">At the most basic level, the user interface (UI) is the series of screens, pages, and visual elements—like buttons and icons—that enable a person to interact with a product or service.</p>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h5>Divider</h5>
+            <div class="muzedocs-content-divider">
+              <div class="tab-wrapper">
+                <!-- Nav Classic -->
+                <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-result-tab-1" data-bs-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-html-tab-1" data-bs-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                  </li>
+                </ul>
+                <!-- End Nav Classic -->
+  
+                <!-- Tab Content -->
+                <div class="tab-content" id="pills-tabContent-1">
+                  <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                    <hr>
+                  </div>
+                  <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                    <pre class="rounded">
+                      <code class="language-markup" data-lang="html">
+                        &lt;hr&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+            </div>
+            <h5>Circles</h5>
+            <div class="muzedocs-content-divider">
+              <div class="tab-wrapper">
+                <!-- Nav Classic -->
+                <ul class="nav nav-classic" id="pills-tab-150" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-result-tab-150" data-bs-toggle="pill" href="#pills-result-150" role="tab" aria-controls="pills-result-150" aria-selected="true">Preview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-html-tab-150" data-bs-toggle="pill" href="#pills-html-150" role="tab" aria-controls="pills-html-150" aria-selected="false">HTML</a>
+                  </li>
+                </ul>
+                <!-- End Nav Classic -->
+  
+                <!-- Tab Content -->
+                <div class="tab-content" id="pills-tabContent-150">
+                  <div class="tab-pane fade p-4 show active" id="pills-result-150" role="tabpanel" aria-labelledby="pills-result-tab-150">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="d-flex flex-wrap align-items-center mb-3">
+                          <span class="bg-primary circle circle-lg me-3">12</span>
+                          <span class="bg-primary circle me-3">12</span>
+                          <span class="bg-primary circle circle-sm">12</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="d-flex flex-wrap align-items-center">
+                          <span class="bg-primary circle circle-lg me-3">
+                            <svg data-name="icons/tabler/notification" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                              <rect data-name="Icons/Tabler/Notification background" width="16" height="16" fill="none"/>
+                              <path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.043,0L7.18,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.257v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.334ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.047,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.887,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(1)" fill="#ffffff"/>
+                            </svg>                        
+                          </span>
+                          <span class="bg-primary circle me-3">
+                            <svg data-name="icons/tabler/notification" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <rect data-name="Icons/Tabler/Notification background" width="16" height="16" fill="none"/>
+                              <path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.043,0L7.18,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.257v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.334ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.047,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.887,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(1)" fill="#ffffff"/>
+                            </svg>
+                          </span>
+                          <span class="bg-primary circle circle-sm">
+                            <svg data-name="icons/tabler/notification" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                              <rect data-name="Icons/Tabler/Notification background" width="16" height="16" fill="none"/>
+                              <path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.043,0L7.18,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.257v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.334ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.047,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.887,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(1)" fill="#ffffff"/>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-html-150" role="tabpanel" aria-labelledby="pills-html-tab-150">
+                    <pre class="rounded">
+                      <code class="language-markup" data-lang="html">
+                        &lt;div class="d-flex flex-wrap align-items-center"&gt;
+                          &lt;span class="bg-primary circle circle-lg me-3"&gt;12&lt;/span&gt;
+                          &lt;span class="bg-primary circle me-3"&gt;12&lt;/span&gt;
+                          &lt;span class="bg-primary circle circle-sm"&gt;12&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class="d-flex flex-wrap align-items-center"&gt;
+                          &lt;span class="bg-primary circle circle-lg me-3"&gt;
+                            &lt;svg data-name="icons/tabler/notification" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"&gt;
+                              &lt;rect data-name="Icons/Tabler/Notification background" width="16" height="16" fill="none"/&gt;
+                              &lt;path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.043,0L7.18,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.257v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.334ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.047,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.887,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(1)" fill="#ffffff"/&gt;
+                            &lt;/svg&gt;                        
+                          &lt;/span&gt;
+                          &lt;span class="bg-primary circle me-3"&gt;
+                            &lt;svg data-name="icons/tabler/notification" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"&gt;
+                              &lt;rect data-name="Icons/Tabler/Notification background" width="16" height="16" fill="none"/&gt;
+                              &lt;path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.043,0L7.18,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.257v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.334ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.047,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.887,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(1)" fill="#ffffff"/&gt;
+                            &lt;/svg&gt;
+                          &lt;/span&gt;
+                          &lt;span class="bg-primary circle circle-sm"&gt;
+                            &lt;svg data-name="icons/tabler/notification" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16"&gt;
+                              &lt;rect data-name="Icons/Tabler/Notification background" width="16" height="16" fill="none"/&gt;
+                              &lt;path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.043,0L7.18,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.257v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.334ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.047,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.887,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(1)" fill="#ffffff"/&gt;
+                            &lt;/svg&gt;
+                          &lt;/span&gt;
+                        &lt;/div&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+            </div>
+
+            <h5>Indicators</h5>
+            <div class="muzedocs-content-divider">
+              <div class="tab-wrapper">
+                <!-- Nav Classic -->
+                <ul class="nav nav-classic" id="pills-tab-151" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-result-tab-151" data-bs-toggle="pill" href="#pills-result-151" role="tab" aria-controls="pills-result-151" aria-selected="true">Preview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-html-tab-151" data-bs-toggle="pill" href="#pills-html-151" role="tab" aria-controls="pills-html-151" aria-selected="false">HTML</a>
+                  </li>
+                </ul>
+                <!-- End Nav Classic -->
+  
+                <!-- Tab Content -->
+                <div class="tab-content" id="pills-tabContent-151">
+                  <div class="tab-pane bg-gray-200 fade p-4 show active" id="pills-result-151" role="tabpanel" aria-labelledby="pills-result-tab-151">
+                    <div class="d-flex mb-3">
+                      <span class="avatar-status avatar-xxl-status avatar-success position-relative me-2">&nbsp;</span>
+                      <span class="avatar-status avatar-xxl-status avatar-warning position-relative me-2">&nbsp;</span>
+                      <span class="avatar-status avatar-xxl-status avatar-danger position-relative me-2">&nbsp;</span>
+                      <span class="avatar-status avatar-xxl-status avatar-offline position-relative me-2">&nbsp;</span>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-html-151" role="tabpanel" aria-labelledby="pills-html-tab-151">
+                    <pre class="rounded">
+                      <code class="language-markup" data-lang="html">
+                        &lt;div class="d-flex mb-3"&gt;
+                          &lt;span class="avatar-status avatar-xxl-status avatar-success position-relative me-2"&gt;&nbsp;&lt;/span&gt;
+                          &lt;span class="avatar-status avatar-xxl-status avatar-warning position-relative me-2"&gt;&nbsp;&lt;/span&gt;
+                          &lt;span class="avatar-status avatar-xxl-status avatar-danger position-relative me-2"&gt;&nbsp;&lt;/span&gt;
+                          &lt;span class="avatar-status avatar-xxl-status avatar-offline position-relative me-2"&gt;&nbsp;&lt;/span&gt;
+                        &lt;/div&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+            </div>
+
+            <h5>Logos</h5>
+            <div class="muzedocs-content-divider">
+              <div class="tab-wrapper">
+                <!-- Nav Classic -->
+                <ul class="nav nav-classic" id="pills-tab-152" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-result-tab-152" data-bs-toggle="pill" href="#pills-result-152" role="tab" aria-controls="pills-result-152" aria-selected="true">Preview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-html-tab-152" data-bs-toggle="pill" href="#pills-html-152" role="tab" aria-controls="pills-html-152" aria-selected="false">HTML</a>
+                  </li>
+                </ul>
+                <!-- End Nav Classic -->
+  
+                <!-- Tab Content -->
+                <div class="tab-content" id="pills-tabContent-152">
+                  <div class="tab-pane fade p-4 show active" id="pills-result-152" role="tabpanel" aria-labelledby="pills-result-tab-152">
+                    <div class="d-flex">
+                      <svg class="me-5" xmlns="http://www.w3.org/2000/svg" width="78.395" height="22.585" viewBox="0 0 78.395 22.585">
+                        <path data-name="Combined Shape" d="M66.578,21.587a7.332,7.332,0,0,1-3.028-2.762,7.653,7.653,0,0,1-1.066-4.012,7.74,7.74,0,0,1,1.052-4,7.381,7.381,0,0,1,2.888-2.777A8.953,8.953,0,0,1,74.554,8a6.983,6.983,0,0,1,2.816,2.732,8.148,8.148,0,0,1,1.023,3.984v.165l-.017.25-.005.059a.913.913,0,0,1-.86.783H66.735l.025.111.031.131a3.685,3.685,0,0,0,1.481,2.166,4.991,4.991,0,0,0,2.948.841,5.991,5.991,0,0,0,2.147-.361,5.08,5.08,0,0,0,1.033-.6.917.917,0,0,1,1.171.091l.036.037,1.2,1.36.04.053a.993.993,0,0,1,.188.724.437.437,0,0,1-.185.293,10.861,10.861,0,0,1-5.738,1.766A9.933,9.933,0,0,1,66.578,21.587Zm1.541-10.594a3.767,3.767,0,0,0-1.293,2.324l-.035.214h7.916l-.015-.106-.023-.136a3.81,3.81,0,0,0-1.287-2.281,3.932,3.932,0,0,0-2.617-.905A4.017,4.017,0,0,0,68.119,10.994ZM49.469,22.029a13.745,13.745,0,0,1-2.132-.729l-.015-.007-.056-.027a.787.787,0,0,1-.362-1.052l.687-1.364.032-.062a1.238,1.238,0,0,1,.941-.665.514.514,0,0,1,.2.04,11.691,11.691,0,0,0,4.876,1.054h.055l.265,0,.1,0,.2-.009.193-.013.121-.01.233-.02.22-.022.063-.007.031,0h.011l.2-.025.189-.027.177-.03.028-.005.056-.011.159-.033.031-.008.032-.007.012,0,.142-.039c.636-.187.908-.487.908-1,0-.465-.4-.848-1.162-1.108a6.757,6.757,0,0,0-.671-.185l-.2-.042-.139-.028c-.227-.044-.481-.086-.774-.131l-.257-.036-.271-.035-.283-.034-.282-.041-.278-.041-.36-.058-.214-.035A21.474,21.474,0,0,1,50,15.686a5.1,5.1,0,0,1-2.213-1.261,3.377,3.377,0,0,1-.913-2.537,3.807,3.807,0,0,1,.867-2.453A5.686,5.686,0,0,1,50.3,7.745a12.031,12.031,0,0,1,4.045-.614,17.356,17.356,0,0,1,3.454.351,12.263,12.263,0,0,1,1.811.55l.049.021a.833.833,0,0,1,.455.481.759.759,0,0,1-.04.6l-.7,1.387-.03.053a.9.9,0,0,1-.768.416.938.938,0,0,1-.3-.05,13.066,13.066,0,0,0-3.926-.824,5.321,5.321,0,0,0-2.391.418,1.342,1.342,0,0,0-.868,1.184,1.213,1.213,0,0,0,.954,1.166c.076.027.166.055.288.09l.159.043.262.065.287.064.206.042.218.041.347.061.246.04.391.06.275.04.181.029.356.057.342.059.332.058.473.089.3.06.288.061.185.04c.29.066.573.136.842.209a4.909,4.909,0,0,1,2.165,1.247,3.335,3.335,0,0,1,.9,2.481,3.674,3.674,0,0,1-.88,2.409,5.765,5.765,0,0,1-2.611,1.661,12.791,12.791,0,0,1-4.138.6A17.209,17.209,0,0,1,49.469,22.029Zm-7.5.463-.072,0a1.327,1.327,0,0,1-1.278-1.31V20.131l-.318.347-.121.129a5.951,5.951,0,0,1-2,1.367,6.876,6.876,0,0,1-2.676.518,6.719,6.719,0,0,1-4.834-1.706A6.756,6.756,0,0,1,28.894,15.7V8.444l0-.069a1.334,1.334,0,0,1,1.348-1.243h1.541l.072,0a1.329,1.329,0,0,1,1.278,1.31v6.727c.038,2.521,1.182,3.8,3.4,3.8a3.7,3.7,0,0,0,2.79-1.108,4.555,4.555,0,0,0,1.055-3.252V8.444l0-.069a1.332,1.332,0,0,1,1.347-1.243h1.542l.072,0a1.328,1.328,0,0,1,1.277,1.31V21.181l0,.069a1.332,1.332,0,0,1-1.347,1.243Zm-18.184,0-.072,0A1.322,1.322,0,0,1,22.42,21.2V14.229a4.078,4.078,0,0,0-.833-2.68,3.031,3.031,0,0,0-2.385-.955,3.584,3.584,0,0,0-2.723,1.064,4.4,4.4,0,0,0-1,3.117V21.2l0,.068a1.332,1.332,0,0,1-1.361,1.22H12.558l-.072,0A1.322,1.322,0,0,1,11.2,21.2V14.25c-.037-2.425-1.12-3.656-3.218-3.656a3.546,3.546,0,0,0-2.694,1.064,4.4,4.4,0,0,0-1,3.117V21.2l0,.068a1.332,1.332,0,0,1-1.361,1.22H1.363l-.073,0A1.321,1.321,0,0,1,0,21.2V8.647l0-.068a1.331,1.331,0,0,1,1.361-1.22H2.708l.073,0a1.322,1.322,0,0,1,1.29,1.287V9.4l.317-.343L4.5,8.935a5.752,5.752,0,0,1,2-1.306,7.549,7.549,0,0,1,2.777-.5,7.039,7.039,0,0,1,2.99.621A5.205,5.205,0,0,1,14.4,9.547l.138.2.155-.187.113-.134a6.414,6.414,0,0,1,2.3-1.658,8.045,8.045,0,0,1,3.217-.637,6.494,6.494,0,0,1,4.652,1.637A6.53,6.53,0,0,1,26.7,13.7V21.2l0,.068a1.332,1.332,0,0,1-1.361,1.22Zm13.706-20.3a2.194,2.194,0,1,1,2.194,2.2A2.194,2.194,0,0,1,37.489,2.194Zm-5.852,0a2.194,2.194,0,1,1,2.194,2.2A2.194,2.194,0,0,1,31.637,2.194Z" fill="#1e1e1e"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.727" height="22.493" viewBox="0 0 15.727 22.493">
+                        <path data-name="Combined Shape" d="M13.073,22.493l-.072,0a1.327,1.327,0,0,1-1.278-1.31V20.131l-.318.347-.121.129a5.951,5.951,0,0,1-2,1.367,6.876,6.876,0,0,1-2.676.518,6.719,6.719,0,0,1-4.834-1.706A6.756,6.756,0,0,1,0,15.7V8.444l0-.069A1.334,1.334,0,0,1,1.35,7.132H2.891l.072,0a1.329,1.329,0,0,1,1.278,1.31v6.727c.038,2.521,1.182,3.8,3.4,3.8a3.7,3.7,0,0,0,2.79-1.108,4.555,4.555,0,0,0,1.055-3.252V8.444l0-.069a1.332,1.332,0,0,1,1.347-1.243h1.542l.072,0a1.328,1.328,0,0,1,1.277,1.31V21.181l0,.069a1.332,1.332,0,0,1-1.347,1.243ZM8.6,2.194a2.194,2.194,0,1,1,2.194,2.2A2.195,2.195,0,0,1,8.6,2.194Zm-5.852,0a2.194,2.194,0,1,1,2.194,2.2A2.194,2.194,0,0,1,2.743,2.194Z" fill="#1e1e1e"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-html-152" role="tabpanel" aria-labelledby="pills-html-tab-152">
+                    <pre class="rounded">
+                      <code class="language-markup" data-lang="html">
+                        &lt;div class="d-flex"&gt;
+                          &lt;svg class="me-5" xmlns="http://www.w3.org/2000/svg" width="78.395" height="22.585" viewBox="0 0 78.395 22.585"&gt;
+                            &lt;path data-name="Combined Shape" d="M66.578,21.587a7.332,7.332,0,0,1-3.028-2.762,7.653,7.653,0,0,1-1.066-4.012,7.74,7.74,0,0,1,1.052-4,7.381,7.381,0,0,1,2.888-2.777A8.953,8.953,0,0,1,74.554,8a6.983,6.983,0,0,1,2.816,2.732,8.148,8.148,0,0,1,1.023,3.984v.165l-.017.25-.005.059a.913.913,0,0,1-.86.783H66.735l.025.111.031.131a3.685,3.685,0,0,0,1.481,2.166,4.991,4.991,0,0,0,2.948.841,5.991,5.991,0,0,0,2.147-.361,5.08,5.08,0,0,0,1.033-.6.917.917,0,0,1,1.171.091l.036.037,1.2,1.36.04.053a.993.993,0,0,1,.188.724.437.437,0,0,1-.185.293,10.861,10.861,0,0,1-5.738,1.766A9.933,9.933,0,0,1,66.578,21.587Zm1.541-10.594a3.767,3.767,0,0,0-1.293,2.324l-.035.214h7.916l-.015-.106-.023-.136a3.81,3.81,0,0,0-1.287-2.281,3.932,3.932,0,0,0-2.617-.905A4.017,4.017,0,0,0,68.119,10.994ZM49.469,22.029a13.745,13.745,0,0,1-2.132-.729l-.015-.007-.056-.027a.787.787,0,0,1-.362-1.052l.687-1.364.032-.062a1.238,1.238,0,0,1,.941-.665.514.514,0,0,1,.2.04,11.691,11.691,0,0,0,4.876,1.054h.055l.265,0,.1,0,.2-.009.193-.013.121-.01.233-.02.22-.022.063-.007.031,0h.011l.2-.025.189-.027.177-.03.028-.005.056-.011.159-.033.031-.008.032-.007.012,0,.142-.039c.636-.187.908-.487.908-1,0-.465-.4-.848-1.162-1.108a6.757,6.757,0,0,0-.671-.185l-.2-.042-.139-.028c-.227-.044-.481-.086-.774-.131l-.257-.036-.271-.035-.283-.034-.282-.041-.278-.041-.36-.058-.214-.035A21.474,21.474,0,0,1,50,15.686a5.1,5.1,0,0,1-2.213-1.261,3.377,3.377,0,0,1-.913-2.537,3.807,3.807,0,0,1,.867-2.453A5.686,5.686,0,0,1,50.3,7.745a12.031,12.031,0,0,1,4.045-.614,17.356,17.356,0,0,1,3.454.351,12.263,12.263,0,0,1,1.811.55l.049.021a.833.833,0,0,1,.455.481.759.759,0,0,1-.04.6l-.7,1.387-.03.053a.9.9,0,0,1-.768.416.938.938,0,0,1-.3-.05,13.066,13.066,0,0,0-3.926-.824,5.321,5.321,0,0,0-2.391.418,1.342,1.342,0,0,0-.868,1.184,1.213,1.213,0,0,0,.954,1.166c.076.027.166.055.288.09l.159.043.262.065.287.064.206.042.218.041.347.061.246.04.391.06.275.04.181.029.356.057.342.059.332.058.473.089.3.06.288.061.185.04c.29.066.573.136.842.209a4.909,4.909,0,0,1,2.165,1.247,3.335,3.335,0,0,1,.9,2.481,3.674,3.674,0,0,1-.88,2.409,5.765,5.765,0,0,1-2.611,1.661,12.791,12.791,0,0,1-4.138.6A17.209,17.209,0,0,1,49.469,22.029Zm-7.5.463-.072,0a1.327,1.327,0,0,1-1.278-1.31V20.131l-.318.347-.121.129a5.951,5.951,0,0,1-2,1.367,6.876,6.876,0,0,1-2.676.518,6.719,6.719,0,0,1-4.834-1.706A6.756,6.756,0,0,1,28.894,15.7V8.444l0-.069a1.334,1.334,0,0,1,1.348-1.243h1.541l.072,0a1.329,1.329,0,0,1,1.278,1.31v6.727c.038,2.521,1.182,3.8,3.4,3.8a3.7,3.7,0,0,0,2.79-1.108,4.555,4.555,0,0,0,1.055-3.252V8.444l0-.069a1.332,1.332,0,0,1,1.347-1.243h1.542l.072,0a1.328,1.328,0,0,1,1.277,1.31V21.181l0,.069a1.332,1.332,0,0,1-1.347,1.243Zm-18.184,0-.072,0A1.322,1.322,0,0,1,22.42,21.2V14.229a4.078,4.078,0,0,0-.833-2.68,3.031,3.031,0,0,0-2.385-.955,3.584,3.584,0,0,0-2.723,1.064,4.4,4.4,0,0,0-1,3.117V21.2l0,.068a1.332,1.332,0,0,1-1.361,1.22H12.558l-.072,0A1.322,1.322,0,0,1,11.2,21.2V14.25c-.037-2.425-1.12-3.656-3.218-3.656a3.546,3.546,0,0,0-2.694,1.064,4.4,4.4,0,0,0-1,3.117V21.2l0,.068a1.332,1.332,0,0,1-1.361,1.22H1.363l-.073,0A1.321,1.321,0,0,1,0,21.2V8.647l0-.068a1.331,1.331,0,0,1,1.361-1.22H2.708l.073,0a1.322,1.322,0,0,1,1.29,1.287V9.4l.317-.343L4.5,8.935a5.752,5.752,0,0,1,2-1.306,7.549,7.549,0,0,1,2.777-.5,7.039,7.039,0,0,1,2.99.621A5.205,5.205,0,0,1,14.4,9.547l.138.2.155-.187.113-.134a6.414,6.414,0,0,1,2.3-1.658,8.045,8.045,0,0,1,3.217-.637,6.494,6.494,0,0,1,4.652,1.637A6.53,6.53,0,0,1,26.7,13.7V21.2l0,.068a1.332,1.332,0,0,1-1.361,1.22Zm13.706-20.3a2.194,2.194,0,1,1,2.194,2.2A2.194,2.194,0,0,1,37.489,2.194Zm-5.852,0a2.194,2.194,0,1,1,2.194,2.2A2.194,2.194,0,0,1,31.637,2.194Z" fill="#1e1e1e"/&gt;
+                          &lt;/svg&gt;
+                          &lt;svg xmlns="http://www.w3.org/2000/svg" width="15.727" height="22.493" viewBox="0 0 15.727 22.493"&gt;
+                            &lt;path data-name="Combined Shape" d="M13.073,22.493l-.072,0a1.327,1.327,0,0,1-1.278-1.31V20.131l-.318.347-.121.129a5.951,5.951,0,0,1-2,1.367,6.876,6.876,0,0,1-2.676.518,6.719,6.719,0,0,1-4.834-1.706A6.756,6.756,0,0,1,0,15.7V8.444l0-.069A1.334,1.334,0,0,1,1.35,7.132H2.891l.072,0a1.329,1.329,0,0,1,1.278,1.31v6.727c.038,2.521,1.182,3.8,3.4,3.8a3.7,3.7,0,0,0,2.79-1.108,4.555,4.555,0,0,0,1.055-3.252V8.444l0-.069a1.332,1.332,0,0,1,1.347-1.243h1.542l.072,0a1.328,1.328,0,0,1,1.277,1.31V21.181l0,.069a1.332,1.332,0,0,1-1.347,1.243ZM8.6,2.194a2.194,2.194,0,1,1,2.194,2.2A2.195,2.195,0,0,1,8.6,2.194Zm-5.852,0a2.194,2.194,0,1,1,2.194,2.2A2.194,2.194,0,0,1,2.743,2.194Z" fill="#1e1e1e"/&gt;
+                          &lt;/svg&gt;
+                        &lt;/div&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+
+<!-- JS Plugins Init -->
+<script>
+
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

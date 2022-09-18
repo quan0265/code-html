@@ -140,17 +140,44 @@ time {
 .form-control:focus {
     box-shadow: 0 0 0 0.125rem rgb(13 110 253 / 25%);
 }
-form.needs-validation .form-group {
-    margin-bottom: 1rem;
+form.needs-validation .form-group, .form--edit .form-group {
+    margin-bottom: 1.2rem;
 }
-form.needs-validation .form-group label.form-label{
+form.needs-validation .form-group label.form-label, .form--edit .form-group label.form-label{
     display: block;
     font-size: 1rem
 }
-form.needs-validation .form-group label.form-label>span {
+form.needs-validation .form-group label.form-label>span, .form--edit .form-group label.form-label>span {
     font-weight: 600;
     margin-bottom: 0.5rem;
     display: inline-block;
+}
+.form--edit .form-group>label {
+    display: block;
+    max-width: 800px;
+}
+.form-group-submit {
+    text-align: left;
+    margin-top: 32px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 24px;
+}
+.form-group-submit>.btn {
+    margin-bottom: .5rem;
+}
+@media(max-width: 767px) {
+    .form-group-submit>.btn {
+        width: 100%;
+    }
+}
+.form-group-image input[type=file] {
+    display: none;
+}
+.form-group-image img {
+    display: block;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
 }
 
 /* modal left */
@@ -225,14 +252,13 @@ button>.spinner-border {
 }
 
 /*image*/
-.img-contain, .img-cover {
+.img-contain:not(img), .img-cover:not(img) {
     height: 0;
     padding-bottom: 100%;
     position: relative;
     display: block;
 }
-
-.img-contain>img, .img-cover>img {
+.img-contain:not(img)>img, .img-cover:not(img)>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -240,8 +266,13 @@ button>.spinner-border {
     height: 100%;
     object-position: center;
 }
-
-.img-cover>img {
+.img-cover:not(img)>img {
+    object-fit: cover;
+}
+img.img-contain {
+    object-fit: contain;
+}
+img.img-cover {
     object-fit: cover;
 }
 
