@@ -1,0 +1,78 @@
+:root {
+    --color-primary: #0a88d3;
+    --color-orange: #ff5b00;
+    --color-yellow: #ff9c00;
+    --color-gray: #f5f5f5;
+    --border-gray: #e0dede;
+    --border-gray1: #dee2e6;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    src: url(https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_reg-webfont.woff2) format("woff2"),url(https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_reg-webfont.woff) format("woff")
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    src: url(https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_med-webfont.woff2) format("woff2"),url(https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_med-webfont.woff) format("woff")
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    src: url(https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_bld-webfont.woff2) format("woff2"),url(https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_bld-webfont.woff) format("woff")
+}
+body {
+    font-size: 16px;
+    font-weight: 400;
+    /*color: #191b26;*/
+    color: #333;
+    /*font-family: Open Sans, Arial, system-ui;*/
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 15px;
+}
+#header a:hover {
+    color: inherit;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 12px;
+}
+.logo a{
+    font-size: 28px;
+    font-weight: 600;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    /*height: 100%;*/
+}
+.header-nav li {
+    text-transform: capitalize;
+    /* padding: 12px; */
+    /* height: 100%; */
+}
+.header-nav>li>a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 5px 12px;
+}
+@media (max-width: 991px) {
+
+}
