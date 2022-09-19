@@ -477,7 +477,7 @@ img.img-cover {
 .dropdown--hover .dropdown-content {
     /* display: none; */
     -webkit-box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
-    box-shadow: 0 3px 6pxrgba(0,0,0,.2);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
     position: absolute;
     top: 100%;
     left: 0;

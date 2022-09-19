@@ -1,3 +1,8 @@
+/* - color:; 
+
+    - bg gray: #f3f4f7
+
+*/
 :root {
     --color-primary: #0a88d3;
     --color-orange: #ff5b00;
@@ -5,6 +10,7 @@
     --color-gray: #f5f5f5;
     --border-gray: #e0dede;
     --border-gray1: #dee2e6;
+    --bg-gray: #f3f4f7;
 }
 
 @font-face {
@@ -72,6 +78,49 @@ body {
     height: 60px;
     line-height: 60px;
     padding: 5px 12px;
+}
+.sub-menu {
+    position: relative;
+}
+.sub-menu::after {
+    position: absolute;
+    bottom: -11px;
+    right: 20px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    z-index: 1;
+    content: ' ';
+    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: 1;
+    visibility: hidden;
+    background: white;
+}
+.sub-menu:hover::after {
+    visibility: visible;
+}
+.sub-menu ul {
+    padding: 12px 0;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid rgba(131,131,131,.2);
+    position: absolute;
+    /* width: 158px; */
+    z-index: 2;
+    width: 200px;
+    left: initial !important;
+    right: 0;
+    display: none;
+}
+.sub-menu ul a {
+    display: block;
+    padding: 6px 12px;
+}
+.sub-menu li:hover {
+    background: var(--bg-gray);
 }
 @media (max-width: 991px) {
 
