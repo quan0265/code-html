@@ -180,15 +180,9 @@ body {
     border-bottom: 0;
     border-left: 0.3em solid transparent;
 }
-.smenu .collapse.show ~ a::after {
+.smenu [aria-expanded=true]::after {
     border-bottom: 0.3em solid;
     border-top: 0;
-    color: red;
-}
-.smenu .collapse.show ~ .abc {
-    /*border-bottom: 0.3em solid;
-    border-top: 0;*/
-    color: red;
 }
 
 /* ========== Main ========== */
@@ -201,6 +195,7 @@ body>main {
 /* ========== Page home ========== */
 /* home search */
 .st-home-search {
+    min-height: 300px;
     height: 60vh;
     /* background: #f1f1f1; */
     display: flex;
