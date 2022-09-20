@@ -468,17 +468,21 @@ img.img-cover {
 .dropdown--hover {
     position: relative;
 }
-.dropdown--hover:hover .dropdown-content{
-    display: block;
-}
 .dropdown--hover .dropdown-btn {
     
 }
 .dropdown--hover .dropdown-content {
-    /* display: none; */
     -webkit-box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
     box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
     position: absolute;
     top: 100%;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .1s, visible .1s;
+    transition: all .1s ease;
+}
+.dropdown--hover:hover .dropdown-content{
+    opacity: 1;
+    visibility: visible;
 }
