@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" />
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css?v=0.003">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=0.003">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+	    <div class="container">
+	        <a class="navbar-brand" href="/">
+	            <img src="assets/images/logo-white.svg" alt="Dân Đầu Tư" class="loading" data-was-processed="true">
+	        </a>
+	        <div class="d-flex align-items-center">
+	        	<button class="navbar-toggler btn-sm btn-search" type="button">
+	                <span>Tìm kiếm</span>
+	            </button>
+		        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+	        </div>
+		        
+	        <div class="collapse navbar-collapse" id="mynavbar">
+	            <ul class="navbar-nav ms-auto">
+	                <li class="nav-item">
+	                    <a class="nav-link waves-effect waves-light" href="/">
+	                        <i class="icon-header fa fa-home"></i> Trang chủ
+	                    </a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link waves-effect waves-light" href="/dat-hoa-lac">
+	                        <i class="icon-header fab fa-renren"></i> Đất Hòa Lạc</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link waves-effect waves-light" href="/dat-hoa-lac/maps">
+	                        <i class="icon-header fa fa-location-arrow"></i> Bảng hàng Đất trực tuyến</a>
+	                </li>
+	                <li class="nav-item dropdown active">
+	                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+	                    	<i class="icon-header fa fa-map-signs"></i>
+	                    	Tin rao bán
+	                    </a>
+	                    <ul class="dropdown-menu">
+	                        <a class="dropdown-item" href="/dat-hoa-lac/tin-moi"> <i class="fas fa-sun"></i> Tin Rao Mới</a>
+	                        <a class="dropdown-item" href="/dat-hoa-lac/tin-mua-ban"> <i class="far fa-newspaper"></i> Tất Cả Tin Rao</a>
+	                    </ul>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link waves-effect waves-light" href="/dang-nhap">
+	                        <i class="icon-header fa fa-paper-plane"></i> Đăng Nhập</a>
+	                </li>
+	                <li class="nav-item nav-item--post">
+	                    <a class="nav-link btn-sm waves-effect waves-light" href="/dang-tin">
+	                        <span class="posted-sale-btn">Đăng tin</span>
+	                    </a>
+	                </li>
+	                <li class="nav-item waves-effect waves-light hidden-md-down">
+	                    <a class="nav-link btn-sm waves-effect waves-light">
+	                        <span class="btn-search-menu" id="filter-search-sale">Tìm kiếm</span>
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+</header>
+
+<main>
+	<section class="st-bredcrumb">
+		<nav class="container">
+			<ul class="breadcrumb">
+				<li><a href="/dat-hoa-lac">Trang chủ</a></li>
+				<li><a href="/dat-hoa-lac/kenh-mua-ban">Đất Hòa Lạc</a></li>
+				<li><a href="/dat-hoa-lac/kenh-mua-ban">Mua bán đất Hòa Lạc</a></li>
+				<li><span>Bán lô đất full thổ cư 200m2 tại Bình Yên, Thạch Thất</span></li>
+			</ul>
+		</nav>
+	</section>
+	<style>
+		.st-about h1 {
+			font-weight: bold;
+			text-transform: capitalize;
+		}
+		.st-about a:hover {
+			text-decoration: underline;
+		}
+		.index-list {
+		    border: 1px solid #ccc;
+		    background-color: rgba(158, 158, 158, 0.1);
+		    margin: 10px 0 20px;
+		}
+		.st-about .featured-content-intro ul {
+		    margin-bottom: 16px;
+		    padding-left: 40px;
+		    list-style-type: disc;
+		}
+		.services-area a {
+			color: var(--color);
+		}
+		.single-service-item .text-holder h3.title a {
+			color: #000;
+		}
+		.icon-holder>i {
+		    color: var(--color-yellow);
+		}
+	</style>
+	<section class="st-about">
+		<div class="container">
+			<div class="featured-content-intro" style="padding-bottom: 10px">
+			    <h1 class="text-uppercase"><strong><img style="width: 25px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Giới thiệu Dân Đầu Tư</strong></h1>
+			    <div class="index-list" style="padding: 0 20px;">
+			        <p style="text-align: center;padding-top: 10px"><strong>CÂU CHUYỆN CỦA CHÚNG TÔI</strong></p>
+			        <p><a class="scroll-index" href="#chung_toi_la_ai"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Chúng tôi là ai?</a></p>
+			        <p><a class="scroll-index" href="#hanh_trinh_den_voi_phu_quoc"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Hành trình đến với Phú Quốc</a></p>
+			        <p style="margin-left: 20px;"><a class="scroll-index" href="#co_duyen_voi_dao_ngoc"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Cơ duyên với đảo Ngọc</a></p>
+			        <p style="margin-left: 20px;"><a class="scroll-index" href="#quyet_dinh_dau_tu_bds"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Quyết định đầu tư BĐS Phú Quốc</a></p>
+			        <p><a class="scroll-index" href="#thuong_hieu_dan_dau_tu"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Thương hiệu <em>“Dân Đầu Tư”</em> hình thành</a></p>
+			        <p style="margin-left: 20px;"><a class="scroll-index" href="#thi_truong_bds_hon_loan"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Thời điểm thị trường Bđs Phú Quốc hỗn loạn</a></p>
+			        <p style="margin-left: 20px;"><a class="scroll-index" href="#dandautu_chia_se_ho_tro_nha_dau_tu"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - <em>“Dân Đầu Tư”</em> - chia sẻ &amp; hỗ trợ mọi vấn đề cho nhà đầu tư BĐS Phú Quốc</a></p>
+			        <p style="margin-left: 20px;"><a class="scroll-index" href="#thanh_tuu_cua_dandautu"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Những giá trị Dân Đầu Tư đạt được</a></p>
+			    </div>
+			    <h2 id="chung_toi_la_ai" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Chúng tôi là ai?</strong>
+			        <div class="index-list" style="padding: 0 20px;">
+			            <p style="text-align: center;padding-top: 10px"><strong>CÂU CHUYỆN CỦA CHÚNG TÔI</strong></p>
+			            <p><a class="scroll-index" href="#chung_toi_la_ai"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Chúng tôi là ai?</a></p>
+			            <p><a class="scroll-index" href="#hanh_trinh_den_voi_phu_quoc"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Hành trình đến với Phú Quốc</a></p>
+			            <p style="margin-left: 20px;"><a class="scroll-index" href="#co_duyen_voi_dao_ngoc"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Cơ duyên với đảo Ngọc</a></p>
+			            <p style="margin-left: 20px;"><a class="scroll-index" href="#quyet_dinh_dau_tu_bds"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Quyết định đầu tư BĐS Phú Quốc</a></p>
+			            <p><a class="scroll-index" href="#thuong_hieu_dan_dau_tu"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Thương hiệu <em>“Dân Đầu Tư”</em> hình thành</a></p>
+			            <p style="margin-left: 20px;"><a class="scroll-index" href="#thi_truong_bds_hon_loan"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Thời điểm thị trường Bđs Phú Quốc hỗn loạn</a></p>
+			            <p style="margin-left: 20px;"><a class="scroll-index" href="#dandautu_chia_se_ho_tro_nha_dau_tu"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - <em>“Dân Đầu Tư”</em> - chia sẻ &amp; hỗ trợ mọi vấn đề cho nhà đầu tư BĐS Phú Quốc</a></p>
+			            <p style="margin-left: 20px;"><a class="scroll-index" href="#thanh_tuu_cua_dandautu"><img style="width: 18px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Những giá trị Dân Đầu Tư đạt được</a></p>
+			        </div>
+			    </h2>
+			    <p>
+			        Năm 2014, lĩnh vực kinh doanh &amp; đầu tư bất động sản trên cả nước đã <em>“thoát đáy”</em> sau nhiều năm khủng hoảng,
+			        suy thoái trước đó. Thị trường bất động sản có dấu hiệu khởi sắc hơn và <em>“Chúng tôi - 1 nhóm người”</em> đã cùng nhau tìm hiểu
+			        với những bước đầu tham gia vào <em>“lĩnh vực bất động sản”</em>.
+			    </p>
+			    <p class="text-center">
+			        <img src="assets/images/gioi-thieu-dan-dan-dau-2018-1.jpg" alt="Giới thiệu về Dân đầu tư 2018" class="loading" data-was-processed="true">
+			    </p>
+			    <p style="color:"><strong><em>“CHÚNG TÔI LÀ MỘT NHÓM NGƯỜI YÊU THÍCH KINH DOANH &amp; ĐẦU TƯ BẤT ĐỘNG SẢN”</em></strong></p>
+			    <p>
+			        Khoảng thời gian 2014 - 2016, thị trường bất động sản tại Việt Nam có khá nhiều những diễn biến tích cực do những điều
+			        chỉnh &amp; luật pháp ban hành mới của chính quyền như:
+			        <em>lần đầu tiên Việt Nam mở cửa cho người nước ngoài mua và sở hữu nhà
+			            tại Việt Nam (hiệu lực từ ngày 1/7/2015), quy định mới về diện tích các căn hộ, quy định bảo lãnh bán nhà hình thành
+			            trong tương lai của các chủ đầu tư, hạ lãi suất vay ngân hàng, nâng thời hạn cho vay, điều chỉnh khung giá đất,...</em>
+			    </p>
+			    <p>
+			        Và chúng tôi cũng rất may mắn khi bắt nhịp thị trường với các hoạt động mua bán, đầu tư bất động sản tại khu vực Hà Nội.
+			        Chúng tôi tham gia đầu tư với phần lớn vốn tài chính vào phân khúc <em>“Chung cư và căn hộ thấp tầng”</em>. Song song là những kết
+			        quả khá tốt khi luôn có các giao dịch chuyển nhượng để có thể liên tục xoay vòng vốn và duy trì hoạt động của nhóm.
+			    </p>
+			    <p>
+			        Thời điểm đó, quy mô nhóm chúng tôi không lớn và chỉ định hướng phát triển ở một số khu vực thuộc thành phố Hà Nội, có mở
+			        rộng thêm cũng nhắm tới mục tiêu cố gắng phủ hết các phân khúc bất động sản tại đây!
+			    </p>
+			    <h2 id="hanh_trinh_den_voi_phu_quoc" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Hành trình đến với Phú Quốc</strong></h2>
+			    <p>
+			        Vào tháng 6/2016, chúng tôi có 1 chuyến bay tới Phú Quốc để tham quan du lịch. Chúng tôi đã tận hưởng hết 6 ngày nghỉ tại
+			        đây khi đi 1 vòng quanh đảo Ngọc.
+			    </p>
+			    <p>
+			        Thời tiết và cảnh quan thiên nhiên tại Phú Quốc rất tuyệt, không khí tại đây mát mẻ, có rừng, có biển,...nơi đây như những
+			        vùng quê yên bình vậy! Chúng tôi thực sự cảm thấy thoải mái khi nghỉ ngơi tại các <em>“lán nhà nhỏ gần biển”</em>, ấn tượng bởi
+			        những ngọn núi, con đường hoang sơ trên đảo, và các làng chài ở phía Bắc, phía Nam đảo Phú Quốc.
+			    </p>
+			    <p>
+			        Sau chuyến đi, <span style="color:"><strong>CHÚNG TÔI CŨNG NHƯ MỌI NGƯỜI ĐỀU NHẬN RA <em>“PHÚ QUỐC VÔ CÙNG TIỀM NĂNG ĐỂ PHÁT TRIỂN DU LỊCH NGHỈ DƯỠNG”</em></strong></span>
+			    </p>
+			    <h3 id="co_duyen_voi_dao_ngoc" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Cơ duyên với đảo Ngọc</strong></h3>
+			    <p>
+			        Chúng tôi vẫn hoạt động kinh doanh - đầu tư bất động sản tại Hà Nội, nhưng sau chuyến đi du lịch tháng 6/2016,
+			        chúng tôi bắt đầu dành sự quan tâm đến Phú Quốc, hay bất động sản tại Phú Quốc nhiều hơn.
+			    </p>
+			    <p>
+			        Cho đến cuối năm 2016, chúng tôi nghe và đọc rất nhiều thông tin truyền thông về <a href="https://dandautu.vn">bất động sản tại Phú Quốc</a>. Và sau đó,
+			        chúng tôi đã quyết định đến Phú Quốc để tìm kiếm <em>“cơ hội đầu tư bất động sản”</em> với rất nhiều sự hào hứng, hy vọng cùng với
+			        những nhận định riêng về thị trường mà chúng tôi có!
+			    </p>
+			    <h3 id="quyet_dinh_dau_tu_bds" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Quyết định đầu tư BĐS Phú Quốc</strong></h3>
+			    <p>
+			        Bước đến một thị trường mới với sự cẩn thận và chắc chắn, chúng tôi không lao ngay đầu tư mà dành khá nhiều thời gian để
+			        quan sát, tìm hiểu về <em>“nhịp biến động của thị trường bất động sản tại Phú Quốc”</em>. Sau đó, chúng tôi hướng đến việc đầu tư
+			        phân khúc <em>“đất công - đất nền”</em> tại Phú Quốc.
+			    </p>
+			    <p>
+			        Kể từ đầu năm 2017, bất động sản Phú Quốc nóng dần lên và được truyền thông rộng khắp cả nước. Nơi đây thu hút vốn tài
+			        chính của rất nhiều các nhà đầu tư, cùng với đó <em>“theo thời gian”</em> thì <em>“giá bất động sản”</em> leo thang từng ngày.
+			    </p>
+			    <p style="color:">
+			        <strong>CHÚNG TÔI CÓ NHỮNG GIAO DỊCH ĐẦU TIÊN VÀ SAU ĐÓ LÀ NHIỀU GIAO DỊCH TIẾP SAU KHÁ DỄ DÀNG </strong>
+			    </p>
+			    <p>
+			        Thời điểm quý III/2017 trở đi, các hoạt động chuyển nhượng - giao dịch mua bán bất động sản tại Phú Quốc diễn ra sôi nổi và
+			        nóng nhất trên cả nước.
+			    </p>
+			    <p class="text-center">
+			        <img src="assets/images/gioi-thieu-dan-dan-dau-2018-2.jpg" alt="Giới thiệu về Dân đầu tư 2018" class="loading" data-was-processed="true">
+			    </p>
+			    <p>
+			        Người mua, người bán nhộn nhịp khắp trên các nẻo đường, các quán cafe, quán ăn,...việc mua đi bán lại bất động sản rất
+			        nhanh và dễ dàng, các giao dịch thực hiện phần lớn là công chứng ủy quyền, viết giấy tay để ngay sau đó là bán ra với
+			        mức giá chênh (lợi nhuận) hấp dẫn.
+			    </p>
+			    <p style="color:"><strong>Ở PHÚ QUỐC <em>“CÓ TIỀN LÀ CÓ ĐẤT &amp; CÓ ĐẤT LÀ SẼ CÓ RẤT NHIỀU TIỀN”</em></strong></p>
+			    <p>
+			        Chúng tôi cũng như các nhà đầu tư khác luôn chuẩn bị <em>“nguồn tiền mặt sẵn sàng”</em> để có thể mua đất ngay khi được giá và
+			        chủ đất xác nhận bán, không giấy đặt cọc - cũng không quá quan tâm đến quy hoạch hay tình trạng pháp lý của mảnh đất.
+			    </p>
+			    <p>
+			        Cuối năm 2017 - đầu năm 2018, các nhà đầu tư khắp cả nước liên tục bay đến Phú Quốc để tìm mua - đầu tư đất.
+			        Thị trường dần hình thành một cơn sốt mà mọi người gọi là <em>“sóng đất”</em> tại đảo Ngọc.
+			    </p>
+			    <p class="text-center">
+			        <img src="assets/images/gioi-thieu-dan-dan-dau-2018-3.jpg" alt="Giới thiệu về Dân đầu tư 2018" class="loading" data-was-processed="true">
+			    </p>
+			    <p>
+			        <a href="/gia-dat-phu-quoc">Giá đất / giá bất động sản Phú Quốc</a> tăng lên <em>“từng giờ”</em>, có những khu vực tăng giá gấp 3, 4 thậm chí là gấp 8,9 lần;
+			        một mảnh đất có thể mua đi bán lại 2,3 lần trong 1 ngày, các hoạt động giao dịch diễn ra như mua mớ rau ở ngoài chợ
+			        Dương Đông vậy!
+			    </p>
+			    <p>
+			        Đỉnh điểm của cơn sốt <em>“sóng đất”</em> tại Phú Quốc vào tháng 3/2018, nhà nhà mua bán đất - người người là môi giới hay
+			        cò đất → bất kể ai cũng có thể là một nhà đầu tư bất động sản!
+			    </p>
+			    <p>
+			        Lợi nhuận &amp; lãi suất không tưởng từ việc đầu tư bất động sản Phú Quốc giờ đây ai cũng nhìn thấy. Và bởi vậy, các hành vi
+			        trái phép xâm chiếm đất đai - xây dựng tràn lan, các giao dịch mua bán ngầm, các hoạt động - chiêu trò lừa đảo ngày một
+			        diễn ra nhiều hơn, có thể nói là <em>“đất Phú Quốc trở nên loạn lạc hơn bao giờ hết”</em>.
+			    </p>
+			    <p>
+			        → Đây cũng là thời điểm mà chúng tôi bắt đầu xây dựng và phát triển thương hiệu <em>“Dân Đầu Tư”</em> với trang web chính thức
+			        là <em>“Dandautu.vn”</em>.
+			    </p>
+			    <p>
+			        Và đợt <em>“sóng đất”</em> cũng dần thấp &amp; hạ nhiệt từ đầu tháng 4, khi chính quyền thông báo và thực hiện thanh tra - quản lý
+			        đất đai tại đảo Ngọc.
+			    </p>
+			    <h2 id="thuong_hieu_dan_dau_tu" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Thương hiệu “Dân Đầu Tư” hình thành</strong></h2>
+			    <p>Chúng tôi sẽ nói với bạn vì sao <em>“Dân Đầu Tư ra đời”</em> và <em>“Dân Đầu Tư”</em> hoạt động như thế nào!</p>
+			    <p class="text-center p-logo-intro"><img src="assets/images/logo-white.svg" class="logo-intro loading" data-was-processed="true"></p>
+			    <h3 id="thi_truong_bds_hon_loan" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Thời điểm thị trường Bđs Phú Quốc hỗn loạn</strong></h3>
+			    <p>
+			        Chúng tôi ở đây - Phú Quốc, chứng kiến cảnh thị trường hỗn loạn về giá bất động sản, hỗn loạn về giao dịch chuyển nhượng,
+			        hỗn loạn về xây dựng - quy hoạch, hỗn loạn về thông tin và cả những hoạt động chiếm đoạt/ lừa đảo.
+			    </p>
+			    <p>
+			        Và kéo theo đó là rất nhiều nhà đầu tư đã phải ngậm trái đắng, trả giá đắt tại Phú Quốc khi không tìm hiểu rõ thông
+			        tin thị trường mà vội vàng rót vốn tài chính tại nơi đây!
+			    </p>
+			    <p style="color:">
+			        <strong>
+			            DÂN ĐẦU TƯ RA ĐỜI ĐỂ HỖ TRỢ NHÀ ĐẦU TƯ HẠN CHẾ TỐI ĐA RỦI RO VỀ THÔNG TIN - ĐẦU TƯ BẤT ĐỘNG SẢN TẠI PHÚ QUỐC
+			        </strong>
+			    </p>
+			    <h3 id="dandautu_chia_se_ho_tro_nha_dau_tu" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - “Dân Đầu Tư” - chia sẻ &amp; hỗ trợ mọi vấn đề cho nhà đầu tư BĐS Phú Quốc</strong></h3>
+			    <p>
+			        Để giúp các nhà đầu tư nhận được thông tin chính xác về thị trường, chúng tôi - Dân Đầu Tư đã phát triển
+			        <em>“kênh thông tin bất động sản Phú Quốc”</em> với tổ hợp rất nhiều tin tức, kiến thức, kinh nghiệm được chúng tôi rút ra và
+			        tổng hợp qua quá trình gần 3 năm tham gia đầu tư <a href="/bds-phu-quoc">tại đây</a>.
+			    </p>
+			    <p>
+			        Thị trường qua đợt sốt, nhưng Phú Quốc vẫn thu hút các nhà đầu tư và chúng tôi muốn giúp các nhà đầu tư tránh những rủi
+			        ro, hay có được những bài học mà chúng tôi đã trải qua về các vấn đề <em>“quy hoạch đất, giá trị thực đất, quy trình - thủ
+			            tục mua bán đất đai, chiêu trò lừa đảo trong mua bán,...”</em>
+			    </p>
+			    <p style="color:">
+			        <strong>
+			            <em>“DÂN ĐẦU TƯ RA ĐỜI VỚI NHIỆM VỤ ĐÓNG GÓP CHÚT SỨC LỰC - GIÁ TRỊ NHỎ NHOI ĐẾN VỚI CÁC NHÀ ĐẦU TƯ BẤT ĐỘNG SẢN PHÚ QUỐC!”</em>
+			        </strong>
+			    </p>
+			    <p>
+			        Nhà đầu tư có thể tìm thấy mọi thông tin về bất động sản Phú Quốc tại trang web <em>“Dandautu.vn”</em>, tại đây chúng tôi đã hệ
+			        thống các thông tin theo từng danh mục để các nhà đầu tư có thể dễ dàng tìm kiếm &amp; tham khảo.
+			    </p>
+			    <!--Start services area-->
+			</div>
+			<div class="services-area" id="services-intro">
+			    <div class="container inner-content">
+			        <div class="row">
+			            <!--Start single service item-->
+			            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+			                <div class="single-service-item text-center">
+			                    <div class="icon-holder">
+			                        <i class="fas fa-4x fa-fw fa-map"></i>
+			                    </div>
+			                    <div class="text-holder">
+			                        <h3 class="title"><strong><a href="javascript:void(0)">Quy hoạch</a></strong></h3>
+			                        <p><strong><a href="/kiem-tra-quy-hoach-dat-phu-quoc">Kiểm tra quy hoạch</a><br><a href="/maps-quy-hoach-phu-quoc"> Bản đồ quy hoạch</a></strong></p>
+			                    </div>
+			                </div>
+			            </div>
+			            <!--Start single service item-->
+			            <!--Start single service item-->
+			            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+			                <div class="single-service-item text-center">
+			                    <div class="icon-holder">
+			                        <i class="fa fa-4x fa-fw fa-info-circle"></i>
+			                    </div>
+			                    <div class="text-holder">
+			                        <h3 class="title"><strong><a href="javascript:void(0)">Thông tin</a></strong></h3>
+			                        <p><strong><a href="/bds-phu-quoc">Bất động sản Phú Quốc</a><br><a href="/tu-van-dat"> Tư vấn</a> - <a href="/kinh-nghiem"> Kiến thức nhà đất</a></strong></p>
+			                    </div>
+			                </div>
+			            </div>
+			            <!--Start single service item-->
+			            <!--Start single service item-->
+			            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+			                <div class="single-service-item text-center">
+			                    <div class="icon-holder">
+			                        <i class="fa fa-4x fa-fw fa-database"></i>
+			                    </div>
+			                    <div class="text-holder">
+			                        <h3 class="title"><strong><a href="javascript:void(0)">Dữ liệu</a></strong></h3>
+			                        <p><strong><a href="/gia-dat-phu-quoc">Giá đất Phú Quốc</a><br><a href="/dat-phu-quoc/kenh-mua-ban"> Bảng hàng đất Phú Quốc</a></strong></p>
+			                    </div>
+			                </div>
+			            </div>
+			            <!--Start single service item-->
+			            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+			                <div class="single-service-item text-center">
+			                    <div class="icon-holder">
+			                        <i class="fa fa-4x fa-fw fa-rss-square"></i>
+			                    </div>
+			                    <div class="text-holder">
+			                        <h3 class="title"><strong><a href="javascript:void(0)">Kết nối</a></strong></h3>
+			                        <p><strong><a href="/ho-tro-ban-dat-phu-quoc">Hỗ trợ bán đất</a><br><a href="/dat-phu-quoc/maps"> Hỗ trợ tìm mua đất</a></strong></p>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+
+			<div class="featured-content-intro">
+			    <p>
+			        Và có những thông tin mà nhà đầu tư bắt buộc phải biết khi muốn mua bất động sản tại Phú Quốc như 3 mục dưới đây:
+			    </p>
+			    <ul>
+			        <li>Số 1 - Quy hoạch: <span style="color: #fdc209"> Phải kiểm tra quy hoạch đất để biết mục đích sử dụng đất</span></li>
+			        <li>Số 2 - Giá đất: <span style="color: #fdc209"> Phải nắm được biến động giá đất để có thể định giá bất động sản</span></li>
+			        <li>Số 3 - Pháp lý: <span style="color: #fdc209"> Phải nắm được quy trình - thủ tục, văn bản luật để đảm bảo an toàn cho quyền sử hữu tài sản khi mua bán bất động sản</span></li>
+			    </ul>
+			    <p>
+			        Bên cạnh đó, Dân Đầu Tư đóng vai trò là cổng kết nối giữa nhà đầu tư và chủ đầu tư, chúng tôi cũng luôn sẵn sàng hỗ trợ
+			        các chủ đầu tư bán hàng hay hỗ trợ nhà đầu tư tìm hàng nhanh chóng và hiệu quả bằng chuyên môn, nhiệm vụ &amp; trách nhiệm
+			        của mình!
+			    </p>
+			    <h3 id="thanh_tuu_cua_dandautu" class="text-uppercase"><strong><img style="width: 24px; margin-top: -5px" src="assets/images/favion-dandautu.png" class="loading" data-was-processed="true"> - Những giá trị Dân Đầu Tư đạt được</strong></h3>
+			    <p>
+			        Sau thời gian gần 8 tháng đi vào hoạt động, Dân Đầu Tư đã hỗ trợ rất nhiều các nhà đầu tư bất động sản tại Phú Quốc và
+			        cùng với đó, chúng tôi cũng đạt được những giá trị vô cùng lớn về số khách hàng đến với mình!
+			    </p>
+			    <ul>
+			        <li>Hỗ trợ kiểm tra quy hoạch tại Dân Đầu Tư: <span style="color: #fdc209">18.000 bản quy hoạch</span></li>
+			        <li>Thành viên đăng ký theo dõi Dân Đầu Tư: <span style="color: #fdc209">7.400 người dùng</span></li>
+			        <li>Hỗ trợ định giá đất, tư vấn pháp lý, tư vấn đầu tư và hỗ trợ bán hàng: <span style="color: #fdc209">2.600 khách hàng</span></li>
+			        <li>Lượng truy cập/ đến website Dandautu.vn qua 8 tháng hoạt động: <span style="color: #fdc209">2.960.000 người dùng</span></li>
+			    </ul>
+			    <p>
+			        Chúng tôi vẫn đang cung cấp những thông tin, hỗ trợ các nhà đầu tư với tầm nhìn <em>“Trở thành kênh thông tin bất động sản
+			            Phú Quốc chuyên nghiệp &amp; chất lượng nhất”</em> cùng sứ mệnh <em>“Vì một cộng đồng chia sẻ thông tin có giá trị thực tế, chính xác”</em>.
+			    </p>
+			    <p>
+			        Dân Đầu Tư xây dựng và phát triển với giá trị cốt lõi <em>“Tạo ra giá trị cho bạn là chữ tín của chúng tôi.
+			            Sự hài lòng của bạn là thành công của chúng tôi”.</em>
+			    </p>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer id="footer">
+	<!-- Footer top -->
+	<div class="footer-top">
+		<div class="container">
+			 <!-- Grid row -->
+	        <div class="row d-flex flex-row-reverse">
+	            <!-- Grid column -->
+	            <!-- Grid column -->
+	            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+	                <div class="row">
+	                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12">
+	                        <div class="single-footer-widget float-start me-5">
+	                            <div class="title">
+	                                <h5> Về chúng tôi </h5>
+	                            </div>
+	                            <ul class="ul-widget list-unstyled float-start">
+	                                <li class="mb-1"><a rel="nofollow" href="/gioi-thieu">Giới thiệu</a></li>
+	                                <li class="mb-1"><a rel="nofollow" href="/lien-he">Liên hệ</a></li>
+	                                <li class="mb-1"><a rel="nofollow" href="/cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li>
+	                                <li class="mb-1"><a rel="nofollow" href="/chinh-sach-hoat-dong">Chính sách hoạt động</a></li>
+	                                <li class="mb-1"><a rel="nofollow" href="/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+	                            </ul>
+	                            <!-- <div class="title">
+	                                <h5>Bất động sản khu vực</h5>
+	                            </div>
+	                            <ul class="ul-widget list-unstyled float-start">
+	                                <li class="mb-1"><a href="/dat-hoa-lac/xa-phu-cat-k23">Xã Phú Cát</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/xa-phu-man-k20">Xã Phú Mãn</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/xa-binh-yen-k25">Xã Bình Yên</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/xa-binh-minh-k19">Xã Bình Minh</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/xa-tan-xa-k28">Xã Tân Xã</a></li>
+	                            </ul> -->
+	                        </div>
+	                        <div class="single-footer-widget float-start">
+	                            <!-- <div class="title">
+	                                <h5> Dịch vụ </h5>
+	                            </div>
+	                            <ul class="ul-widget list-unstyled float-start">
+	                                <li class="mb-1"><a href="/bds-hoa-lac">Tin BĐS Hòa Lạc</a></li>
+	                                <li class="mb-1"><a href="/tin-bds-ha-noi">Tin BĐS Hà Nội</a></li>
+	                                <li class="mb-1"><a href="/tu-van-dat">Tư vấn luật đất đai</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/kiem-tra-quy-hoach">Kiểm tra quy hoạch</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/gia-dat">Giá đất Hòa Lạc</a></li>
+	                            </ul> -->
+	                        </div>
+	                    </div>
+	                    <!-- Grid column -->
+	                    <!--Start single footer widget-->
+	                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12">
+	                        <div class="single-footer-widget pb-2">
+	                            <div class="subscribe-form">
+	                                <h5 class="fw-600">Đăng ký theo dõi dandautu.vn</h5>
+	                                <p>
+	                                    Nhận tin tức, biến động thị trường bất động sản nhanh nhất &amp; chính xác nhất.
+	                                </p>
+	                                <form class="email-subscribe">
+	                                    <div class="input-group md-form form-sm form-2 pl-0">
+	                                        <input class="form-control border-#CCD3D9" name="email_sub" id="email_sub" type="text" placeholder="Nhập Email" aria-label="Nhập Email">
+	                                        <div class="input-group-append">
+	                                            <span onclick="SendEmailSubscribe();" class="input-group-text" id="basic-text1"><i class="fa fa-paper-plane text-grey"></i></span>
+	                                        </div>
+	                                    </div>
+	                                </form>
+	                            </div>
+	                        </div>
+	                        <div class="clearfix"></div>
+	                        <div class="single-footer-widget">
+	                            <!-- <div class="title">
+	                                <h5> Biến động giá đất khu vực</h5>
+	                            </div>
+	                            <ul class="list-unstyled float-start">
+	                                <li class="mb-1"><a href="/dat-hoa-lac/gia-dat/xom-binh-son-tien-xuan-thach-that">Đường Xóm Bình Sơn</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/gia-dat/quoc-lo-21-hoa-lac">Đường Đường Quốc Lộ 21</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/gia-dat/thon-dong-cham-dong-xuan-quoc-oai">Đường Thôn Đồng Chằm</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/gia-dat/xom-mieu-tien-xuan-thach-that">Đường Xóm Miễu</a></li>
+	                                <li class="mb-1"><a href="/dat-hoa-lac/gia-dat/thon-dong-ben-dong-xuan-quoc-oai">Đường Thôn Đồng Bèn</a></li>
+	                            </ul> -->
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <!--End single footer widget-->
+	            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+	                <a style="margin-left: -11px;" class="footer-logo" href="/">
+	                    <img src="assets/images/logo-white.svg" alt="Dân Đầu Tư" class="loading" data-was-processed="true">
+	                </a>
+	                <table>
+	                    <tbody>
+	                        <tr>
+	                            <td><b> E-mail: </b></td>
+	                            <td> <a href="mailto:lienhe@dandautu.vn">lienhe@dandautu.vn</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td style="min-width: 90px"><b> Số điện thoại: </b></td>
+	                            <td><a href="tel:0886393939"> (+84) 0886.393939</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Mạng xã hội:</b></td>
+	                            <td>
+	                                <ul class="list-unstyled footer-social-list">
+	                                    <li><a rel="nofollow" href="https://facebook.com/dandautu"><i style="color: #39579a" class="fab fa-fw fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+	                                    <li><a rel="nofollow" href="#"><i style="color: #de4d3b" class="fab fa-fw fa-2x fa-google-plus-square" aria-hidden="true"></i></a></li>
+	                                    <li><a rel="nofollow" href="https://twitter.com/dandautu"><i style="color: #00A2ED" class="fab fa-fw fa-2x fa-twitter-square" aria-hidden="true"></i></a></li>
+	                                    <li><a rel="nofollow" href="https://www.youtube.com/c/D%C3%A2n%C4%90%E1%BA%A7uT%C6%B0?sub_confirmation=1"><i style="color: #FF0016" class="fab fa-fw fa-2x fa-youtube-square" aria-hidden="true"></i></a></li>
+	                                    <li><a rel="nofollow" href="https://www.linkedin.com/in/dandautu"><i style="color: #006597" class="fab fa-fw fa-2x fa-linkedin-square" aria-hidden="true"></i></a></li>
+	                                </ul>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Địa chỉ: </b></td>
+	                            <td><a title="Xem bản đồ" href="https://goo.gl/maps/kwZLunu44JC2" rel="nofollow" target="_blank"> Số 9, QL 21A, Thạch Hòa, Thạch Thất, Hà Nội </a> </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	                <div class="mt-3 company-name">
+	                    <h5 class="text-uppercase">Công ty Cổ phần thương mại BILLIONS</h5>
+	                </div>
+	                <div class="mb-3 company-info">
+	                    <span>
+	                        Số ĐKKD 0107704947 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp ngày 13 tháng 01 năm 2017.
+	                    </span>
+	                </div>
+	                <div id="gov_box">
+	                    <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=44078" rel="nofollow" target="_blank"><img style="width: 120px;" class="img-bct loading" src="assets/images/dathongbao.png" data-was-processed="true"></a>
+	                </div>
+	                <br>
+	            </div>
+	            <!-- Grid column -->
+	        </div>
+		</div>
+	       
+        <!-- Grid row -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright py-3">
+        <div class="container">
+            Bản quyền thuộc về 
+            <a href="/" title="dandautu.vn" class="fw-bold">dandautu.vn</a> © 2018.
+            <a href="https://www.dmca.com/Protection/Status.aspx?ID=b726b273-f6c6-4447-a765-47b7119268ed&amp;refurl=https://dandautu.vn/dat-hoa-lac/tin-moi" rel="nofollow" title="DMCA.com Protection Status" class="dmca-badge"> <img src="assets/images/dmca.png" alt="DMCA.com Protection Status" class="loading" data-was-processed="true"></a>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// $('.btn-toggle-bars').click();
+})
+</script>
+</body>
+</html>
