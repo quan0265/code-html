@@ -254,7 +254,7 @@ body>main {
 }
 
 /* Breadbrumb */
-.breadcrumb {
+/*.breadcrumb {
     padding: 24px 0;
     margin: 0;
 }
@@ -268,7 +268,7 @@ body>main {
 }
 .breadcrumb li a{
     color: var(--color);
-}
+}*/
 
 
 /* ========== Page home ========== */

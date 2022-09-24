@@ -1,0 +1,94 @@
+main a {
+    color: var(--color-yellow);
+}
+h1 {
+    font-size: 25px;
+}
+h2 {
+    font-size: 23px;
+}
+
+/*** 
+=============================================
+    Breadcrumb area style
+=============================================
+***/
+.breadcrumb{
+    background-color: transparent !important;
+    padding: 0;
+}
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #202020;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    font-size: 12px;
+}
+.breadcrumb-area {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.breadcrumb-area .title{}
+.breadcrumb-area .title h1 {
+    color: #202020;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+
+.breadcrumb-area .breadcrumb-menu{}
+.breadcrumb-area .breadcrumb-menu ul {
+    overflow: hidden;
+    margin: 8px 0;
+}
+.breadcrumb-area .breadcrumb-menu ul li{
+    display: inline-block;
+    /*float: left;*/
+    margin-right: 6px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #202020;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.breadcrumb-area .breadcrumb-menu ul li:last-child{
+    margin-right: 0;
+}
+.breadcrumb-area .breadcrumb-menu ul li a{
+    color: #202020;
+    text-transform: capitalize;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: all 500ms ease;
+}
+.breadcrumb-area .breadcrumb-menu ul li.active{
+    color: #fdc209;    
+}
+.breadcrumb-area .breadcrumb-menu ul li i{
+    font-size: 16px;
+    color: #202020;
+}
+.breadcrumb-area .breadcrumb-menu ul li a:hover{
+    color: #fdc209;     
+}
+.breadcrumb span{
+    font-size: 14px;
+}
+
+
+/*** 
+=============================================
+    Blog area style
+=============================================
+***/
+#blog-area{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blog-default-area .post-pagination {
+    margin-top: 0px;
+}

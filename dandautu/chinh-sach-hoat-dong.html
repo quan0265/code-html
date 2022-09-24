@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css?v=0.004">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=0.004">
+	<link rel="stylesheet" type="text/css" href="assets/css/ddt.css?v=0.004">
 </head>
 <body>
 
@@ -74,189 +75,159 @@
 	</nav>
 </header>
 
-<!-- Modal Sidebar -->
-<div class="modal modal--left fade" id="modal-sidebar">
-    <div class="modal-dialog">
-        <div class="modal-content sidebar">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <!-- <div class="dropdown">
-                    <div class="dropdown-toggle d-flex align-items-center px-3" data-bs-toggle="dropdown">
-                        <img width="30" height="30" class="rounded-circle" src="<?php echo getLogo($user->image) ?>" alt="">
-                    </div>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/profile">Hi, name</a></li>
-                        <li><a class="dropdown-item fw-normal" href="/profile">About me</a></li>
-                        <li><a class="dropdown-item fw-normal" href="/profile/setting">Setting</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item fw-normal btn_logout" href="#">Log out</a></li>
-                    </ul>
-                </div> -->
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-                <ul class="smenu nav flex-column">
-				    <!-- <li>
-								<a href="#" class="dropdown-btn">TRANG CHỦ</a>
-							</li> -->
-				    <li>
-				        <a href="#" data-bs-toggle="collapse" data-bs-target="#smenu1" class="">ĐẤT HÒA LẠC</a>
-				        <ul id="smenu1" class="collapse">
-				            <li>
-				                <a href="/dat-hoa-lac">ĐẤT HÒA LẠC</a>
-				            </li>
-				            <li>
-				                <a href="/dat-hoa-lac/gia-dat">GIÁ ĐẤT HÒA LẠC</a>
-				            </li>
-				            <li>
-				                <a href="/ban-do-quy-hoach-phia-tay-ha-noi">BẢN ĐỒ QUY HOẠCH</a>
-				            </li>
-				            <li>
-				                <a href="/dat-hoa-lac/kiem-tra-quy-hoach">KIỂM TRA QUY HOẠCH</a>
-				            </li>
-				            <li>
-				                <a href="/dat-hoa-lac/kenh-mua-ban">MUA BÁN ĐẤT HÒA LẠC</a>
-				            </li>
-				            <li>
-				                <a href="/bds-hoa-lac">TIN TỨC BĐS HÒA LẠC</a>
-				            </li>
-				            <li>
-				                <a href="/tin-bds-ha-noi">TIN TỨC BĐS HÀ NỘI</a>
-				            </li>
-				            <li>
-				                <a href="/ky-gui-dat-hoa-lac-xuan-mai">KÝ GỬI ĐẤT ĐAI</a>
-				            </li>
-				        </ul>
-				    </li>
-				    <li>
-				        <a href="/dat-hoa-lac/maps">BẢNG HÀNG ĐẤT TRỰC TUYẾN</a>
-				    </li>
-				    <li>
-				        <a href="#" data-bs-toggle="collapse" data-bs-target="#smenu2" class="" href="javascript:void(0);">KIẾN THỨC - KINH NGHIỆM</a>
-				        <ul id="smenu2" class="collapse">
-				            <li>
-				                <a href="/tu-van-dat">TƯ VẤN LUẬT ĐẤT ĐAI</a>
-				            </li>
-				            <li>
-				                <a href="/kinh-nghiem">KINH NGIỆM ĐẦU TƯ BĐS</a>
-				            </li>
-				            <li>
-				                <a href="/kien-thuc-bds">KIẾN THỨC ĐẦU TƯ BĐS</a>
-				            </li>
-				        </ul>
-				        <div class=""></div>
-				    </li>
-				    <li>
-				        <a href="gioi-thieu.html">GIỚI THIỆU</a>
-				    </li>
-				    <li>
-				        <a href="/lien-he">LIÊN HỆ</a>
-				    </li>
-				</ul>
-                <!-- <hr>
-                <div>
-                	<a href="#" class="btn-gray1 rounded d-block">abc</a>
-                </div> -->
-            </div>
-            <!-- Modal footer -->
-            <div class="modal-footer justify-content-center">
-                <a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">Đăng nhập</a>
-            </div>
-        </div>
-    </div>
-</div>
-
 <main>
-	<section class="st-home-search">
-		<img src="assets/images/banner.png" alt="" class="home-search-img img-cover">
-		<div class="container">
-			<h1>dân đầu tư</h1>
-			<p>Vì một thị trường bất động sản minh bạch hơn cho người việt.</p>
-			<form action="/search" class="home-search">
-				<input type="text" name="q" class="form-control" placeholder="Nhập địa điểm" >
-				<button type="submit" class="btn">
-					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style=" fill:#212121; display: block;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
-					</svg>
-				</button>
-			</form>
-		</div>
+	<!-- Breadcrumb -->
+	<section class="breadcrumb-area" style="background-image: url('assets/images/breadcrumb-bg.jpg');">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xl-12 col-lg-12 col-md-12">
+	                <div class="breadcrumb-menu">
+	                    <nav itemscope="" itemtype="http://schema.org/Breadcrumb">
+	                        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+	                            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> <a itemprop="item" href="https://dandautu.vn"> <span itemprop="name">Trang chủ</span> </a>
+	                                <meta itemprop="position" content="1">
+	                            </li>
+	                            <li class="active"> <span>Chính Sách Hoạt Động</span> </li>
+	                        </ul>
+	                    </nav>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	</section>
 
-	<section class="st-home1 container">
-		<h2>KINH DOANH, ĐẦU TƯ<br>BẤT ĐỘNG SẢN</h2>
-		<div class="home1-content">
-			<em>
-				Quý khách muốn <h2>ĐẦU TƯ BẤT ĐỘNG SẢN?</h2> Quý khách đã biết khu vực nào có giá trị tiềm năng? Quy hoạch của mảnh đất sẽ đầu tư? Định giá được giá trị thực của mảnh đất? Có kiến thức về thủ tục - pháp lý trong mua bán & chuyển nhượng đất đai? Và quý khách nắm được biến động, tình hình thị trường Bất động sản hiện đang ở giai đoạn nào?
-			</em>
-			<p>Dân Đầu Tư ở đây để giải quyết mọi câu hỏi, vấn đề khúc mắc mà quý khách gặp phải trong lĩnh vực đầu tư Bất động sản.</p>
-		</div>
-	</section>
-
-	<!-- <section class="st-home2">
+	<!-- Blog area -->
+	<section id="blog-area" class="blog-single-area">
 		<div class="container">
-			<h4 class="h3-title">TẦM NHÌN - SỨ MỆNH - GIÁ TRỊ CỐT LÕI</h4>
 			<div class="row">
-				<div class="col-lg-4 col-md-12">
-					<div class="home2-item">
-						<div class="home2-icon">
-							<i class="far fa-4x fa-compass"></i>
-						</div>
-						<div class="home2-item-content">
-							<h3 class="home2-item-title">TẦM NHÌN</h3>
-							<p>Trở thành kênh cung cấp thông tin bất động sản, kiến thức mua bán nhà đất hàng đầu Việt Nam.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12">
-					<div class="home2-item">
-						<div class="home2-icon">
-							<i class="fas fa-4x fa-plane"></i>
-						</div>
-						<div class="home2-item-content">
-							<h3 class="home2-item-title">TẦM NHÌN</h3>
-							<p>Trở thành kênh cung cấp thông tin bất động sản, kiến thức mua bán nhà đất hàng đầu Việt Nam.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12">
-					<div class="home2-item">
-						<div class="home2-icon">
-							<i class="far fa-4x fa-gem"></i>
-						</div>
-						<div class="home2-item-content">
-							<h3 class="home2-item-title">TẦM NHÌN</h3>
-							<p>Trở thành kênh cung cấp thông tin bất động sản, kiến thức mua bán nhà đất hàng đầu Việt Nam.</p>
-						</div>
-					</div>
-				</div>
+				<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12">
+	                <div class="blog-post">
+	                    <div class="single-blog-post" style="box-shadow: none;">
+	                        <div class="text-holder" style="padding-left:0;">
+	                            <h1><strong>Chính Sách Hoạt Động</strong></h1>
+	                            <div class="dector"></div>
+	                            <p>
+	                                <strong>
+	                                    <a href="https://dandautu.vn" title="Dân Đầu Tư">Dandautu.vn</a> là một sản phẩm công nghệ do Công ty Cổ phần thương mại BILLIONS xây dựng
+	                                    và phát triển với mục tiêu tạo ra kênh thông tin cho các cá nhân, doanh nghiệp đầu tư
+	                                    Bất động sản.
+	                                </strong>
+	                            </p>
+	                            <h2>1 - Quy chế hoạt động</h2>
+	                            <p>
+	                                Nhà đầu tư (thương nhân, tổ chức, cá nhân) tham gia giao dịch tại Dandautu.vn tự do thỏa
+	                                thuận trên cơ sở tôn trọng quyền và lợi ích hợp pháp của các bên tham gia, không trái
+	                                với quy định của pháp luật.
+	                            </p>
+	                            <p>
+	                                Thông tin liên hệ của nhà đầu tư (thương nhân, tổ chức, cá nhân) tham gia hoạt động góp
+	                                vốn, ngân sách đầu tư vào các dự án trên Dandautu.vn phải đảm bảo tính chính xác.
+	                            </p>
+	                            <p>
+	                                Nhà đầu tư và chúng tôi chịu trách nhiệm pháp lý của mình đối với luật pháp hiện hành
+	                                của nhà nước Việt Nam.
+	                            </p>
+	                            <h2>2 - Chính sách thanh toán</h2>
+	                            <p>
+	                                DANDAUTU cung cấp các hình thức thanh toán với tiêu chuẩn bảo mật, giao dịch đảm bảo,
+	                                thông tin thanh toán của khách hàng an toàn tuyệt đối.
+	                            </p>
+	                            <p>
+	                                <strong>Chi tiết các hình thức thanh toán</strong>
+	                            </p>
+	                            <div style="margin-left:20px;">
+	                                <p>
+	                                    1, Thanh toán trực tiếp<br>
+	                                    Nhà đầu tư cùng chúng tôi làm giấy tờ pháp lý, thủ tục đầu tư hoàn chỉnh tại văn phòng
+	                                    của DANDAUTU. Tại đây nhà đầu tư sẽ thanh toán tiền đặt cọc trước dự án và sẽ có dấu đỏ
+	                                    của công ty.
+	                                </p>
+	                                <p>
+	                                    2, Thanh toán trực tuyến<br>
+	                                    Nhà đầu tư thanh toán bằng phương thức chuyển khoản trực tuyến, khi chuyển khoản vui
+	                                    lòng điền vào nội dung chuyển khoản những thông tin như sau: Họ và tên, số điện thoại,
+	                                    số tiền thanh toán, dự án thanh toán....
+	                                </p>
+	                            </div>
+	                            <p>
+	                                Nhà đầu tư xác nhận thông tin giấy tờ pháp lý, thủ tục đầu tư dự án với chúng tôi qua số
+	                                điện thoại hoặc email. Thông tin tài khoản ngân hàng nhà đầu tư xin vui lòng liên hệ
+	                                trực tiếp với chúng tôi để giao dịch gần nhất và nhanh nhất.
+	                            </p>
+	                            <p>
+	                                Sau khi nhận được số tiền chính xác thanh toán, chúng tôi sẽ gọi điện thoại thông báo
+	                                giao dịch thành công cho nhà đầu tư.
+	                            </p>
+	                            <p style="font-style: italic">
+	                                Lưu ý: Trong mọi trường hợp nhà đầu tư cần hỗ trợ, giải quyết vấn đề thanh toán xin vui
+	                                lòng liên hệ trực tiếp với chúng tôi qua số điện thoại: 0982.83.83.83
+	                            </p>
+	                            <p>
+	                                Mọi giao dịch thanh toán chỉ diễn ra khi chúng tôi và nhà đầu tư đã thỏa thuận, thống
+	                                nhất và đi đến quyết định ký kết.
+	                            </p>
+	                            <h2>3 - Chính sách bảo mật thông tin</h2>
+	                            <p>
+	                                <strong>Mục đích thu thập thông tin</strong>
+	                            </p>
+	                            <p>
+	                                Chúng tôi thu thập thông tin từ các nhà đầu tư tham gia trên hệ thống website của Công ty Cổ phần thương mại BILLIONS để liên hệ xác nhận sử dụng dịch vụ trên website nhằm
+	                                đảm bảo quyền lợi cho khách hàng.
+	                            </p>
+	                            <p>
+	                                <strong>Quy định sử dụng thông tin</strong>
+	                            </p>
+	                            <p>Chúng tôi sử dụng thông tin để:</p>
+	                            <p style="margin-left: 20px;">
+	                                - Cung cấp các dịch vụ đến nhà đầu tư.<br>
+	                                - Gửi các thông báo về các hoạt động trao đổi thông tin giữa nhà đầu tư và ban quản trị
+	                                website Dandautu.vn.<br>
+	                                - Ngăn ngừa các hoạt động lợi dụng, giả mạo thông tin của nhà đầu tư.<br>
+	                                - Liên lạc và giải quyết với nhà đầu tư trong những trường hợp đặc biệt.
+	                            </p>
+	                            <p>
+	                                Chúng tôi không sử dụng thông tin cá nhân của nhà đầu tư ngoài mục đích xác nhận và liên
+	                                hệ có liên quan đến giao dịch đầu tư bất động sản.
+	                            </p>
+	                            <p>
+	                                <strong>Cam kết bảo mật thông tin</strong>
+	                            </p>
+	                            <p>
+	                                Việc thu thập và sử dụng thông tin của mỗi thành viên chỉ được thực hiện khi có sự đồng
+	                                ý của thành viên đó trừ những trường hợp pháp luật có quy định khác.
+	                            </p>
+	                            <p>
+	                                Không sử dụng, không chuyển giao, cung cấp hay tiết lộ cho bên thứ 3 nào về thông tin cá
+	                                nhân của nhà đầu tư khi không có sự cho phép đồng ý.
+	                            </p>
+	                            <p>
+	                                Trong trường hợp máy chủ lưu trữ thông tin bị hacker tấn công dẫn đến mất mát dữ liệu cá
+	                                nhân, Dandautu.vn sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng điều tra xử
+	                                lý kịp thời và thông báo cho thành viên được biết.
+	                            </p>
+	                            <p>
+	                                Bảo mật tuyệt đối mọi thông tin giao dịch trực tuyến của nhà đầu tư bao gồm thông tin
+	                                giấy tờ pháp lý, hóa đơn kế toán, chứng từ số hóa tại văn phòng làm việc của
+	                                Dandautu.vn.
+	                            </p>
+	                            <p>
+	                                Chúng tôi yêu cầu các nhà đầu tư phải cung cấp đầy đủ thông tin cá nhân có liên quan
+	                                như: Họ và tên, địa chỉ liên lạc, email, số điện thoại, số chứng minh nhân dân trong quá
+	                                trình thực hiện giao dịch. Nhà đầu tư phải chịu trách nhiệm về tính pháp lý của những
+	                                thông tin trên.
+	                            </p>
+	                            <p>
+	                                Chúng tôi không chịu trách nhiệm cũng như không giải quyết mọi khiếu nại có liên quan
+	                                đến quyền lợi của nhà đầu tư đó nếu thấy thông tin cá nhân của nhà đầu tư cung cấp là
+	                                không chính xác.
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
 			</div>
-		</div>
+		</div>			
 	</section>
-
-	<section class="st-home3">
-		<div class="container">
-			<h3 class="h3-title">KHU VỰC ĐẦU TƯ BẤT ĐỘNG SẢN NỔI BẬT</h3>
-			<div class="home3-content">
-				Chúng tôi chú trọng cung cấp thông tin, tư vấn đầu tư tại 2 khu vực 
-				<a href="/dat-hoa-lac"><h3 class="inline-block fw-bold">Bất động sản Hòa Lạc</h3></a> 
-				và 
-				<a href="/dat-phu-quoc"><h3 class="inline-block fw-bold">Bất động sản Phú Quốc</h3></a>.
-			</div>
-			<div class="row home3-list">
-				<div class="col-md-6 col-sm-12">
-					<a href="/date-hoa-lac" class="img-cover" alt="Đất hòa lạc">
-						<img src="assets/images/banner1.png" alt="" class="rounded">
-					</a>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<a href="/date-phu-quoc" class="img-cover" alt="Đất phú quốc">
-						<img src="assets/images/banner2.png" alt="" class="rounded">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section> -->
 </main>
 
 <footer id="footer">
