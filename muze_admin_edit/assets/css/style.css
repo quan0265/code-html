@@ -330,7 +330,7 @@ table .spinner-border {
 
 /* theme muze */
 .navbar-vertical.navbar-expand-lg .navbar-nav {
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 96px);
 }
 body.container {
     max-width: 1400px;
